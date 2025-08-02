@@ -270,10 +270,11 @@ description: Explore FAMuS and SEAMuS datasets with interactive annotations
       </div>
       <div class="mdl-card__supporting-text">
         <div class="hierarchy-search">
-          <div class="mdl-textfield mdl-js-textfield">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <input class="mdl-textfield__input" type="text" id="hierarchy-filter"
-                   v-model="hierarchyFilter" placeholder="Filter frames...">
-            <label class="mdl-textfield__label" for="hierarchy-filter">Filter frames...</label>
+                   v-model="hierarchyFilter">
+            <label class="mdl-textfield__label" for="hierarchy-filter" 
+                   v-show="!hierarchyFilter">Filter frames...</label>
           </div>
         </div>
         <div class="hierarchy-tree">
@@ -396,6 +397,23 @@ document.addEventListener('DOMContentLoaded', function() {
 /* Search Input - Full Width */
 #explorer-app .search-panel .mdl-textfield {
   width: 100%;
+}
+
+/* Fix floating label visibility issues */
+/* Hide label text completely when input has any value */
+#explorer-app .search-panel .mdl-textfield.is-dirty .mdl-textfield__label {
+  color: transparent !important;
+  opacity: 0 !important;
+}
+
+/* Also ensure it's hidden when focused */
+#explorer-app .search-panel .mdl-textfield.is-focused .mdl-textfield__label {
+  color: transparent !important;
+}
+
+/* Hide the ::after pseudo element */
+#explorer-app .search-panel .mdl-textfield__label::after {
+  background-color: transparent !important;
 }
 
 
@@ -897,6 +915,9 @@ document.addEventListener('DOMContentLoaded', function() {
 .hierarchy-search .mdl-textfield {
   width: 100%;
 }
+
+/* Frame filter uses v-show to control label visibility */
+/* No additional CSS needed for hierarchy filter */
 
 .frame-node {
   margin-bottom: 10px;
