@@ -556,16 +556,34 @@ const ExplorerApp = {
           
           // Check if document has SEAMuS summary
           let hasSeamus = false;
+          let seamusCombinedSummary = null;
+          let seamusReportSummary = null;
+          
           if (doc.instance_id && this.seamusInstanceMapping[doc.instance_id]) {
             const seamusData = this.seamusInstanceMapping[doc.instance_id];
-            hasSeamus = seamusData.length > 0 && (seamusData[0].report_summary || seamusData[0].combined_summary);
+            if (seamusData.length > 0) {
+              hasSeamus = !!(seamusData[0].report_summary || seamusData[0].combined_summary);
+              // Store the summaries for preview
+              if (seamusData[0].combined_summary) {
+                seamusCombinedSummary = Array.isArray(seamusData[0].combined_summary) 
+                  ? seamusData[0].combined_summary.join(' ') 
+                  : seamusData[0].combined_summary;
+              }
+              if (seamusData[0].report_summary) {
+                seamusReportSummary = Array.isArray(seamusData[0].report_summary) 
+                  ? seamusData[0].report_summary.join(' ') 
+                  : seamusData[0].report_summary;
+              }
+            }
           }
           
           return {
             ...doc,
             score: result.score,
             frame: doc.frame_name || 'Unknown',
-            has_seamus: hasSeamus
+            has_seamus: hasSeamus,
+            seamus_combined_summary: seamusCombinedSummary,
+            seamus_report_summary: seamusReportSummary
           };
         });
         
@@ -624,15 +642,33 @@ const ExplorerApp = {
       // Map results and add SEAMuS info
       results = results.map(r => {
         let hasSeamus = false;
+        let seamusCombinedSummary = null;
+        let seamusReportSummary = null;
+        
         if (r.instance_id && this.seamusInstanceMapping[r.instance_id]) {
           const seamusData = this.seamusInstanceMapping[r.instance_id];
-          hasSeamus = seamusData.length > 0 && seamusData[0].summary;
+          if (seamusData.length > 0) {
+            hasSeamus = !!(seamusData[0].report_summary || seamusData[0].combined_summary);
+            // Store the summaries for preview
+            if (seamusData[0].combined_summary) {
+              seamusCombinedSummary = Array.isArray(seamusData[0].combined_summary) 
+                ? seamusData[0].combined_summary.join(' ') 
+                : seamusData[0].combined_summary;
+            }
+            if (seamusData[0].report_summary) {
+              seamusReportSummary = Array.isArray(seamusData[0].report_summary) 
+                ? seamusData[0].report_summary.join(' ') 
+                : seamusData[0].report_summary;
+            }
+          }
         }
         
         return {
           ...r,
           frame: r.frame_name || 'Unknown',
-          has_seamus: hasSeamus
+          has_seamus: hasSeamus,
+          seamus_combined_summary: seamusCombinedSummary,
+          seamus_report_summary: seamusReportSummary
         };
       });
       
@@ -924,7 +960,12 @@ const ExplorerApp = {
     },
     
     getResultPreview(result) {
-      if (result.summary) {
+      // Prioritize SEAMuS combined summary when available
+      if (result.seamus_combined_summary) {
+        return result.seamus_combined_summary.substring(0, 150) + '...';
+      } else if (result.seamus_report_summary) {
+        return result.seamus_report_summary.substring(0, 150) + '...';
+      } else if (result.summary) {
         return result.summary.substring(0, 150) + '...';
       } else if (result.report_text) {
         return result.report_text.substring(0, 150) + '...';
