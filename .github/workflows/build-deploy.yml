@@ -108,7 +108,7 @@ jobs:
           find _site/assets/css -name "*.css" -type f -exec cssnano {} {} \;
       
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
@@ -123,4 +123,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
+        uses: actions/deploy-pages@v4
