@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{% include head.html %}
+
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    {% include navigation.html %}
+    
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        {{ content }}
+      </div>
+      
+    </main>
+  </div>
+  
+  <!-- Register Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('{{ "/sw.js" | relative_url }}')
+          .then(registration => console.log('ServiceWorker registered:', registration))
+          .catch(error => console.log('ServiceWorker registration failed:', error));
+      });
+    }
+  </script>
+</body>
+
+</html>

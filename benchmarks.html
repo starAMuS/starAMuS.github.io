@@ -1,0 +1,1126 @@
+---
+layout: page
+title: Benchmarks
+description: Model performance comparisons on FAMuS and SEAMuS datasets
+---
+
+{% raw %}
+<div id="benchmarks-app">
+  <div class="benchmarks-container">
+    <!-- Header -->
+    <div class="benchmarks-header">
+      <h1>Dataset Benchmarks</h1>
+      <p class="subtitle">Compare state-of-the-art model performance on FAMuS and SEAMuS tasks</p>
+    </div>
+
+    <!-- Dashboard Control Panel -->
+    <div class="control-panel">
+      <div class="control-card">
+        <h3>Select Benchmark</h3>
+        
+        <!-- Dataset Selection -->
+        <div class="control-section">
+          <label>Dataset</label>
+          <div class="toggle-group">
+            <button class="toggle-button" :class="{ active: selectedDataset === 'famus' }" 
+                    @click="selectedDataset = 'famus'">
+              <i class="material-icons">assessment</i>
+              FAMuS
+            </button>
+            <button class="toggle-button" :class="{ active: selectedDataset === 'seamus' }" 
+                    @click="selectedDataset = 'seamus'">
+              <i class="material-icons">summarize</i>
+              SEAMuS
+            </button>
+          </div>
+        </div>
+
+        <!-- Task Selection -->
+        <div class="control-section" v-if="selectedDataset === 'famus'">
+          <label>Task</label>
+          <div class="toggle-group">
+            <button class="toggle-button small" :class="{ active: selectedFamusTask === 'validation' }" 
+                    @click="selectedFamusTask = 'validation'">
+              Source Validation
+            </button>
+            <button class="toggle-button small" :class="{ active: selectedFamusTask === 'extraction' }" 
+                    @click="selectedFamusTask = 'extraction'">
+              Argument Extraction
+            </button>
+          </div>
+        </div>
+
+        <div class="control-section" v-if="selectedDataset === 'seamus'">
+          <label>Task</label>
+          <div class="toggle-group">
+            <button class="toggle-button small" :class="{ active: selectedSeamusTask === 'report' }" 
+                    @click="selectedSeamusTask = 'report'">
+              Report Summarization
+            </button>
+            <button class="toggle-button small" :class="{ active: selectedSeamusTask === 'cross' }" 
+                    @click="selectedSeamusTask = 'cross'">
+              Cross-Document
+            </button>
+          </div>
+        </div>
+
+
+        <!-- Info Section -->
+        <div class="control-info">
+          <p><i class="material-icons">info</i> Click on model names or metric headers to view detailed descriptions</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results Section -->
+    <div class="results-section">
+      <!-- FAMuS Source Validation -->
+      <div v-if="selectedDataset === 'famus' && selectedFamusTask === 'validation'" class="table-card">
+        <div class="table-header">
+          <h2>Source Validation Performance</h2>
+          <p>Binary classification: Does the source document describe the same event as the report?</p>
+        </div>
+        <div class="table-wrapper">
+          <table class="results-table">
+            <thead>
+              <tr>
+                <th class="sortable" @click="sortTable('model')" :class="getSortClass('model')">
+                  Model
+                  <i class="material-icons sort-icon">unfold_more</i>
+                </th>
+                <th class="sortable" @click="sortTable('setting')" :class="getSortClass('setting')">
+                  Setting
+                  <i class="material-icons sort-icon">unfold_more</i>
+                </th>
+                <th class="numeric sortable clickable-metric" @click="showMetricModal('Accuracy')" 
+                    :class="getSortClass('accuracy')">
+                  Accuracy
+                  <i class="material-icons sort-icon">unfold_more</i>
+                </th>
+                <th class="numeric sortable clickable-metric" @click="showMetricModal('Precision')"
+                    :class="getSortClass('precision')">
+                  Precision
+                  <i class="material-icons sort-icon">unfold_more</i>
+                </th>
+                <th class="numeric sortable clickable-metric" @click="showMetricModal('Recall')"
+                    :class="getSortClass('recall')">
+                  Recall
+                  <i class="material-icons sort-icon">unfold_more</i>
+                </th>
+                <th class="numeric sortable clickable-metric" @click="showMetricModal('F1')"
+                    :class="getSortClass('f1')">
+                  F1
+                  <i class="material-icons sort-icon">unfold_more</i>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="row in sortedValidationData" :key="row.model">
+                <td class="model-name clickable" @click="showModelModal(row.model)">{{ row.model }}</td>
+                <td>{{ row.setting || '-' }}</td>
+                <td class="numeric" :class="{ 'best-score': row.accuracy === getBestScore('validation', 'accuracy') }">{{ row.accuracy }}</td>
+                <td class="numeric" :class="{ 'best-score': row.precision === getBestScore('validation', 'precision') }">{{ row.precision }}</td>
+                <td class="numeric" :class="{ 'best-score': row.recall === getBestScore('validation', 'recall') }">{{ row.recall }}</td>
+                <td class="numeric" :class="{ 'best-score': row.f1 === getBestScore('validation', 'f1') }">{{ row.f1 }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- FAMuS Argument Extraction -->
+      <div v-if="selectedDataset === 'famus' && selectedFamusTask === 'extraction'" class="table-card">
+        <div class="table-header">
+          <h2>Argument Extraction Performance</h2>
+          <p>Cross-document argument extraction from report and source documents</p>
+          
+          <!-- Extraction Options -->
+          <div class="extraction-options">
+            <div class="option-group">
+              <label>Document Type</label>
+              <div class="toggle-group inline">
+                <button class="toggle-button small" :class="{ active: selectedExtractionTask === 'report' }" 
+                        @click="selectedExtractionTask = 'report'">
+                  Report
+                </button>
+                <button class="toggle-button small" :class="{ active: selectedExtractionTask === 'source' }" 
+                        @click="selectedExtractionTask = 'source'">
+                  Source
+                </button>
+              </div>
+            </div>
+            
+            <div class="option-group">
+              <label>Metric Variant</label>
+              <div class="toggle-group inline">
+                <button class="toggle-button small" :class="{ active: selectedMetric === 'phi3' }" 
+                        @click="selectedMetric = 'phi3'">
+                  CEAF-RME φ3
+                </button>
+                <button class="toggle-button small" :class="{ active: selectedMetric === 'a' }" 
+                        @click="selectedMetric = 'a'">
+                  CEAF-RME a
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table-wrapper">
+          <table class="results-table">
+            <thead>
+              <tr>
+                <th class="sortable" @click="sortTable('model')" :class="getSortClass('model')">
+                  Model
+                  <i class="material-icons sort-icon">unfold_more</i>
+                </th>
+                <th class="sortable" @click="sortTable('setting')" :class="getSortClass('setting')">
+                  Setting
+                  <i class="material-icons sort-icon">unfold_more</i>
+                </th>
+                <th class="numeric sortable clickable-metric" 
+                    @click="showMetricModal(selectedMetric === 'phi3' ? 'CEAF-RME φ3' : 'CEAF-RME a')"
+                    :class="getSortClass('precision')">
+                  Precision
+                  <i class="material-icons sort-icon">unfold_more</i>
+                </th>
+                <th class="numeric sortable clickable-metric" 
+                    @click="showMetricModal(selectedMetric === 'phi3' ? 'CEAF-RME φ3' : 'CEAF-RME a')"
+                    :class="getSortClass('recall')">
+                  Recall
+                  <i class="material-icons sort-icon">unfold_more</i>
+                </th>
+                <th class="numeric sortable clickable-metric" 
+                    @click="showMetricModal(selectedMetric === 'phi3' ? 'CEAF-RME φ3' : 'CEAF-RME a')"
+                    :class="getSortClass('f1')">
+                  F1
+                  <i class="material-icons sort-icon">unfold_more</i>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="row in sortedExtractionData" :key="row.model">
+                <td class="model-name clickable" @click="showModelModal(row.model)" v-html="row.model"></td>
+                <td>{{ row.setting || '-' }}</td>
+                <td class="numeric" :class="{ 'best-score': row.precision === getBestScore('extraction', 'precision') }">{{ row.precision }}</td>
+                <td class="numeric" :class="{ 'best-score': row.recall === getBestScore('extraction', 'recall') }">{{ row.recall }}</td>
+                <td class="numeric" :class="{ 'best-score': row.f1 === getBestScore('extraction', 'f1') }">{{ row.f1 }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- SEAMuS Summarization -->
+      <div v-if="selectedDataset === 'seamus'" class="table-card">
+        <div class="table-header">
+          <h2>{{ selectedSeamusTask === 'report' ? 'Report' : 'Cross-Document' }} Summarization</h2>
+          <p>Event-centric summarization performance across multiple evaluation metrics</p>
+        </div>
+        <div class="table-wrapper">
+          <table class="results-table">
+            <thead>
+              <tr>
+                <th class="sortable" @click="sortTable('model')" :class="getSortClass('model')">
+                  Model
+                  <i class="material-icons sort-icon">unfold_more</i>
+                </th>
+                <th class="sortable" @click="sortTable('setting')" :class="getSortClass('setting')">
+                  Setting
+                  <i class="material-icons sort-icon">unfold_more</i>
+                </th>
+                <th class="numeric sortable clickable-metric" @click="showMetricModal('R1')"
+                    :class="getSortClass('r1')">
+                  R1
+                  <i class="material-icons sort-icon">unfold_more</i>
+                </th>
+                <th class="numeric sortable clickable-metric" @click="showMetricModal('R2')"
+                    :class="getSortClass('r2')">
+                  R2
+                  <i class="material-icons sort-icon">unfold_more</i>
+                </th>
+                <th class="numeric sortable clickable-metric" @click="showMetricModal('RL')"
+                    :class="getSortClass('rl')">
+                  RL
+                  <i class="material-icons sort-icon">unfold_more</i>
+                </th>
+                <th class="numeric sortable clickable-metric" @click="showMetricModal('BS')"
+                    :class="getSortClass('bs')">
+                  BS
+                  <i class="material-icons sort-icon">unfold_more</i>
+                </th>
+                <th class="numeric sortable clickable-metric" @click="showMetricModal('CR')"
+                    :class="getSortClass('cr')">
+                  CR
+                  <i class="material-icons sort-icon">unfold_more</i>
+                </th>
+                <th class="numeric sortable clickable-metric" @click="showMetricModal('A')"
+                    :class="getSortClass('a')">
+                  A
+                  <i class="material-icons sort-icon">unfold_more</i>
+                </th>
+                <th class="numeric sortable clickable-metric" @click="showMetricModal('F')"
+                    :class="getSortClass('f')">
+                  F
+                  <i class="material-icons sort-icon">unfold_more</i>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="row in sortedSeamusData" :key="row.model + row.setting">
+                <td class="model-name clickable" @click="showModelModal(row.model)">{{ row.model }}</td>
+                <td>{{ row.setting }}</td>
+                <td class="numeric" :class="getBestScoreType('seamus', 'r1', row.r1, row.setting)">
+                  {{ row.r1 }}
+                </td>
+                <td class="numeric" :class="getBestScoreType('seamus', 'r2', row.r2, row.setting)">
+                  {{ row.r2 }}
+                </td>
+                <td class="numeric" :class="getBestScoreType('seamus', 'rl', row.rl, row.setting)">
+                  {{ row.rl }}
+                </td>
+                <td class="numeric" :class="getBestScoreType('seamus', 'bs', row.bs, row.setting)">
+                  {{ row.bs }}
+                </td>
+                <td class="numeric" :class="getBestScoreType('seamus', 'cr', row.cr, row.setting)">
+                  {{ row.cr }}
+                </td>
+                <td class="numeric" :class="getBestScoreType('seamus', 'a', row.a, row.setting)">
+                  {{ row.a }}
+                </td>
+                <td class="numeric" :class="getBestScoreType('seamus', 'f', row.f, row.setting)">
+                  {{ row.f }}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-footer">
+          <div class="legend">
+            <span class="legend-item">
+              <span class="legend-color best-overall"></span>
+              Best Overall
+            </span>
+            <span class="legend-item">
+              <span class="legend-color best-zero-shot"></span>
+              Best Zero-shot
+            </span>
+            <span class="legend-item">
+              <span class="legend-color best-few-shot"></span>
+              Best Few-shot
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Model Description Modal -->
+  <div class="modal-overlay" v-if="showModelDescModal" @click="closeModal">
+    <div class="modal-content" @click.stop>
+      <div class="modal-header">
+        <h3>{{ currentModel.name || currentModelKey }}</h3>
+        <button class="modal-close" @click="closeModal">
+          <i class="material-icons">close</i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="description" v-html="currentModel.description"></p>
+        <div class="modal-meta" v-if="currentModel.type || currentModel.paper_ref">
+          <span v-if="currentModel.type" class="meta-tag">{{ currentModel.type }}</span>
+          <span v-if="currentModel.paper_ref" class="meta-ref" v-html="currentModel.paper_ref"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Metric Description Modal -->
+  <div class="modal-overlay" v-if="showMetricDescModal" @click="closeModal">
+    <div class="modal-content" @click.stop>
+      <div class="modal-header">
+        <h3>{{ currentMetric.name }}</h3>
+        <button class="modal-close" @click="closeModal">
+          <i class="material-icons">close</i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="description" v-html="currentMetric.description"></p>
+        <div v-if="currentMetric.formula" class="formula">
+          <strong>Formula:</strong> <code>{{ currentMetric.formula }}</code>
+        </div>
+        <div class="modal-meta" v-if="currentMetric.paper_ref">
+          <span class="meta-ref" v-html="currentMetric.paper_ref"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endraw %}
+
+<!-- Load Vue.js 3 from CDN -->
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<!-- Benchmarks JavaScript -->
+<script>
+const { createApp } = Vue;
+
+const BenchmarksApp = {
+  data() {
+    return {
+      selectedDataset: 'famus',
+      selectedFamusTask: 'validation',
+      selectedExtractionTask: 'report',
+      selectedMetric: 'phi3',
+      selectedSeamusTask: 'report',
+      sortBy: '',
+      sortOrder: 'asc',
+      
+      // Modals
+      showModelDescModal: false,
+      showMetricDescModal: false,
+      currentModelKey: '',
+      currentModel: {},
+      currentMetric: {},
+      
+      // Data tables loaded from Jekyll
+      validationData: {{ site.data.benchmarks.famus.validation | jsonify }},
+      extractionData: {{ site.data.benchmarks.famus.extraction | jsonify }},
+      seamusData: {{ site.data.benchmarks.seamus | jsonify }},
+      
+      // Model and metric descriptions
+      modelDescriptions: {{ site.data.model_descriptions.models | jsonify }},
+      metricDescriptions: {{ site.data.model_descriptions.metrics | jsonify }}
+    }
+  },
+  
+  computed: {
+    sortedValidationData() {
+      return this.sortData(this.validationData);
+    },
+    
+    sortedExtractionData() {
+      const data = this.extractionData[this.selectedExtractionTask][this.selectedMetric];
+      return this.sortData(data);
+    },
+    
+    sortedSeamusData() {
+      const data = this.seamusData[this.selectedSeamusTask];
+      return this.sortData(data);
+    }
+  },
+  
+  mounted() {
+    // Initialize MDL components if needed
+    this.$nextTick(() => {
+      if (typeof componentHandler !== 'undefined') {
+        componentHandler.upgradeDom();
+      }
+    });
+  },
+  
+  methods: {
+    sortTable(column) {
+      if (this.sortBy === column) {
+        this.sortOrder = this.sortOrder === 'asc' ? 'desc' : 'asc';
+      } else {
+        this.sortBy = column;
+        this.sortOrder = 'desc'; // Default to descending for metrics
+      }
+    },
+    
+    getSortClass(column) {
+      if (this.sortBy === column) {
+        return {
+          'sort-asc': this.sortOrder === 'asc',
+          'sort-desc': this.sortOrder === 'desc'
+        };
+      }
+      return {};
+    },
+    
+    sortData(data) {
+      if (!this.sortBy) return data;
+      
+      return [...data].sort((a, b) => {
+        let aVal = a[this.sortBy];
+        let bVal = b[this.sortBy];
+        
+        // Handle numeric values
+        if (typeof aVal === 'string' && !isNaN(parseFloat(aVal))) {
+          aVal = parseFloat(aVal);
+        }
+        if (typeof bVal === 'string' && !isNaN(parseFloat(bVal))) {
+          bVal = parseFloat(bVal);
+        }
+        
+        // Handle string comparison
+        if (typeof aVal === 'string') {
+          aVal = aVal.toLowerCase();
+        }
+        if (typeof bVal === 'string') {
+          bVal = bVal.toLowerCase();
+        }
+        
+        if (this.sortOrder === 'asc') {
+          return aVal < bVal ? -1 : aVal > bVal ? 1 : 0;
+        } else {
+          return aVal > bVal ? -1 : aVal < bVal ? 1 : 0;
+        }
+      });
+    },
+    
+    getBestScore(taskType, metric) {
+      let data;
+      
+      if (taskType === 'validation') {
+        data = this.validationData;
+      } else if (taskType === 'extraction') {
+        data = this.extractionData[this.selectedExtractionTask][this.selectedMetric];
+      } else if (taskType === 'seamus') {
+        data = this.seamusData[this.selectedSeamusTask];
+      }
+      
+      if (!data) return null;
+      
+      let maxVal = -Infinity;
+      data.forEach(row => {
+        let val = row[metric];
+        if (typeof val === 'string' && !isNaN(parseFloat(val))) {
+          val = parseFloat(val);
+        }
+        if (typeof val === 'number' && val > maxVal) {
+          maxVal = val;
+        }
+      });
+      
+      return maxVal === -Infinity ? null : maxVal;
+    },
+    
+    getBestScoreType(taskType, metric, value, setting) {
+      let data;
+      
+      if (taskType === 'validation') {
+        data = this.validationData;
+      } else if (taskType === 'extraction') {
+        data = this.extractionData[this.selectedExtractionTask][this.selectedMetric];
+      } else if (taskType === 'seamus') {
+        data = this.seamusData[this.selectedSeamusTask];
+      }
+      
+      if (!data) return '';
+      
+      // Find best overall, zero-shot, and few-shot scores
+      let bestOverall = -Infinity;
+      let bestZeroShot = -Infinity;
+      let bestFewShot = -Infinity;
+      
+      data.forEach(row => {
+        let val = row[metric];
+        if (typeof val === 'string' && !isNaN(parseFloat(val))) {
+          val = parseFloat(val);
+        }
+        
+        if (typeof val === 'number') {
+          if (val > bestOverall) bestOverall = val;
+          
+          if (row.setting === 'Zero-shot' && val > bestZeroShot) {
+            bestZeroShot = val;
+          }
+          if (row.setting === 'Few-shot' && val > bestFewShot) {
+            bestFewShot = val;
+          }
+        }
+      });
+      
+      // Convert value to number for comparison
+      let numValue = value;
+      if (typeof numValue === 'string' && !isNaN(parseFloat(numValue))) {
+        numValue = parseFloat(numValue);
+      }
+      
+      // Determine which type of best score this is
+      if (numValue === bestOverall) {
+        return 'best-overall';
+      } else if (setting === 'Zero-shot' && numValue === bestZeroShot) {
+        return 'best-zero-shot';
+      } else if (setting === 'Few-shot' && numValue === bestFewShot) {
+        return 'best-few-shot';
+      }
+      
+      return '';
+    },
+    
+    showModelModal(modelKey) {
+      // Clean HTML from model name
+      const cleanKey = modelKey.replace(/<[^>]*>/g, '');
+      this.currentModelKey = cleanKey;
+      
+      // Find model description
+      const dataset = this.selectedDataset;
+      if (this.modelDescriptions[dataset] && this.modelDescriptions[dataset][cleanKey]) {
+        this.currentModel = this.modelDescriptions[dataset][cleanKey];
+      } else {
+        this.currentModel = {
+          name: cleanKey,
+          description: 'No description available for this model.'
+        };
+      }
+      
+      this.showModelDescModal = true;
+    },
+    
+    showMetricModal(metricKey) {
+      const dataset = this.selectedDataset;
+      if (this.metricDescriptions[dataset] && this.metricDescriptions[dataset][metricKey]) {
+        this.currentMetric = this.metricDescriptions[dataset][metricKey];
+      } else {
+        this.currentMetric = {
+          name: metricKey,
+          description: 'No description available for this metric.'
+        };
+      }
+      
+      this.showMetricDescModal = true;
+    },
+    
+    closeModal() {
+      this.showModelDescModal = false;
+      this.showMetricDescModal = false;
+      this.currentModel = {};
+      this.currentMetric = {};
+    }
+  }
+};
+
+// Create and mount the Vue app
+createApp(BenchmarksApp).mount('#benchmarks-app');
+</script>
+
+<style>
+/* Dashboard Layout */
+.benchmarks-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.benchmarks-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.benchmarks-header h1 {
+  font-size: 36px;
+  font-weight: 300;
+  color: #212121;
+  margin: 0 0 8px 0;
+}
+
+.benchmarks-header .subtitle {
+  font-size: 18px;
+  color: #757575;
+  margin: 0;
+}
+
+/* Control Panel */
+.control-panel {
+  margin-bottom: 48px;
+}
+
+.control-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 32px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.control-card h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #212121;
+  margin: 0 0 24px 0;
+  text-align: center;
+}
+
+.control-section {
+  margin-bottom: 24px;
+}
+
+.control-section:last-child {
+  margin-bottom: 0;
+}
+
+.control-section label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #616161;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
+}
+
+/* Toggle Groups */
+.toggle-group {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.toggle-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: #f5f5f5;
+  border: 2px solid transparent;
+  border-radius: 24px;
+  color: #616161;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.toggle-button.small {
+  padding: 8px 20px;
+  font-size: 14px;
+}
+
+.toggle-button:hover {
+  background: #eeeeee;
+}
+
+.toggle-button.active {
+  background: #3F51B5;
+  color: white;
+  border-color: #3F51B5;
+}
+
+.toggle-button i {
+  font-size: 20px;
+}
+
+/* Control Info */
+.control-info {
+  margin-top: 24px;
+  padding: 16px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.control-info p {
+  margin: 0;
+  color: #757575;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.control-info i {
+  font-size: 18px;
+}
+
+/* Results Section */
+.results-section {
+  min-height: 600px;
+}
+
+.table-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.table-header {
+  padding: 24px 32px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.table-header h2 {
+  font-size: 28px;
+  font-weight: 300;
+  color: #212121;
+  margin: 0 0 8px 0;
+}
+
+.table-header p {
+  margin: 0;
+  color: #757575;
+  font-size: 16px;
+}
+
+/* Extraction Options */
+.extraction-options {
+  display: flex;
+  gap: 32px;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.option-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.option-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #616161;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.toggle-group.inline {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+}
+
+/* Results Table */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.results-table th,
+.results-table td {
+  padding: 16px 24px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.results-table th {
+  background: #fafafa;
+  font-weight: 500;
+  color: #616161;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.results-table th.numeric,
+.results-table td.numeric {
+  text-align: right;
+}
+
+.results-table .sortable {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+.results-table .sortable:hover {
+  background-color: #f5f5f5;
+}
+
+.results-table .sort-icon {
+  font-size: 16px;
+  margin-left: 4px;
+  opacity: 0.5;
+  vertical-align: middle;
+}
+
+.results-table .sortable.sort-asc .sort-icon::before {
+  content: 'arrow_upward';
+  opacity: 1;
+}
+
+.results-table .sortable.sort-desc .sort-icon::before {
+  content: 'arrow_downward';
+  opacity: 1;
+}
+
+/* Clickable Elements */
+.clickable,
+.clickable-metric {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.clickable:hover {
+  color: #3F51B5;
+  text-decoration: underline;
+}
+
+.clickable-metric:hover {
+  background-color: #e8f5e9 !important;
+}
+
+.model-name {
+  font-weight: 500;
+  color: #212121;
+}
+
+.best-score {
+  font-weight: bold;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* Best score variants */
+.best-overall {
+  font-weight: bold;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.best-zero-shot {
+  font-weight: bold;
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.best-few-shot {
+  font-weight: bold;
+  background-color: #f3e5f5;
+  color: #6a1b9a;
+}
+
+.results-table tbody tr {
+  transition: background-color 0.2s;
+}
+
+.results-table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+.results-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Table Footer */
+.table-footer {
+  padding: 16px 32px;
+  background: #f5f5f5;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.table-footer p {
+  margin: 0;
+  color: #757575;
+  font-size: 14px;
+}
+
+/* Legend */
+.legend {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #616161;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* Modals */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 24px;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+  max-height: 80vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: #212121;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+  color: #757575;
+}
+
+.modal-close:hover {
+  background-color: #f5f5f5;
+}
+
+.modal-body {
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.modal-body .description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #424242;
+  margin: 0 0 16px 0;
+}
+
+.modal-body .formula {
+  background: #f5f5f5;
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.modal-body .formula code {
+  background: none;
+  font-size: 14px;
+  color: #212121;
+}
+
+.modal-meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.meta-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #e3f2fd;
+  color: #1976d2;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.meta-ref {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #f3e5f5;
+  color: #7b1fa2;
+  border-radius: 16px;
+  font-size: 14px;
+}
+
+.meta-ref a {
+  color: #7b1fa2;
+  text-decoration: none;
+}
+
+.meta-ref a:hover {
+  text-decoration: underline;
+}
+
+.modal-body a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.modal-body a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .benchmarks-container {
+    padding: 16px;
+  }
+  
+  .control-card {
+    padding: 24px 16px;
+  }
+  
+  .toggle-group {
+    flex-direction: column;
+  }
+  
+  .toggle-button {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .table-header {
+    padding: 16px;
+  }
+  
+  .table-header h2 {
+    font-size: 24px;
+  }
+  
+  .results-table {
+    font-size: 14px;
+  }
+  
+  .results-table th,
+  .results-table td {
+    padding: 12px 16px;
+  }
+  
+  .modal-content {
+    margin: 16px;
+  }
+  
+  .extraction-options {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .option-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+</style>

@@ -1,0 +1,51 @@
+# Site settings
+title: "*AMuS"
+description: >-
+  Interactive explorer for Frames Across Multiple Sources (FAMuS) and 
+  Summaries of Events Across Multiple Sentences (SEAMuS) datasets, 
+  built on MegaWika for cross-document event extraction research.
+baseurl: "" # Leave empty for username.github.io repositories
+url: "https://staramus.github.io" # The base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - scripts/
+  - data/FAMuS.zip
+  - data/SEAMuS.zip
+  - data/extracted/
+  - papers/
+  - inspiration/
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Sass/SCSS settings
+sass:
+  sass_dir: assets/css
+  style: compressed

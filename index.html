@@ -1,0 +1,92 @@
+---
+layout: default
+title: Home
+---
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col">
+      <h1>Across Multiple Sources</h1>
+      <p>
+        Explore cross-document event understanding with FAMuS and SEAMuS datasets.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Dataset Cards Section -->
+<section class="dataset-cards">
+  <div class="mdl-grid">
+    <!-- FAMuS Card -->
+    <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
+      <div class="mdl-card mdl-shadow--2dp dataset-card">
+        <div class="mdl-card__title FAMuS-card">
+          <h2 class="mdl-card__title-text">FAMuS</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          <h4>Frames Across Multiple Sources</h4>
+          <p>
+            FAMuS pairs Wikipedia passages with their cited sources, providing FrameNet annotations
+            for events and arguments across both documents. Built on <a href="https://huggingface.co/datasets/hltcoe/megawika" target="_blank">MegaWika</a>, 
+            the dataset contains over 1,255 report-source pairs covering 253 diverse event types.
+          </p>
+          <ul>
+            <li><strong>Source Validation:</strong> Determine if a source describes the same event as the report</li>
+            <li><strong>Cross-Document Argument Extraction:</strong> Extract event arguments from both report and source</li>
+          </ul>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://github.com/FACTSlab/FAMuS">
+            View on GitHub
+          </a>
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://aclanthology.org/2024.naacl-long.457/">
+            Read Paper
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEAMuS Card -->
+    <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
+      <div class="mdl-card mdl-shadow--2dp dataset-card">
+        <div class="mdl-card__title SEAMuS-card">
+          <h2 class="mdl-card__title-text">SEAMuS</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          <h4>Summaries of Events Across Multiple Sentences</h4>
+          <p>
+            SEAMuS extends event-keyed summarization to the cross-document setting, requiring systems
+            to synthesize information about specific events from multiple sources. Built on expert
+            reannotations of FAMuS data.
+          </p>
+          <ul>
+            <li><strong>Event-Keyed Summarization:</strong> Generate summaries focused on specific events</li>
+            <li><strong>Cross-Document Synthesis:</strong> Combine information from report and source documents</li>
+          </ul>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://github.com/wgantt/SEAMuS">
+            View on GitHub
+          </a>
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://aclanthology.org/2025.xllm-1.19/">
+            Read Paper
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Call to Action -->
+<section style="background-color: #f5f5f5; padding: 40px 0; text-align: center;">
+  <h3>Ready to explore cross-document event extraction?</h3>
+  <a href="{{ "/explorer" | relative_url }}" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+    Launch Explorer
+  </a>
+  <a href="{{ "/benchmarks" | relative_url }}" class="mdl-button mdl-js-button mdl-button--raised">
+    View Benchmarks
+  </a>
+</section>

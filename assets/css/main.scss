@@ -1,0 +1,1050 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// Material Design Color Palette
+$primary: #3F51B5;        // Indigo 500
+$primary-dark: #1A237E;    // Indigo 900 - much darker for navbar
+$primary-light: #C5CAE9;   // Indigo 100
+$secondary: #009688;       // Teal 500
+$accent: #FF6E40;         // Deep Orange A200
+
+// Backgrounds and Surfaces
+$background: #FAFAFA;      // Grey 50
+$surface: #FFFFFF;         // White
+$error: #F44336;          // Red 500
+
+// Text Colors
+$text-primary: #212121;    // Grey 900
+$text-secondary: #757575;  // Grey 600
+$text-disabled: #BDBDBD;   // Grey 400
+$text-on-primary: #FFFFFF;
+$text-on-secondary: #FFFFFF;
+
+// Dataset Brand Colors (Material Design)
+$famus-color: #1976D2;     // Blue 700
+$seamus-color: #00796B;    // Teal 700
+$megawika-color: #7B1FA2;  // Purple 700
+
+// Elevation Shadows (Material Design)
+$elevation-1dp: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$elevation-2dp: 0 2px 4px rgba(0,0,0,0.12), 0 2px 3px rgba(0,0,0,0.24);
+$elevation-4dp: 0 4px 8px rgba(0,0,0,0.12), 0 4px 6px rgba(0,0,0,0.24);
+$elevation-8dp: 0 8px 16px rgba(0,0,0,0.12), 0 8px 12px rgba(0,0,0,0.24);
+$elevation-16dp: 0 16px 32px rgba(0,0,0,0.12), 0 16px 24px rgba(0,0,0,0.24);
+
+// Spacing (8dp grid)
+$spacing-unit: 8px;
+$spacing-xs: $spacing-unit;      // 8px
+$spacing-sm: $spacing-unit * 2;  // 16px
+$spacing-md: $spacing-unit * 3;  // 24px
+$spacing-lg: $spacing-unit * 4;  // 32px
+$spacing-xl: $spacing-unit * 6;  // 48px
+$spacing-xxl: $spacing-unit * 8; // 64px
+
+// Breakpoints
+$mobile: 600px;
+$tablet: 960px;
+$desktop: 1280px;
+$large: 1920px;
+
+// Reset and Base Styles
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: $text-primary;
+  background-color: $background;
+}
+
+// Typography - Material Design Type Scale
+h1 {
+  font-size: 96px;
+  font-weight: 300;
+  letter-spacing: -1.5px;
+  line-height: 1.167;
+  margin: $spacing-lg 0 $spacing-md;
+  
+  @media (max-width: $tablet) {
+    font-size: 60px;
+  }
+  
+  @media (max-width: $mobile) {
+    font-size: 48px;
+  }
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  margin: $spacing-lg 0 $spacing-md;
+  
+  @media (max-width: $tablet) {
+    font-size: 48px;
+  }
+  
+  @media (max-width: $mobile) {
+    font-size: 34px;
+  }
+}
+
+h3 {
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.167;
+  margin: $spacing-md 0 $spacing-sm;
+  
+  @media (max-width: $tablet) {
+    font-size: 34px;
+  }
+  
+  @media (max-width: $mobile) {
+    font-size: 24px;
+  }
+}
+
+h4 {
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  line-height: 1.235;
+  margin: $spacing-md 0 $spacing-sm;
+  
+  @media (max-width: $mobile) {
+    font-size: 24px;
+  }
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.334;
+  margin: $spacing-sm 0 $spacing-xs;
+}
+
+h6 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+  line-height: 1.6;
+  margin: $spacing-sm 0 $spacing-xs;
+}
+
+p {
+  margin: 0 0 $spacing-sm;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: $primary-dark;
+    text-decoration: underline;
+  }
+}
+
+// Material Design Header
+.mdl-layout__header {
+  background-color: $primary-dark;
+  color: $text-on-primary;
+  box-shadow: $elevation-4dp;
+  
+  .mdl-layout__header-row {
+    height: 64px;
+    padding: 0 $spacing-sm;
+    
+    @media (max-width: $mobile) {
+      height: 56px;
+    }
+  }
+  
+  .mdl-layout-title {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  
+  .mdl-navigation__link {
+    color: $text-on-primary;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: none;
+    }
+    opacity: 0.87;
+    
+    &:hover {
+      opacity: 1;
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+  }
+}
+
+// Hide hamburger menu on desktop
+@media (min-width: 1025px) {
+  .mdl-layout__drawer-button {
+    display: none !important;
+  }
+}
+
+// Material Design Drawer
+.mdl-layout__drawer {
+  .mdl-layout-title {
+    background-color: $primary;
+    color: $text-on-primary;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding-left: $spacing-sm;
+  }
+  
+  .mdl-navigation__link {
+    padding: $spacing-sm;
+    color: $text-primary;
+    text-decoration: none;
+    
+    &:hover {
+      background-color: $background;
+      text-decoration: none;
+    }
+  }
+}
+
+// Hero Section
+.hero-section {
+  background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
+  color: $text-on-primary;
+  padding: $spacing-xxl $spacing-md;
+  text-align: center;
+  
+  h1 {
+    margin-top: 0;
+    font-weight: 300;
+  }
+  
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.87;
+  }
+}
+
+// Dataset Cards Section
+.dataset-cards {
+  padding: $spacing-xl $spacing-md;
+  
+  .mdl-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .mdl-cell {
+    display: flex;
+  }
+  
+  .dataset-card {
+    width: 100%;
+    background-color: $surface;
+    border-radius: 4px;
+    box-shadow: $elevation-2dp;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
+    &:hover {
+      box-shadow: $elevation-8dp;
+    }
+    
+    .mdl-card__title {
+      padding: $spacing-md;
+      min-height: 176px;
+      display: flex;
+      align-items: flex-end;
+      
+      &.FAMuS-card {
+        background-color: $megawika-color;
+      }
+      
+      &.SEAMuS-card {
+        background-color: $seamus-color;
+      }
+      
+      &.megawika-card {
+        background-color: $megawika-color;
+      }
+      
+      h2 {
+        color: $text-on-primary;
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 1;
+        margin: 0;
+      }
+    }
+    
+    .mdl-card__supporting-text {
+      padding: $spacing-sm;
+      flex-grow: 1;
+      
+      h4 {
+        color: $text-primary;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0 0 $spacing-xs;
+      }
+      
+      p {
+        color: $text-secondary;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      
+      ul {
+        margin: $spacing-xs 0 0;
+        padding-left: $spacing-md;
+        
+        li {
+          color: $text-secondary;
+          font-size: 14px;
+          line-height: 1.5;
+          margin-bottom: $spacing-xs;
+        }
+      }
+    }
+    
+    .mdl-card__actions {
+      padding: $spacing-xs $spacing-sm;
+      display: flex;
+      gap: $spacing-xs;
+      border-top: 1px solid rgba(0, 0, 0, 0.12);
+      
+      .mdl-button {
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+      }
+    }
+  }
+}
+
+// Explorer Page Styles
+.explorer-container {
+  padding: $spacing-md;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.search-panel {
+  margin: 0 auto $spacing-lg;
+  max-width: 800px;
+  background-color: $surface;
+  border-radius: 4px;
+  box-shadow: $elevation-2dp;
+  
+  .mdl-card__title {
+    background-color: $primary;
+    color: $text-on-primary;
+    
+    h2 {
+      font-size: 24px;
+      font-weight: 400;
+      margin: 0;
+    }
+  }
+  
+  .dataset-selector {
+    text-align: center;
+    margin-bottom: $spacing-md;
+    
+    .mdl-radio {
+      margin: 0 $spacing-sm;
+    }
+  }
+  
+  .search-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+    justify-content: center;
+    margin: $spacing-md 0;
+  }
+  
+  .mdl-textfield {
+    width: 100%;
+  }
+}
+
+.navigation-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-sm;
+  margin: $spacing-md 0;
+  
+  .nav-info {
+    margin: 0 $spacing-sm;
+    font-weight: 500;
+    color: $text-secondary;
+  }
+}
+
+.example-viewer {
+  .top-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: $spacing-md;
+    margin-bottom: $spacing-md;
+    
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .frame-info,
+  .text-panel {
+    background-color: $surface;
+    border-radius: 4px;
+    box-shadow: $elevation-2dp;
+    
+    .mdl-card__title {
+      background-color: $background;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+      padding: $spacing-sm;
+      
+      h2, h3 {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0;
+        color: $text-primary;
+      }
+    }
+    
+    .mdl-card__supporting-text {
+      padding: $spacing-sm;
+    }
+  }
+  
+  .text-content {
+    line-height: 1.8;
+    font-size: 16px;
+    max-height: 600px;
+    overflow-y: auto;
+    padding: $spacing-xs;
+    
+    .annotation {
+      padding: 2px 4px;
+      border-radius: 3px;
+      cursor: help;
+      transition: opacity 0.2s;
+      
+      &:hover {
+        opacity: 0.8;
+      }
+      
+      sub {
+        font-size: 0.7em;
+        margin-left: 2px;
+      }
+    }
+  }
+}
+
+.search-results {
+  h3 {
+    text-align: center;
+    color: $text-primary;
+    margin-bottom: $spacing-md;
+  }
+  
+  .results-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: $spacing-md;
+    
+    @media (max-width: $mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .result-item {
+    background-color: $surface;
+    border-radius: 4px;
+    box-shadow: $elevation-2dp;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: $elevation-8dp;
+    }
+    
+    .mdl-card__title {
+      background-color: $background;
+      padding: $spacing-sm;
+      
+      h4 {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+        color: $text-primary;
+      }
+    }
+    
+    .result-preview {
+      color: $text-secondary;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+}
+
+.empty-state {
+  text-align: center;
+  padding: $spacing-xxl $spacing-md;
+  color: $text-disabled;
+  
+  .material-icons {
+    font-size: 80px;
+    margin-bottom: $spacing-md;
+  }
+  
+  p {
+    font-size: 20px;
+    margin: 0;
+  }
+}
+
+.frame-hierarchy {
+  position: fixed;
+  top: 80px;
+  right: $spacing-md;
+  width: 400px;
+  max-height: 80vh;
+  background-color: $surface;
+  border-radius: 4px;
+  box-shadow: $elevation-16dp;
+  z-index: 100;
+  overflow: hidden;
+  
+  @media (max-width: $desktop) {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+    max-height: 500px;
+    margin-top: $spacing-md;
+  }
+  
+  .mdl-card__title {
+    background-color: $primary;
+    color: $text-on-primary;
+    padding: $spacing-sm;
+    display: flex;
+    align-items: center;
+    
+    h2 {
+      font-size: 20px;
+      font-weight: 500;
+      margin: 0;
+      flex-grow: 1;
+    }
+  }
+  
+  .hierarchy-tree {
+    max-height: 60vh;
+    overflow-y: auto;
+    padding: $spacing-sm;
+    
+    .frame-item {
+      display: flex;
+      align-items: center;
+      padding: $spacing-xs $spacing-sm;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.2s;
+      
+      &:hover {
+        background-color: $background;
+      }
+      
+      &.child {
+        margin-left: $spacing-md;
+      }
+      
+      .material-icons {
+        margin-right: $spacing-xs;
+        color: $primary;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+// Benchmarks Page Styles
+.benchmarks-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: $spacing-md;
+}
+
+.benchmarks-header {
+  text-align: center;
+  margin-bottom: $spacing-xl;
+  
+  h2 {
+    color: $text-primary;
+    margin-bottom: $spacing-sm;
+  }
+  
+  p {
+    color: $text-secondary;
+    font-size: 18px;
+  }
+}
+
+.dataset-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: $spacing-xl;
+  gap: $spacing-xs;
+  
+  .tab-button {
+    padding: $spacing-sm $spacing-md;
+    background-color: transparent;
+    color: $primary;
+    border: 2px solid $primary;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    
+    &:hover {
+      background-color: rgba($primary, 0.08);
+    }
+    
+    &.active {
+      background-color: $primary;
+      color: $text-on-primary;
+    }
+  }
+}
+
+.benchmarks-content {
+  .metric-section {
+    margin-bottom: $spacing-xl;
+    
+    h3 {
+      color: $text-primary;
+      text-align: center;
+      margin-bottom: $spacing-lg;
+    }
+  }
+  
+  .table-container {
+    background-color: $surface;
+    border-radius: 4px;
+    box-shadow: $elevation-2dp;
+    overflow: hidden;
+    margin-bottom: $spacing-lg;
+    
+    h4 {
+      font-size: 20px;
+      font-weight: 500;
+      padding: $spacing-sm;
+      margin: 0;
+      background-color: $background;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+  }
+  
+  .mdl-data-table {
+    width: 100%;
+    border: 0;
+    background-color: $surface;
+    
+    th {
+      background-color: $background;
+      font-weight: 500;
+      color: $text-secondary;
+      text-align: left;
+      padding: $spacing-sm;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    
+    td {
+      padding: $spacing-sm;
+      color: $text-primary;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+      font-size: 14px;
+    }
+    
+    tbody tr {
+      transition: background-color 0.2s;
+      
+      &:hover {
+        background-color: $background;
+      }
+      
+      &:last-child td {
+        border-bottom: none;
+      }
+    }
+    
+    // Numeric columns right-aligned
+    th.numeric,
+    td.numeric {
+      text-align: right;
+    }
+    
+    // Model name column
+    .model-name {
+      font-weight: 500;
+    }
+  }
+}
+
+.metrics-explanation {
+  margin-top: $spacing-xxl;
+  
+  h3 {
+    text-align: center;
+    color: $text-primary;
+    margin-bottom: $spacing-lg;
+  }
+  
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: $spacing-md;
+  }
+  
+  .metric-card {
+    background-color: $surface;
+    border-radius: 4px;
+    box-shadow: $elevation-2dp;
+    overflow: hidden;
+    
+    .mdl-card__title {
+      background-color: $primary;
+      color: $text-on-primary;
+      padding: $spacing-sm;
+      
+      h4 {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+      }
+    }
+    
+    .mdl-card__supporting-text {
+      padding: $spacing-sm;
+      line-height: 1.6;
+      color: $text-secondary;
+      font-size: 14px;
+    }
+  }
+}
+
+// About Page Styles
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: $spacing-lg $spacing-md;
+  
+  h2 {
+    color: $primary;
+    margin-top: $spacing-xl;
+    margin-bottom: $spacing-md;
+  }
+  
+  h3 {
+    color: $text-primary;
+    margin-top: $spacing-lg;
+    margin-bottom: $spacing-sm;
+  }
+  
+  h4 {
+    color: $text-primary;
+    margin-top: $spacing-md;
+    margin-bottom: $spacing-sm;
+  }
+  
+  ul {
+    margin: $spacing-sm 0;
+    padding-left: $spacing-lg;
+    
+    li {
+      margin-bottom: $spacing-xs;
+      line-height: 1.6;
+    }
+  }
+  
+  // Citation blocks
+  div[style*="background-color"] {
+    background-color: $background !important;
+    padding: $spacing-sm !important;
+    border-radius: 4px !important;
+    border: 1px solid rgba(0, 0, 0, 0.12) !important;
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    overflow-x: auto !important;
+  }
+}
+
+// Call to Action Section
+section[style*="background-color"] {
+  background-color: $background !important;
+  padding: $spacing-xl 0 !important;
+  text-align: center;
+  
+  h3 {
+    color: $text-primary;
+    margin-bottom: $spacing-md;
+  }
+  
+  .mdl-button {
+    margin: 0 $spacing-xs;
+  }
+}
+
+// Material Design Buttons
+.mdl-button--raised.mdl-button--colored {
+  background-color: $primary;
+  color: $text-on-primary;
+  
+  &:hover {
+    background-color: $primary-dark;
+  }
+}
+
+.mdl-button--raised:not(.mdl-button--colored) {
+  background-color: $surface;
+  color: $text-primary;
+  
+  &:hover {
+    background-color: $background;
+  }
+}
+
+// Utility Classes
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: $spacing-md;
+}
+
+.mb-20 {
+  margin-bottom: $spacing-md;
+}
+
+.p-20 {
+  padding: $spacing-md;
+}
+
+// Loading States
+.loading {
+  text-align: center;
+  padding: $spacing-xl;
+  
+  .mdl-spinner {
+    margin: 0 auto;
+  }
+}
+
+// Tooltip Styles
+.metric-tooltip {
+  position: absolute;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.87);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.4;
+  max-width: 300px;
+  word-wrap: break-word;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4px);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.metric-tooltip.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.metric-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border: 5px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.87);
+}
+
+.metric-header {
+  cursor: help;
+  position: relative;
+}
+
+.metric-header:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+// Role Popover Styles
+.role-tooltip {
+  position: absolute;
+  z-index: 1001;
+  background-color: rgba(0, 0, 0, 0.87);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.4;
+  max-width: 320px;
+  word-wrap: break-word;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4px);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.role-tooltip.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.role-tooltip.persistent {
+  pointer-events: auto;
+  padding-right: 40px;
+}
+
+.role-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -6px;
+  border: 6px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.87);
+}
+
+.tooltip-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.tooltip-close:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.role-popover {
+  cursor: help;
+}
+
+.role-popover:hover {
+  opacity: 0.8;
+}
+
+// Frame styles for frames without examples
+.frame-no-examples {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: default;
+}
+
+.frame-no-examples .frame-name {
+  color: #999 !important;
+}
+
+.frame-link-button.frame-no-examples {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: default;
+  background-color: #f5f5f5 !important;
+  color: #999 !important;
+}
+
+.frame-link-button.frame-no-examples:hover {
+  background-color: #f5f5f5 !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+  transform: none !important;
+}
+
+// Responsive Adjustments
+@media (max-width: $mobile) {
+  .hero-section {
+    padding: $spacing-xl $spacing-sm;
+    
+    h1 {
+      font-size: 36px;
+    }
+    
+    p {
+      font-size: 16px;
+    }
+  }
+  
+  .dataset-cards {
+    padding: $spacing-lg $spacing-sm;
+  }
+  
+  .benchmarks-container {
+    padding: $spacing-sm;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+}

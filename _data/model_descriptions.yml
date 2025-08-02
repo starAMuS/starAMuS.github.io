@@ -1,0 +1,174 @@
+# Model and metric descriptions extracted from FAMuS and SEAMuS papers
+
+models:
+  famus:
+    # Source Validation Models
+    "Majority":
+      name: "Majority Baseline"
+      description: "A simple baseline model that always predicts the majority class (YES) for source validation. This baseline achieves 50% accuracy by definition on the balanced FAMuS dataset."
+      type: "baseline"
+      
+    "Lemma":
+      name: "Lemma Baseline"
+      description: "A rule-based baseline that predicts YES if the lemmatized form of the report's event trigger appears anywhere in the source document, and NO otherwise. Uses NLTK's WordNetLemmatizer for lemmatization."
+      type: "baseline"
+      
+    "Longformer":
+      name: "Longformer"
+      description: "A transformer-based model designed for long documents, fine-tuned for sequence classification. For source validation, the model takes a concatenated report and source text with the event trigger marked by special tags. Fine-tuned for 30 epochs with hyperparameter optimization using Optuna."
+      type: "fine-tuned"
+      paper_ref: "<a href='https://arxiv.org/abs/2004.05150' target='_blank'>Beltagy et al., 2020</a>"
+      
+    "ChatGPT":
+      name: "ChatGPT (GPT-3.5-turbo)"
+      description: "OpenAI's GPT-3.5-turbo-0301 model used in a few-shot setting with 4 hand-written examples (2 positive, 2 negative). Temperature set to 0 for consistent generations. No fine-tuning performed."
+      type: "few-shot"
+      
+    "Llama-2-13b":
+      name: "Llama 2 (13B)"
+      description: "Meta's Llama 2 13-billion parameter model used for source validation. Evaluated in few-shot setting with the same prompt as ChatGPT. Uses default hyperparameters with temperature 0."
+      type: "few-shot"
+      paper_ref: "<a href='https://arxiv.org/abs/2307.09288' target='_blank'>Touvron et al., 2023</a>"
+      
+    # Cross-Document Argument Extraction Models
+    "IterXgold":
+      name: "IterX (Gold Spans)"
+      description: "IterX (Iterative Document-level Information Extraction) is a state-of-the-art template filling model that treats argument extraction as autoregressive span assignment. Each candidate span is assigned to a role (possibly null) in the current template, with embeddings updated based on assignments. This variant is trained and tested exclusively on gold annotated spans, representing an upper bound on performance. Uses T5-large encoder with Transformer self-attention for trigger conditioning. Constrained to decode a single template per document for FAMuS."
+      type: "fine-tuned"
+      paper_ref: "<a href='https://aclanthology.org/2023.eacl-main.136' target='_blank'>Chen et al., 2023</a>"
+      
+    "IterXgold+pred":
+      name: "IterX (Gold + Predicted Spans)"
+      description: "IterX model trained on a combination of: (i) gold spans from CDAE annotation, (ii) argument spans from the LOME FrameNet parser, and (iii) entity spans from Stanza's NER module. This mixed training approach aims to improve robustness while still leveraging gold annotations. The model learns to handle both high-quality gold spans and noisier predicted spans, making it more practical for real-world scenarios where gold spans may be partially available."
+      type: "fine-tuned"
+      paper_ref: "<a href='https://aclanthology.org/2023.eacl-main.136' target='_blank'>Chen et al., 2023</a>"
+      
+    "IterXpred":
+      name: "IterX (Predicted Spans)"
+      description: "IterX model trained exclusively on predicted spans from LOME FrameNet parser and Stanza NER, without any access to gold spans during training or testing. This represents the most realistic deployment scenario where only automatic span extraction is available. While performance is lower than gold-span variants, this model demonstrates IterX's ability to work with noisy, automatically extracted candidate spans."
+      type: "fine-tuned"
+      paper_ref: "<a href='https://aclanthology.org/2023.eacl-main.136' target='_blank'>Chen et al., 2023</a>"
+      
+    "Longformer-QA":
+      name: "Longformer QA"
+      description: "Longformer model adapted for extractive question answering following SQuAD 2.0 format. Each role in a frame is converted to a QA pair, with the role name as the question and annotated arguments as answers."
+      type: "fine-tuned"
+      paper_ref: "<a href='https://aclanthology.org/N18-2124' target='_blank'>Rajpurkar et al., 2018</a>"
+      
+    "Llama-2-13b-chat":
+      name: "Llama 2 Chat (13B)"
+      description: "Meta's instruction-tuned Llama 2 13B chat model used for argument extraction. Evaluated in few-shot setting with 2 examples from training data. Uses the chat variant for better instruction following."
+      type: "few-shot"
+      paper_ref: "<a href='https://arxiv.org/abs/2307.09288' target='_blank'>Touvron et al., 2023</a>"
+
+  seamus:
+    "Report Baseline":
+      name: "Report Baseline"
+      description: "A baseline that simply returns the original report text as the summary. High scores indicate that reports already contain much of the target summary content."
+      type: "baseline"
+      
+    "GPT-4o Mini":
+      name: "GPT-4o Mini"
+      description: "OpenAI's smaller, cost-efficient variant of GPT-4o. Evaluated in both zero-shot and few-shot settings for event-centric summarization. Few-shot uses 3 examples from training data with matching frames."
+      type: "llm"
+      
+    "GPT-4o":
+      name: "GPT-4o"
+      description: "OpenAI's most capable model combining text, vision, and audio understanding. Shows strong performance on SEAMuS tasks in both zero-shot and few-shot settings. Temperature set to 0.7."
+      type: "llm"
+      
+    "Claude 3 Haiku":
+      name: "Claude 3 Haiku"
+      description: "Anthropic's fast and lightweight model from the Claude 3 family. Designed for speed while maintaining good performance. Evaluated in zero-shot and few-shot settings."
+      type: "llm"
+      
+    "Claude 3.5 Sonnet":
+      name: "Claude 3.5 Sonnet"
+      description: "Anthropic's balanced model offering strong performance across various tasks. Shows particularly good results on factuality and abstractiveness metrics in SEAMuS evaluation."
+      type: "llm"
+      
+    "BART":
+      name: "BART"
+      description: "Bidirectional and Auto-Regressive Transformer, a denoising autoencoder pre-trained for text generation. Fine-tuned on SEAMuS training data for event-centric summarization using the large variant."
+      type: "fine-tuned"
+      paper_ref: "<a href='https://aclanthology.org/2020.acl-main.703' target='_blank'>Lewis et al., 2020</a>"
+      
+    "PEGASUS":
+      name: "PEGASUS"
+      description: "Pre-trained model specifically designed for abstractive summarization using gap-sentence generation. Fine-tuned on SEAMuS with strong performance on coverage and abstractiveness metrics."
+      type: "fine-tuned"
+      paper_ref: "<a href='https://arxiv.org/abs/1912.08777' target='_blank'>Zhang et al., 2020</a>"
+      
+    "T5":
+      name: "T5 (Large)"
+      description: "Text-to-Text Transfer Transformer that frames all NLP tasks as text generation. Achieves best overall performance on SEAMuS benchmarks when fine-tuned. Uses the large variant with standard conditional language modeling objective."
+      type: "fine-tuned"
+      paper_ref: "<a href='https://jmlr.org/papers/v21/20-074.html' target='_blank'>Raffel et al., 2020</a>"
+
+metrics:
+  famus:
+    "Accuracy":
+      name: "Accuracy"
+      description: "Overall classification accuracy for source validation. Measures the percentage of correct predictions (both YES and NO) out of all predictions."
+      formula: "(TP + TN) / (TP + TN + FP + FN)"
+      
+    "Precision":
+      name: "Precision"
+      description: "The proportion of predicted positive (YES) instances that are actually correct. High precision means few false positives."
+      formula: "TP / (TP + FP)"
+      
+    "Recall":
+      name: "Recall"
+      description: "The proportion of actual positive (YES) instances that are correctly identified. High recall means few false negatives."
+      formula: "TP / (TP + FN)"
+      
+    "F1":
+      name: "F1 Score"
+      description: "The harmonic mean of precision and recall, providing a balanced measure of model performance. Ranges from 0 to 100."
+      formula: "2 * (Precision * Recall) / (Precision + Recall)"
+      
+    "CEAF-RME φ3":
+      name: "CEAF-RME φ3"
+      description: "Cross-document Entity and Event F1 for Role Mention Extraction using φ3 similarity. Awards full credit only for exact string matches between predicted and gold argument mentions. Treats predicted mentions as singleton entities and allows multiple predicted singletons to align to a reference entity."
+      paper_ref: "<a href='https://aclanthology.org/2023.eacl-main.136' target='_blank'>Chen et al., 2023</a>"
+      
+    "CEAF-RME a":
+      name: "CEAF-RME a"
+      description: "A softer variant of CEAF-RME that uses normalized edit distance instead of exact match. Accommodates variability in argument span boundaries (e.g., inclusion of determiners or relative clauses). Uses Levenshtein distance with substitution cost of 2."
+      paper_ref: "FAMuS paper"
+      
+  seamus:
+    "R1":
+      name: "ROUGE-1"
+      description: "ROUGE-1 F1 score measuring unigram overlap between generated and reference summaries. Higher scores indicate better content coverage at the word level."
+      paper_ref: "<a href='https://aclanthology.org/W04-1013' target='_blank'>Lin, 2004</a>"
+      
+    "R2":
+      name: "ROUGE-2"
+      description: "ROUGE-2 F1 score measuring bigram overlap between generated and reference summaries. Captures phrase-level similarity and local coherence."
+      paper_ref: "<a href='https://aclanthology.org/W04-1013' target='_blank'>Lin, 2004</a>"
+      
+    "RL":
+      name: "ROUGE-L"
+      description: "ROUGE-LCS F1 score based on Longest Common Subsequence between generated and reference summaries. Captures sentence-level structure and word order."
+      paper_ref: "<a href='https://aclanthology.org/W04-1013' target='_blank'>Lin, 2004</a>"
+      
+    "BS":
+      name: "BERTScore"
+      description: "BERTScore F1 using contextualized embeddings to measure semantic similarity between generated and reference summaries. More robust to paraphrasing than n-gram overlap metrics."
+      paper_ref: "<a href='https://arxiv.org/abs/1904.09675' target='_blank'>Zhang et al., 2019</a>"
+      
+    "CR":
+      name: "Coverage Ratio"
+      description: "CEAF-REE F1 measuring how well the predicted summary recovers specific event arguments compared to the reference summary. Uses exact match alignment for argument comparison."
+      paper_ref: "<a href='https://aclanthology.org/2021.eacl-main.52' target='_blank'>Du et al., 2021</a>"
+      
+    "A":
+      name: "AlignScore"
+      description: "A learned metric that scores how well a claim (summary) is supported by given context (report/source texts). Ranges from 0 to 100, with higher scores indicating better factual alignment."
+      paper_ref: "<a href='https://aclanthology.org/2023.acl-long.634' target='_blank'>Zha et al., 2023</a>"
+      
+    "F":
+      name: "FActScore"
+      description: "Factuality score that decomposes summaries into atomic facts and measures the percentage supported by source documents. Uses LLMs to verify each atomic fact against the knowledge source."
+      paper_ref: "<a href='https://aclanthology.org/2023.emnlp-main.741' target='_blank'>Min et al., 2023</a>"

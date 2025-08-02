@@ -1,0 +1,11 @@
+{
+  "total_instances": 1265,
+  "chunk_size": 1000,
+  "num_chunks": 2,
+  "splits": {
+    "train": 759,
+    "dev": 253,
+    "test": 253
+  },
+  "total_famus_links": 1265
+}

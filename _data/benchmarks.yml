@@ -1,0 +1,410 @@
+# Benchmark data for FAMuS and SEAMuS datasets
+
+famus:
+  validation:
+    - model: "Majority"
+      setting: "Baseline"
+      accuracy: 50.00
+      precision: 100.00
+      recall: 50.00
+      f1: 66.66
+    - model: "Lemma"
+      setting: "Baseline"
+      accuracy: 75.89
+      precision: 89.70
+      recall: 58.50
+      f1: 70.81
+    - model: "Longformer"
+      setting: "Fine-tuned"
+      accuracy: 71.94
+      precision: 66.67
+      recall: 87.75
+      f1: 75.77
+    - model: "ChatGPT"
+      setting: "Few-shot"
+      accuracy: 67.98
+      precision: 84.21
+      recall: 44.27
+      f1: 58.03
+    - model: "Llama-2-13b"
+      setting: "Few-shot"
+      accuracy: 58.50
+      precision: 65.93
+      recall: 35.18
+      f1: 45.88
+
+  extraction:
+    report:
+      phi3:
+        - model: "IterX<sub>gold</sub>"
+          setting: "Fine-tuned"
+          precision: 73.11
+          recall: 72.00
+          f1: 72.55
+        - model: "IterX<sub>gold+pred</sub>"
+          setting: "Fine-tuned"
+          precision: 40.57
+          recall: 29.38
+          f1: 34.08
+        - model: "IterX<sub>pred</sub>"
+          setting: "Fine-tuned"
+          precision: 37.63
+          recall: 24.14
+          f1: 29.41
+        - model: "Longformer-QA"
+          setting: "Fine-tuned"
+          precision: 43.56
+          recall: 40.14
+          f1: 41.78
+        - model: "ChatGPT"
+          setting: "Few-shot"
+          precision: 33.67
+          recall: 32.00
+          f1: 32.81
+        - model: "Llama-2-13b-chat"
+          setting: "Few-shot"
+          precision: 12.97
+          recall: 22.76
+          f1: 16.52
+      a:
+        - model: "IterX<sub>gold</sub>"
+          setting: "Fine-tuned"
+          precision: 73.56
+          recall: 72.44
+          f1: 73.00
+        - model: "IterX<sub>gold+pred</sub>"
+          setting: "Fine-tuned"
+          precision: 42.24
+          recall: 30.59
+          f1: 35.48
+        - model: "IterX<sub>pred</sub>"
+          setting: "Fine-tuned"
+          precision: 42.16
+          recall: 27.04
+          f1: 32.94
+        - model: "Longformer-QA"
+          setting: "Fine-tuned"
+          precision: 56.01
+          recall: 51.61
+          f1: 53.72
+        - model: "ChatGPT"
+          setting: "Few-shot"
+          precision: 51.28
+          recall: 48.73
+          f1: 49.97
+        - model: "Llama-2-13b-chat"
+          setting: "Few-shot"
+          precision: 23.65
+          recall: 41.49
+          f1: 30.13
+    source:
+      phi3:
+        - model: "IterX<sub>gold</sub>"
+          setting: "Fine-tuned"
+          precision: 70.46
+          recall: 69.16
+          f1: 69.80
+        - model: "IterX<sub>gold+pred</sub>"
+          setting: "Fine-tuned"
+          precision: 25.07
+          recall: 10.82
+          f1: 15.11
+        - model: "IterX<sub>pred</sub>"
+          setting: "Fine-tuned"
+          precision: 20.83
+          recall: 8.63
+          f1: 12.21
+        - model: "Longformer-QA"
+          setting: "Fine-tuned"
+          precision: 25.53
+          recall: 22.21
+          f1: 23.75
+        - model: "ChatGPT"
+          setting: "Few-shot"
+          precision: 14.00
+          recall: 12.77
+          f1: 13.36
+        - model: "Llama-2-13b-chat"
+          setting: "Few-shot"
+          precision: 11.14
+          recall: 8.52
+          f1: 9.65
+      a:
+        - model: "IterX<sub>gold</sub>"
+          setting: "Fine-tuned"
+          precision: 70.58
+          recall: 69.28
+          f1: 69.92
+        - model: "IterX<sub>gold+pred</sub>"
+          setting: "Fine-tuned"
+          precision: 29.85
+          recall: 12.88
+          f1: 18.00
+        - model: "IterX<sub>pred</sub>"
+          setting: "Fine-tuned"
+          precision: 27.63
+          recall: 11.45
+          f1: 16.19
+        - model: "Longformer-QA"
+          setting: "Fine-tuned"
+          precision: 38.85
+          recall: 33.80
+          f1: 36.15
+        - model: "ChatGPT"
+          setting: "Few-shot"
+          precision: 33.31
+          recall: 30.39
+          f1: 31.78
+        - model: "Llama-2-13b-chat"
+          setting: "Few-shot"
+          precision: 20.11
+          recall: 15.36
+          f1: 17.42
+
+seamus:
+  report:
+    - model: "Report Baseline"
+      setting: "-"
+      r1: 56.2
+      r2: 46.1
+      rl: 48.4
+      bs: 91.6
+      cr: 52.6
+      a: 99.1
+      f: 98.7
+    - model: "GPT-4o Mini"
+      setting: "Zero-shot"
+      r1: 62.2
+      r2: 42.3
+      rl: 51.3
+      bs: 93.2
+      cr: 58.5
+      a: 86.0
+      f: 75.8
+    - model: "GPT-4o Mini"
+      setting: "Few-shot"
+      r1: 72.0
+      r2: 55.4
+      rl: 61.0
+      bs: 94.3
+      cr: 66.8
+      a: 94.1
+      f: 83.3
+    - model: "GPT-4o"
+      setting: "Zero-shot"
+      r1: 64.0
+      r2: 45.2
+      rl: 53.0
+      bs: 93.2
+      cr: 61.4
+      cr_note: "*"
+      a: 83.9
+      f: 74.8
+    - model: "GPT-4o"
+      setting: "Few-shot"
+      r1: 72.5
+      r1_note: "+"
+      r2: 56.6
+      r2_note: "+"
+      rl: 62.3
+      rl_note: "+"
+      bs: 94.4
+      cr: 69.6
+      cr_note: "+"
+      a: 94.7
+      f: 81.6
+    - model: "Claude 3 Haiku"
+      setting: "Zero-shot"
+      r1: 64.8
+      r2: 46.2
+      rl: 54.7
+      bs: 93.4
+      cr: 58.8
+      a: 84.9
+      f: 77.6
+    - model: "Claude 3 Haiku"
+      setting: "Few-shot"
+      r1: 71.7
+      r2: 55.9
+      rl: 61.1
+      bs: 94.3
+      cr: 63.2
+      a: 94.8
+      f: 82.5
+    - model: "Claude 3.5 Sonnet"
+      setting: "Zero-shot"
+      r1: 67.4
+      r1_note: "*"
+      r2: 48.1
+      r2_note: "*"
+      rl: 56.5
+      rl_note: "*"
+      bs: 93.8
+      bs_note: "*"
+      cr: 61.1
+      a: 93.0
+      a_note: "*"
+      f: 80.6
+      f_note: "*"
+    - model: "Claude 3.5 Sonnet"
+      setting: "Few-shot"
+      r1: 72.2
+      r2: 54.6
+      rl: 61.3
+      bs: 94.5
+      bs_note: "+"
+      cr: 65.7
+      a: 95.9
+      a_note: "+"
+      f: 83.9
+      f_note: "+"
+    - model: "BART"
+      setting: "Fine-tuned"
+      r1: 74.5
+      r2: 61.7
+      rl: 66.4
+      bs: 94.6
+      cr: 69.9
+      a: 91.6
+      f: 79.3
+    - model: "PEGASUS"
+      setting: "Fine-tuned"
+      r1: 75.2
+      r2: 62.5
+      rl: 67.0
+      bs: 94.7
+      cr: 70.0
+      a: 96.1
+      f: 82.2
+    - model: "T5"
+      setting: "Fine-tuned"
+      r1: 76.6
+      r2: 64.4
+      rl: 68.9
+      bs: 95.0
+      cr: 74.2
+      a: 98.2
+      f: 85.0
+
+  cross:
+    - model: "Report Baseline"
+      setting: "-"
+      r1: 48.5
+      r2: 33.3
+      rl: 39.3
+      bs: 89.6
+      cr: 31.0
+      a: 99.3
+      f: 93.1
+    - model: "GPT-4o Mini"
+      setting: "Zero-shot"
+      r1: 51.8
+      r2: 29.9
+      rl: 39.0
+      bs: 91.3
+      cr: 39.0
+      a: 81.5
+      f: 88.9
+    - model: "GPT-4o Mini"
+      setting: "Few-shot"
+      r1: 57.5
+      r2: 36.9
+      rl: 45.7
+      bs: 92.1
+      cr: 39.8
+      a: 88.5
+      f: 89.8
+    - model: "GPT-4o"
+      setting: "Zero-shot"
+      r1: 58.0
+      r1_note: "*"
+      r2: 36.4
+      rl: 45.8
+      bs: 92.2
+      bs_note: "*"
+      cr: 41.3
+      cr_note: "*"
+      a: 86.6
+      f: 88.4
+    - model: "GPT-4o"
+      setting: "Few-shot"
+      r1: 61.2
+      r1_note: "+"
+      r2: 40.7
+      r2_note: "+"
+      rl: 49.4
+      rl_note: "+"
+      bs: 92.7
+      bs_note: "+"
+      cr: 42.7
+      cr_note: "+"
+      a: 90.6
+      f: 88.5
+    - model: "Claude 3 Haiku"
+      setting: "Zero-shot"
+      r1: 57.7
+      r2: 36.9
+      r2_note: "*"
+      rl: 46.5
+      bs: 92.1
+      cr: 36.2
+      a: 90.4
+      f: 91.4
+    - model: "Claude 3 Haiku"
+      setting: "Few-shot"
+      r1: 59.4
+      r2: 39.5
+      rl: 48.6
+      bs: 92.1
+      cr: 37.2
+      a: 91.0
+      f: 90.5
+      f_note: "+"
+    - model: "Claude 3.5 Sonnet"
+      setting: "Zero-shot"
+      r1: 56.7
+      r2: 34.8
+      rl: 45.3
+      bs: 91.9
+      cr: 35.2
+      a: 93.4
+      a_note: "*"
+      f: 91.7
+      f_note: "*"
+    - model: "Claude 3.5 Sonnet"
+      setting: "Few-shot"
+      r1: 57.9
+      r2: 38.1
+      rl: 47.4
+      bs: 92.1
+      cr: 37.3
+      a: 95.1
+      a_note: "+"
+      f: 90.4
+    - model: "BART"
+      setting: "Fine-tuned"
+      r1: 63.8
+      r2: 45.5
+      rl: 53.0
+      bs: 92.6
+      cr: 45.0
+      a: 85.6
+      f: 85.3
+    - model: "PEGASUS"
+      setting: "Fine-tuned"
+      r1: 63.7
+      r2: 46.2
+      rl: 53.2
+      bs: 92.5
+      cr: 43.7
+      a: 93.9
+      f: 90.5
+    - model: "T5"
+      setting: "Fine-tuned"
+      r1: 64.1
+      r2: 46.4
+      rl: 52.8
+      bs: 92.6
+      cr: 44.7
+      a: 92.5
+      f: 90.2
