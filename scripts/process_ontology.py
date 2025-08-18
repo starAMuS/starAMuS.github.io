@@ -47,8 +47,8 @@ def create_hierarchy_index(frames):
     """Create an index for frame hierarchy navigation."""
     hierarchy = {
         'roots': [],  # Frames with no ancestors
-        'children': defaultdict(list),  # Parent -> [children]
-        'parents': defaultdict(list)    # Child -> [parents]
+        'children': defaultdict(set),  # Parent -> {children} (using set to avoid duplicates)
+        'parents': defaultdict(set)     # Child -> {parents} (using set to avoid duplicates)
     }
     
     for frame_name, frame_data in frames.items():
@@ -60,17 +60,18 @@ def create_hierarchy_index(frames):
             hierarchy['roots'].append(frame_name)
         
         # Build parent-child relationships
+        # Only use ancestor relationships to avoid duplication
+        # (since each frame lists its ancestors, we don't need to also process descendants)
         for ancestor in ancestors:
-            hierarchy['children'][ancestor].append(frame_name)
-            hierarchy['parents'][frame_name].append(ancestor)
-        
-        for descendant in descendants:
-            hierarchy['children'][frame_name].append(descendant)
-            hierarchy['parents'][descendant].append(frame_name)
+            hierarchy['children'][ancestor].add(frame_name)
+            hierarchy['parents'][frame_name].add(ancestor)
     
-    # Convert defaultdicts to regular dicts for JSON serialization
-    hierarchy['children'] = dict(hierarchy['children'])
-    hierarchy['parents'] = dict(hierarchy['parents'])
+    # Convert sets to sorted lists and defaultdicts to regular dicts for JSON serialization
+    hierarchy['children'] = {k: sorted(list(v)) for k, v in hierarchy['children'].items()}
+    hierarchy['parents'] = {k: sorted(list(v)) for k, v in hierarchy['parents'].items()}
+    
+    # Remove duplicates from roots
+    hierarchy['roots'] = sorted(list(set(hierarchy['roots'])))
     
     return hierarchy
 

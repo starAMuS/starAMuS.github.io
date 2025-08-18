@@ -142,175 +142,6 @@
       "Ingestion",
       "Inhibit_movement",
       "Intentional_traversing",
-      "Activity_finish",
-      "Finish_game",
-      "Finish_competition",
-      "Assemble",
-      "Assistance",
-      "Supporting",
-      "Atonement",
-      "Attempt",
-      "Attempt_suasion",
-      "Work",
-      "Seeking_to_achieve",
-      "Seeking",
-      "Shopping",
-      "Attempting_and_resolving_scenario",
-      "Attempt_distant_interaction_scenario",
-      "Shooting_scenario",
-      "Attempt_obtain_food_scenario",
-      "Agriculture",
-      "Hunting_scenario",
-      "Attempt_obtain_mineral_scenario",
-      "Mining",
-      "Attending",
-      "Avoiding",
-      "Dodging",
-      "Evading",
-      "Bail_decision",
-      "Becoming_a_member",
-      "Change_posture",
-      "Change_tool",
-      "Choosing",
-      "Clemency",
-      "Pardon",
-      "Collaboration",
-      "Confronting_problem",
-      "Contacting",
-      "Daring",
-      "Examination",
-      "Exchange",
-      "Execute_plan",
-      "Enforcing",
-      "Exercising",
-      "Forming_relationships",
-      "Front_for",
-      "Get_a_job",
-      "Giving",
-      "Commerce_pay",
-      "Commerce_sell",
-      "Renting_out",
-      "Lending",
-      "Submitting_documents",
-      "Supply",
-      "Funding",
-      "Surrendering_possession",
-      "Heralding",
-      "Hostile_encounter",
-      "Fighting_activity",
-      "Ingest_substance",
-      "Ingestion",
-      "Intentionally_affect",
-      "Abandonment",
-      "Adjusting",
-      "Apply_heat",
-      "Appointing",
-      "Change_of_leadership",
-      "Arranging",
-      "Arrest",
-      "Attaching",
-      "Attack",
-      "Besieging",
-      "Counterattack",
-      "Invading",
-      "Suicide_attack",
-      "Breaking_out_captive",
-      "Cause_emotion",
-      "Cause_to_amalgamate",
-      "Cause_to_experience",
-      "Cause_to_make_progress",
-      "Cause_to_perceive",
-      "Communication",
-      "Communication_manner",
-      "Communication_noise",
-      "Communication_response",
-      "Gesture",
-      "Reassuring",
-      "Summarizing",
-      "Change_accessibility",
-      "Change_operational_state",
-      "Closure",
-      "Cutting",
-      "Detaching",
-      "Education_teaching",
-      "Extradition",
-      "Firing",
-      "Gathering_up",
-      "Grooming",
-      "Hiding_objects",
-      "Hiring",
-      "Hit_target",
-      "Immobilization",
-      "Inhibit_movement",
-      "Imprisonment",
-      "Limiting",
-      "Making_arrangements",
-      "Manipulate_into_doing",
-      "Talking_into",
-      "Manipulate_into_shape",
-      "Rope_manipulation",
-      "Processing_materials",
-      "Preserving",
-      "Publishing",
-      "Rape",
-      "Releasing",
-      "Releasing_from_custody",
-      "Reparation",
-      "Replacing",
-      "Rescuing",
-      "Rewards_and_punishments",
-      "Corporal_punishment",
-      "Execution",
-      "Fining",
-      "Revenge",
-      "Separating",
-      "Short_selling",
-      "Silencing",
-      "Soaking",
-      "Taking",
-      "Theft",
-      "Using",
-      "Attempt_means",
-      "Detonate_explosive",
-      "Expend_resource",
-      "Operating_a_system",
-      "Operate_vehicle",
-      "Use_firearm",
-      "Intentionally_create",
-      "Achieving_first",
-      "Building",
-      "Cooking_creation",
-      "Create_physical_artwork",
-      "Duplication",
-      "Forging",
-      "Knot_creation",
-      "Manufacturing",
-      "Text_creation",
-      "Sign_agreement",
-      "Translating",
-      "Intercepting",
-      "Legal_rulings",
-      "Verdict",
-      "Manipulation",
-      "Aiming",
-      "Military_operation",
-      "Name_conferral",
-      "Passing_off",
-      "Posing_as",
-      "Perception_active",
-      "Touring",
-      "Piracy",
-      "Practice",
-      "Quitting",
-      "Resolve_problem",
-      "Self_motion",
-      "Cotheme",
-      "Fleeing",
-      "Intentional_traversing",
-      "Travel",
-      "Visiting",
-      "Temporary_stay",
-      "Working_a_post",
       "Intentionally_create",
       "Intercepting",
       "Invading",
@@ -472,331 +303,6 @@
       "Endangering",
       "Enforcing",
       "Escaping",
-      "Birth_scenario",
-      "Change_of_consistency",
-      "Change_position_on_a_scale",
-      "Change_of_temperature",
-      "Proliferating_in_number",
-      "Coincidence",
-      "Come_together",
-      "Assemble",
-      "Encounter",
-      "Coming_to_be",
-      "Being_born",
-      "Coming_to_believe",
-      "See_through",
-      "Emergency",
-      "Eventive_affecting",
-      "Aging",
-      "Arriving",
-      "Vehicle_landing",
-      "Visiting_scenario_arrival",
-      "Visit_host_arrival",
-      "Visitor_arrival",
-      "Drop_in_on",
-      "Causation",
-      "Cause_to_start",
-      "Come_down_with",
-      "Departing",
-      "Escaping",
-      "Quitting_a_place",
-      "Setting_out",
-      "Visiting_scenario_departing",
-      "Visit_host_departure",
-      "Visitor_departure",
-      "Destiny",
-      "Eventive_cognizer_affecting",
-      "Suasion",
-      "Explosion",
-      "Historic_event",
-      "Lose_possession",
-      "Giving",
-      "Commerce_pay",
-      "Commerce_sell",
-      "Renting_out",
-      "Lending",
-      "Submitting_documents",
-      "Supply",
-      "Funding",
-      "Surrendering_possession",
-      "Response",
-      "Communication_response",
-      "Rewards_and_punishments",
-      "Corporal_punishment",
-      "Execution",
-      "Fining",
-      "Revenge",
-      "Transfer",
-      "Commerce_goods-transfer",
-      "Commerce_money-transfer",
-      "Experience_bodily_harm",
-      "Getting",
-      "Amassing",
-      "Commerce_buy",
-      "Renting",
-      "Commerce_collect",
-      "Earnings_and_losses",
-      "Receiving",
-      "Borrowing",
-      "Taking",
-      "Theft",
-      "Go_into_shape",
-      "Intentionally_act",
-      "Activity_finish",
-      "Finish_game",
-      "Finish_competition",
-      "Assistance",
-      "Supporting",
-      "Atonement",
-      "Attempt",
-      "Attempt_suasion",
-      "Work",
-      "Seeking_to_achieve",
-      "Seeking",
-      "Shopping",
-      "Attempting_and_resolving_scenario",
-      "Attempt_distant_interaction_scenario",
-      "Shooting_scenario",
-      "Attempt_obtain_food_scenario",
-      "Agriculture",
-      "Hunting_scenario",
-      "Attempt_obtain_mineral_scenario",
-      "Mining",
-      "Attending",
-      "Avoiding",
-      "Dodging",
-      "Evading",
-      "Bail_decision",
-      "Becoming_a_member",
-      "Change_posture",
-      "Change_tool",
-      "Choosing",
-      "Clemency",
-      "Pardon",
-      "Collaboration",
-      "Confronting_problem",
-      "Contacting",
-      "Daring",
-      "Examination",
-      "Exchange",
-      "Execute_plan",
-      "Enforcing",
-      "Exercising",
-      "Forming_relationships",
-      "Front_for",
-      "Get_a_job",
-      "Heralding",
-      "Hostile_encounter",
-      "Fighting_activity",
-      "Ingest_substance",
-      "Ingestion",
-      "Intentionally_affect",
-      "Abandonment",
-      "Adjusting",
-      "Apply_heat",
-      "Appointing",
-      "Change_of_leadership",
-      "Arranging",
-      "Arrest",
-      "Attaching",
-      "Attack",
-      "Besieging",
-      "Counterattack",
-      "Invading",
-      "Suicide_attack",
-      "Breaking_out_captive",
-      "Cause_emotion",
-      "Cause_to_amalgamate",
-      "Cause_to_experience",
-      "Cause_to_make_progress",
-      "Cause_to_perceive",
-      "Communication",
-      "Communication_manner",
-      "Communication_noise",
-      "Gesture",
-      "Reassuring",
-      "Summarizing",
-      "Change_accessibility",
-      "Change_operational_state",
-      "Closure",
-      "Cutting",
-      "Detaching",
-      "Education_teaching",
-      "Extradition",
-      "Firing",
-      "Gathering_up",
-      "Grooming",
-      "Hiding_objects",
-      "Hiring",
-      "Hit_target",
-      "Immobilization",
-      "Inhibit_movement",
-      "Imprisonment",
-      "Limiting",
-      "Making_arrangements",
-      "Manipulate_into_doing",
-      "Talking_into",
-      "Manipulate_into_shape",
-      "Rope_manipulation",
-      "Processing_materials",
-      "Preserving",
-      "Publishing",
-      "Rape",
-      "Releasing",
-      "Releasing_from_custody",
-      "Reparation",
-      "Replacing",
-      "Rescuing",
-      "Separating",
-      "Short_selling",
-      "Silencing",
-      "Soaking",
-      "Using",
-      "Attempt_means",
-      "Detonate_explosive",
-      "Expend_resource",
-      "Operating_a_system",
-      "Operate_vehicle",
-      "Use_firearm",
-      "Intentionally_create",
-      "Achieving_first",
-      "Building",
-      "Cooking_creation",
-      "Create_physical_artwork",
-      "Duplication",
-      "Forging",
-      "Knot_creation",
-      "Manufacturing",
-      "Text_creation",
-      "Sign_agreement",
-      "Translating",
-      "Intercepting",
-      "Legal_rulings",
-      "Verdict",
-      "Manipulation",
-      "Aiming",
-      "Military_operation",
-      "Name_conferral",
-      "Passing_off",
-      "Posing_as",
-      "Perception_active",
-      "Touring",
-      "Piracy",
-      "Practice",
-      "Quitting",
-      "Resolve_problem",
-      "Self_motion",
-      "Cotheme",
-      "Fleeing",
-      "Intentional_traversing",
-      "Travel",
-      "Visiting",
-      "Temporary_stay",
-      "Working_a_post",
-      "Losing_someone",
-      "Misdeed",
-      "Committing_crime",
-      "Abusing",
-      "Kidnapping",
-      "Robbery",
-      "Smuggling",
-      "Motion",
-      "Fluidic_motion",
-      "Mass_motion",
-      "Motion_directional",
-      "Motion_noise",
-      "Objective_influence",
-      "Control",
-      "Being_in_control",
-      "Dominate_competitor",
-      "Transitive_action",
-      "Cause_bodily_experience",
-      "Cause_harm",
-      "Cause_change",
-      "Change_event_duration",
-      "Change_event_time",
-      "Exchange_currency",
-      "Cause_change_of_consistency",
-      "Cause_change_of_phase",
-      "Cause_change_of_position_on_a_scale",
-      "Cause_proliferation_in_number",
-      "Cause_change_of_strength",
-      "Change_resistance",
-      "Cause_expansion",
-      "Cause_impact",
-      "Cause_motion",
-      "Cause_fluidic_motion",
-      "Passing",
-      "Shoot_projectiles",
-      "Cause_temperature_change",
-      "Cause_to_be_dry",
-      "Cause_to_be_included",
-      "Cause_to_be_sharp",
-      "Cause_to_be_wet",
-      "Cause_to_continue",
-      "Cause_to_end",
-      "Cause_to_fragment",
-      "Cause_to_make_noise",
-      "Cause_to_move_in_place",
-      "Cause_to_resume",
-      "Cause_to_rot",
-      "Cause_to_wake",
-      "Container_focused_placing",
-      "Filling",
-      "Container_focused_removing",
-      "Emptying",
-      "Corroding_caused",
-      "Creating",
-      "Cure",
-      "Damaging",
-      "Reshaping",
-      "Destroying",
-      "Downing",
-      "Endangering",
-      "Erasing",
-      "Grinding",
-      "Imposing_obligation",
-      "Infecting",
-      "Interrupt_process",
-      "Killing",
-      "Placing",
-      "Burying",
-      "Dispersal",
-      "Rejuvenation",
-      "Removing",
-      "Render_nonfunctional",
-      "Setting_fire",
-      "Setting_back_burn",
-      "Process_end",
-      "Process_pause",
-      "Activity_pause",
-      "Process_resume",
-      "Activity_resume",
-      "Process_start",
-      "Activity_start",
-      "Come_into_effect",
-      "Process_stop",
-      "Activity_stop",
-      "Halt",
-      "Rotting",
-      "Transition_to_state",
-      "Becoming",
-      "Transition_to_a_quality",
-      "Absorb_heat",
-      "Becoming_attached",
-      "Becoming_detached",
-      "Becoming_dry",
-      "Becoming_visible",
-      "Ceasing_to_be",
-      "Death",
-      "Transition_to_a_situation",
-      "Undergo_change",
-      "Improvement_or_decline",
-      "Nuclear_process",
-      "Undergo_transformation",
-      "Traversing",
-      "Undergoing",
-      "Waking_up",
       "Examination",
       "Exchange",
       "Execute_plan",
@@ -1115,155 +621,6 @@
       "Making_arrangements",
       "Manipulate_into_doing",
       "Manufacturing",
-      "Control",
-      "Being_in_control",
-      "Dominate_competitor",
-      "Transitive_action",
-      "Cause_bodily_experience",
-      "Cause_harm",
-      "Corporal_punishment",
-      "Cause_change",
-      "Change_event_duration",
-      "Change_event_time",
-      "Exchange_currency",
-      "Cause_change_of_consistency",
-      "Cause_change_of_phase",
-      "Cause_change_of_position_on_a_scale",
-      "Cause_proliferation_in_number",
-      "Cause_change_of_strength",
-      "Change_resistance",
-      "Cause_expansion",
-      "Cause_impact",
-      "Cause_motion",
-      "Cause_fluidic_motion",
-      "Passing",
-      "Shoot_projectiles",
-      "Cause_temperature_change",
-      "Cause_to_be_dry",
-      "Cause_to_be_included",
-      "Cause_to_be_sharp",
-      "Cause_to_be_wet",
-      "Cause_to_continue",
-      "Cause_to_end",
-      "Cause_to_fragment",
-      "Cause_to_make_noise",
-      "Cause_to_move_in_place",
-      "Cause_to_resume",
-      "Cause_to_rot",
-      "Cause_to_wake",
-      "Container_focused_placing",
-      "Filling",
-      "Container_focused_removing",
-      "Emptying",
-      "Corroding_caused",
-      "Creating",
-      "Intentionally_create",
-      "Achieving_first",
-      "Building",
-      "Cooking_creation",
-      "Create_physical_artwork",
-      "Duplication",
-      "Forging",
-      "Knot_creation",
-      "Manufacturing",
-      "Text_creation",
-      "Sign_agreement",
-      "Translating",
-      "Cure",
-      "Damaging",
-      "Reshaping",
-      "Destroying",
-      "Downing",
-      "Endangering",
-      "Erasing",
-      "Grinding",
-      "Imposing_obligation",
-      "Infecting",
-      "Intentionally_affect",
-      "Abandonment",
-      "Adjusting",
-      "Apply_heat",
-      "Appointing",
-      "Change_of_leadership",
-      "Arranging",
-      "Arrest",
-      "Attaching",
-      "Attack",
-      "Besieging",
-      "Counterattack",
-      "Invading",
-      "Suicide_attack",
-      "Breaking_out_captive",
-      "Cause_emotion",
-      "Cause_to_amalgamate",
-      "Cause_to_experience",
-      "Cause_to_make_progress",
-      "Cause_to_perceive",
-      "Communication",
-      "Communication_manner",
-      "Communication_noise",
-      "Communication_response",
-      "Gesture",
-      "Reassuring",
-      "Summarizing",
-      "Change_accessibility",
-      "Change_operational_state",
-      "Closure",
-      "Cutting",
-      "Detaching",
-      "Education_teaching",
-      "Extradition",
-      "Firing",
-      "Gathering_up",
-      "Grooming",
-      "Hiding_objects",
-      "Hiring",
-      "Hit_target",
-      "Immobilization",
-      "Inhibit_movement",
-      "Imprisonment",
-      "Limiting",
-      "Making_arrangements",
-      "Manipulate_into_doing",
-      "Talking_into",
-      "Manipulate_into_shape",
-      "Rope_manipulation",
-      "Processing_materials",
-      "Preserving",
-      "Publishing",
-      "Rape",
-      "Releasing",
-      "Releasing_from_custody",
-      "Reparation",
-      "Replacing",
-      "Rescuing",
-      "Rewards_and_punishments",
-      "Execution",
-      "Fining",
-      "Revenge",
-      "Separating",
-      "Short_selling",
-      "Silencing",
-      "Soaking",
-      "Taking",
-      "Theft",
-      "Using",
-      "Attempt_means",
-      "Detonate_explosive",
-      "Expend_resource",
-      "Operating_a_system",
-      "Operate_vehicle",
-      "Use_firearm",
-      "Interrupt_process",
-      "Killing",
-      "Placing",
-      "Burying",
-      "Dispersal",
-      "Rejuvenation",
-      "Removing",
-      "Render_nonfunctional",
-      "Setting_fire",
-      "Setting_back_burn",
       "Operate_vehicle",
       "Operating_a_system",
       "Placing",
@@ -1296,13 +653,6 @@
     ],
     "Committing_crime": [
       "Abusing",
-      "Abusing",
-      "Kidnapping",
-      "Piracy",
-      "Rape",
-      "Robbery",
-      "Smuggling",
-      "Theft",
       "Kidnapping",
       "Piracy",
       "Rape",
@@ -1324,17 +674,6 @@
       "Cooking_creation",
       "Create_physical_artwork",
       "Forging",
-      "Achieving_first",
-      "Building",
-      "Cooking_creation",
-      "Create_physical_artwork",
-      "Duplication",
-      "Forging",
-      "Knot_creation",
-      "Manufacturing",
-      "Text_creation",
-      "Sign_agreement",
-      "Translating",
       "Manufacturing",
       "Sign_agreement",
       "Text_creation",
@@ -1353,14 +692,7 @@
       "Translating"
     ],
     "Process_end": [
-      "Activity_finish",
-      "Activity_finish",
-      "Finish_game",
-      "Finish_competition"
-    ],
-    "Activity_finish": [
-      "Finish_game",
-      "Finish_competition"
+      "Activity_finish"
     ],
     "Process_pause": [
       "Activity_pause"
@@ -1394,24 +726,14 @@
       "Transportation_status",
       "Visiting"
     ],
-    "Activity_ready_state": [
-      "Be_on_alert"
-    ],
     "Process_resume": [
       "Activity_resume"
     ],
     "Process_start": [
-      "Activity_start",
-      "Activity_start",
-      "Come_into_effect"
+      "Activity_start"
     ],
     "Process_stop": [
-      "Activity_stop",
-      "Activity_stop",
-      "Halt"
-    ],
-    "Activity_stop": [
-      "Halt"
+      "Activity_stop"
     ],
     "Attempt_obtain_food_scenario": [
       "Agriculture"
@@ -1421,13 +743,6 @@
     ],
     "Emotions_by_stimulus": [
       "Annoyance",
-      "Annoyance",
-      "Emotions_by_possibility",
-      "Fear",
-      "Emotions_of_mental_activity",
-      "Emotions_success_or_failure",
-      "Just_found_out",
-      "Others_situation_as_stimulus",
       "Emotions_of_mental_activity",
       "Emotions_success_or_failure",
       "Fear",
@@ -1450,10 +765,6 @@
       "Apply_heat",
       "Arraignment",
       "Precipitation"
-    ],
-    "Appointing": [
-      "Change_of_leadership",
-      "Change_of_leadership"
     ],
     "Eventive_affecting": [
       "Arriving",
@@ -1483,44 +794,12 @@
       "Transfer",
       "Vehicle_landing"
     ],
-    "Arriving": [
-      "Vehicle_landing",
-      "Visiting_scenario_arrival",
-      "Visit_host_arrival",
-      "Visitor_arrival",
-      "Drop_in_on",
-      "Vehicle_landing"
-    ],
-    "Assistance": [
-      "Supporting",
-      "Supporting"
-    ],
-    "Attack": [
-      "Besieging",
-      "Counterattack",
-      "Invading",
-      "Suicide_attack",
-      "Besieging",
-      "Counterattack",
-      "Invading",
-      "Suicide_attack"
-    ],
     "Attempt": [
-      "Attempt_suasion",
-      "Work",
-      "Seeking_to_achieve",
-      "Seeking",
-      "Shopping",
       "Attempt_suasion",
       "Seeking",
       "Seeking_to_achieve",
       "Shopping",
       "Work"
-    ],
-    "Avoiding": [
-      "Dodging",
-      "Evading",
-      "Dodging"
     ],
     "Transition_to_state": [
       "Becoming",
@@ -1532,25 +811,14 @@
       "Undergo_change",
       "Undergo_transformation"
     ],
-    "Becoming": [
-      "Transition_to_a_quality",
-      "Absorb_heat",
-      "Becoming_attached",
-      "Becoming_detached",
+    "Transition_to_a_quality": [
       "Becoming_dry",
-      "Becoming_visible",
+      "Becoming_visible"
+    ],
+    "Becoming": [
       "Becoming_dry",
       "Becoming_visible",
       "Transition_to_a_quality"
-    ],
-    "Transition_to_a_quality": [
-      "Becoming_dry",
-      "Becoming_visible",
-      "Absorb_heat",
-      "Becoming_attached",
-      "Becoming_detached",
-      "Becoming_dry",
-      "Becoming_visible"
     ],
     "Reciprocality": [
       "Being_attached",
@@ -1558,44 +826,25 @@
       "Exchange"
     ],
     "Coming_to_be": [
-      "Being_born",
       "Being_born"
     ],
     "Control": [
       "Being_in_control",
-      "Being_in_control",
-      "Dominate_competitor",
       "Dominate_competitor"
     ],
-    "Being_in_control": [
-      "Dominate_competitor",
-      "Dominate_competitor"
-    ],
-    "Being_located": [
-      "Presence",
-      "Visiting",
-      "Temporary_stay",
-      "Presence",
-      "Temporary_stay",
-      "Visiting"
+    "Attack": [
+      "Besieging",
+      "Counterattack",
+      "Invading",
+      "Suicide_attack"
     ],
     "Receiving": [
-      "Borrowing",
       "Borrowing"
     ],
     "Getting": [
       "Borrowing",
       "Commerce_buy",
       "Earnings_and_losses",
-      "Amassing",
-      "Commerce_buy",
-      "Renting",
-      "Commerce_collect",
-      "Earnings_and_losses",
-      "Receiving",
-      "Borrowing",
-      "Taking",
-      "Theft",
       "Receiving",
       "Renting",
       "Taking",
@@ -1603,61 +852,29 @@
     ],
     "Placing": [
       "Burying",
-      "Dispersal",
-      "Burying",
       "Dispersal"
-    ],
-    "Causation": [
-      "Cause_to_start"
-    ],
-    "Cause_change": [
-      "Change_event_duration",
-      "Change_event_time",
-      "Exchange_currency",
-      "Change_event_duration",
-      "Change_event_time"
-    ],
-    "Cause_change_of_position_on_a_scale": [
-      "Cause_proliferation_in_number"
-    ],
-    "Cause_change_of_strength": [
-      "Change_resistance"
     ],
     "Cause_motion": [
       "Cause_fluidic_motion",
-      "Cause_fluidic_motion",
-      "Passing",
-      "Shoot_projectiles",
       "Shoot_projectiles"
     ],
     "Cause_bodily_experience": [
       "Cause_harm",
       "Corporal_punishment"
     ],
-    "Cause_harm": [
-      "Corporal_punishment",
-      "Corporal_punishment"
+    "Cause_change": [
+      "Change_event_duration",
+      "Change_event_time"
+    ],
+    "Appointing": [
+      "Change_of_leadership"
     ],
     "Change_position_on_a_scale": [
       "Change_of_temperature",
-      "Change_of_temperature",
-      "Proliferating_in_number",
       "Proliferating_in_number"
     ],
     "Deciding": [
       "Choosing"
-    ],
-    "Clemency": [
-      "Pardon",
-      "Pardon"
-    ],
-    "Come_together": [
-      "Assemble",
-      "Encounter"
-    ],
-    "Commerce_buy": [
-      "Renting",
-      "Renting"
     ],
     "Giving": [
       "Commerce_pay",
@@ -1677,10 +894,6 @@
       "Supply",
       "Surrendering_possession"
     ],
-    "Commerce_sell": [
-      "Renting_out",
-      "Renting_out"
-    ],
     "Cause_to_perceive": [
       "Communication",
       "Communication_noise",
@@ -1690,12 +903,6 @@
       "Summarizing"
     ],
     "Communication": [
-      "Communication_manner",
-      "Communication_noise",
-      "Communication_response",
-      "Gesture",
-      "Reassuring",
-      "Summarizing",
       "Communication_noise",
       "Communication_response",
       "Gesture",
@@ -1707,32 +914,17 @@
       "Corporal_punishment",
       "Execution",
       "Fining",
-      "Communication_response",
-      "Rewards_and_punishments",
-      "Corporal_punishment",
-      "Execution",
-      "Fining",
-      "Revenge",
       "Revenge",
       "Rewards_and_punishments"
+    ],
+    "Cause_harm": [
+      "Corporal_punishment"
     ],
     "Rewards_and_punishments": [
       "Corporal_punishment",
       "Execution",
       "Fining",
-      "Revenge",
-      "Corporal_punishment",
-      "Execution",
-      "Fining",
       "Revenge"
-    ],
-    "Damaging": [
-      "Reshaping",
-      "Reshaping"
-    ],
-    "Dead_or_alive": [
-      "Subsisting",
-      "Subsisting"
     ],
     "Ceasing_to_be": [
       "Death"
@@ -1741,19 +933,18 @@
       "Detonate_explosive",
       "Operate_vehicle",
       "Operating_a_system",
-      "Use_firearm",
-      "Attempt_means",
-      "Detonate_explosive",
-      "Expend_resource",
-      "Operating_a_system",
-      "Operate_vehicle",
       "Use_firearm"
+    ],
+    "Avoiding": [
+      "Dodging"
+    ],
+    "Being_in_control": [
+      "Dominate_competitor"
     ],
     "Commerce_collect": [
       "Earnings_and_losses"
     ],
     "Execute_plan": [
-      "Enforcing",
       "Enforcing"
     ],
     "Departing": [
@@ -1762,7 +953,6 @@
       "Setting_out"
     ],
     "Killing": [
-      "Execution",
       "Execution"
     ],
     "Emotions_by_possibility": [
@@ -1777,114 +967,79 @@
     ],
     "Self_motion": [
       "Fleeing",
-      "Intentional_traversing",
-      "Cotheme",
-      "Fleeing",
-      "Intentional_traversing",
-      "Travel"
+      "Intentional_traversing"
     ],
     "Motion": [
       "Fleeing",
       "Intentional_traversing",
       "Mass_motion",
-      "Fluidic_motion",
-      "Mass_motion",
-      "Motion_directional",
-      "Motion_noise",
-      "Self_motion",
-      "Cotheme",
-      "Fleeing",
-      "Intentional_traversing",
-      "Travel",
       "Motion_directional",
       "Self_motion"
     ],
     "Duplication": [
       "Forging"
     ],
-    "Hostile_encounter": [
-      "Fighting_activity"
-    ],
     "Inhibit_movement": [
-      "Imprisonment",
       "Imprisonment"
     ],
     "Undergo_change": [
       "Improvement_or_decline",
-      "Improvement_or_decline",
-      "Nuclear_process",
-      "Undergo_transformation",
       "Undergo_transformation"
     ],
     "Ingest_substance": [
-      "Ingestion",
       "Ingestion"
     ],
     "Manipulation": [
-      "Ingestion",
-      "Aiming",
       "Ingestion"
     ],
     "Traversing": [
-      "Intentional_traversing",
       "Intentional_traversing"
     ],
-    "Legal_rulings": [
-      "Verdict"
-    ],
-    "Manipulate_into_doing": [
-      "Talking_into",
-      "Talking_into"
-    ],
     "Operating_a_system": [
-      "Operate_vehicle",
       "Operate_vehicle"
+    ],
+    "Clemency": [
+      "Pardon"
     ],
     "Passing_off": [
       "Posing_as"
     ],
     "State_of_entity": [
-      "Predicament",
       "Predicament"
+    ],
+    "Being_located": [
+      "Presence",
+      "Temporary_stay",
+      "Visiting"
     ],
     "Processing_materials": [
       "Preserving"
     ],
-    "Process_completed_state": [
-      "Activity_done_state"
+    "Commerce_buy": [
+      "Renting"
     ],
-    "Process_continue": [
-      "Activity_ongoing",
-      "Retaining",
-      "Sleep"
+    "Commerce_sell": [
+      "Renting_out"
     ],
-    "Quitting_a_place": [
-      "Setting_out",
-      "Setting_out"
+    "Damaging": [
+      "Reshaping"
     ],
     "Seeking_to_achieve": [
       "Seeking",
-      "Seeking",
-      "Shopping",
       "Shopping"
     ],
     "Work": [
       "Seeking",
       "Seeking_to_achieve",
-      "Shopping",
-      "Seeking_to_achieve",
-      "Seeking",
       "Shopping"
+    ],
+    "Quitting_a_place": [
+      "Setting_out"
     ],
     "Seeking": [
-      "Shopping",
       "Shopping"
     ],
-    "Setting_fire": [
-      "Setting_back_burn"
-    ],
     "Text_creation": [
-      "Sign_agreement",
       "Sign_agreement"
     ],
     "Bringing": [
@@ -1899,371 +1054,165 @@
     "Statement": [
       "Suasion"
     ],
-    "Supply": [
-      "Funding"
+    "Dead_or_alive": [
+      "Subsisting"
     ],
-    "Taking": [
-      "Theft",
-      "Theft"
+    "Assistance": [
+      "Supporting"
+    ],
+    "Manipulate_into_doing": [
+      "Talking_into"
     ],
     "Residence": [
       "Temporary_stay"
     ],
     "Visiting": [
-      "Temporary_stay",
       "Temporary_stay"
     ],
     "Visiting_scenario_stay": [
       "Temporary_stay",
       "Visiting"
     ],
-    "Transfer": [
-      "Commerce_goods-transfer",
-      "Commerce_money-transfer"
+    "Taking": [
+      "Theft"
+    ],
+    "Arriving": [
+      "Vehicle_landing"
     ]
   },
   "parents": {
     "Abandonment": [
+      "Event",
+      "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
       "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Abusing": [
       "Committing_crime",
-      "Misdeed",
       "Event",
-      "Committing_crime",
-      "Event"
+      "Misdeed"
     ],
     "Achieving_first": [
-      "Intentionally_create",
       "Creating",
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Intentionally_act",
       "Event",
       "Intentionally_act",
       "Intentionally_create",
-      "Objective_influence"
+      "Objective_influence",
+      "Transitive_action"
     ],
     "Activity_finish": [
-      "Intentionally_act",
-      "Event",
-      "Process_end",
-      "Event",
-      "Intentionally_act",
-      "Process_end"
-    ],
-    "Finish_game": [
-      "Activity_finish",
-      "Event",
-      "Intentionally_act",
-      "Process_end"
-    ],
-    "Finish_competition": [
-      "Activity_finish",
       "Event",
       "Intentionally_act",
       "Process_end"
     ],
     "Activity_pause": [
-      "Process_pause",
       "Event",
-      "Event"
+      "Process_pause"
     ],
     "Activity_ready_state": [
       "Process_initial_state",
       "State"
     ],
-    "Be_on_alert": [
-      "Activity_ready_state"
-    ],
     "Activity_resume": [
-      "Process_resume",
       "Event",
-      "Event"
+      "Process_resume"
     ],
     "Activity_start": [
-      "Process_start",
-      "Event",
       "Event",
       "Process_start"
     ],
     "Activity_stop": [
-      "Process_stop",
-      "Event",
-      "Event",
-      "Process_stop"
-    ],
-    "Halt": [
-      "Activity_stop",
       "Event",
       "Process_stop"
     ],
     "Adjusting": [
+      "Event",
+      "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
       "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Agriculture": [
       "Attempt_obtain_food_scenario",
       "Attempting_and_resolving_scenario",
-      "Intentionally_act",
-      "Event",
       "Event",
       "Intentionally_act"
     ],
     "Annoyance": [
-      "Emotions_by_stimulus",
       "Emotions",
-      "State",
-      "Emotions_by_stimulus"
+      "Emotions_by_stimulus",
+      "State"
     ],
     "Apply_heat": [
       "Activity",
-      "Process",
+      "Event",
+      "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
       "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
+      "Process",
+      "Transitive_action"
     ],
     "Appointing": [
+      "Event",
+      "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
       "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Change_of_leadership": [
-      "Appointing",
-      "Appointing",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Arraignment": [
       "Process"
     ],
     "Arranging": [
+      "Event",
+      "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
       "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Arrest": [
+      "Event",
+      "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
       "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Arriving": [
-      "Eventive_affecting",
       "Event",
-      "Event"
-    ],
-    "Vehicle_landing": [
-      "Arriving",
-      "Event",
-      "Arriving",
-      "Eventive_affecting",
-      "Event"
-    ],
-    "Visiting_scenario_arrival": [
-      "Arriving",
-      "Event"
-    ],
-    "Visit_host_arrival": [
-      "Arriving",
-      "Event"
-    ],
-    "Visitor_arrival": [
-      "Arriving",
-      "Event"
-    ],
-    "Drop_in_on": [
-      "Arriving",
-      "Event"
+      "Eventive_affecting"
     ],
     "Assistance": [
-      "Intentionally_act",
-      "Event",
       "Event",
       "Intentionally_act"
     ],
-    "Supporting": [
-      "Assistance",
-      "Event",
-      "Intentionally_act",
-      "Assistance",
-      "Intentionally_act",
-      "Event"
-    ],
     "Atonement": [
-      "Intentionally_act",
-      "Event",
       "Event",
       "Intentionally_act"
     ],
     "Attaching": [
+      "Event",
+      "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
       "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Attack": [
+      "Event",
+      "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
       "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Besieging": [
-      "Attack",
-      "Attack",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Counterattack": [
-      "Attack",
-      "Attack",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Invading": [
-      "Attack",
-      "Event",
-      "Intentionally_act",
-      "Attack",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Objective_influence"
-    ],
-    "Suicide_attack": [
-      "Attack",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence",
-      "Attack",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Attempt": [
-      "Intentionally_act",
-      "Event",
       "Event",
       "Intentionally_act"
     ],
     "Attempt_suasion": [
       "Attempt",
-      "Attempt",
-      "Intentionally_act",
-      "Event",
       "Event",
       "Intentionally_act"
     ],
-    "Work": [
-      "Attempt",
-      "Event",
-      "Intentionally_act",
-      "Attempt",
-      "Intentionally_act",
-      "Event"
-    ],
-    "Seeking_to_achieve": [
-      "Attempt",
-      "Event",
-      "Intentionally_act",
-      "Work",
-      "Attempt",
-      "Intentionally_act",
-      "Event",
-      "Work"
-    ],
-    "Seeking": [
-      "Attempt",
-      "Event",
-      "Intentionally_act",
-      "Seeking_to_achieve",
-      "Work",
-      "Attempt",
-      "Intentionally_act",
-      "Event",
-      "Seeking_to_achieve",
-      "Work"
-    ],
-    "Shopping": [
-      "Attempt",
-      "Event",
-      "Intentionally_act",
-      "Seeking",
-      "Seeking_to_achieve",
-      "Seeking",
-      "Seeking_to_achieve",
-      "Work",
-      "Attempt",
-      "Intentionally_act",
-      "Event",
-      "Work"
-    ],
     "Attending": [
-      "Intentionally_act",
-      "Event",
       "Event",
       "Intentionally_act"
     ],
@@ -2271,27 +1220,10 @@
       "State"
     ],
     "Avoiding": [
-      "Intentionally_act",
-      "Event",
-      "Event",
-      "Intentionally_act"
-    ],
-    "Dodging": [
-      "Avoiding",
-      "Avoiding",
-      "Intentionally_act",
-      "Event",
-      "Event",
-      "Intentionally_act"
-    ],
-    "Evading": [
-      "Avoiding",
       "Event",
       "Intentionally_act"
     ],
     "Bail_decision": [
-      "Intentionally_act",
-      "Event",
       "Event",
       "Intentionally_act"
     ],
@@ -2299,55 +1231,24 @@
       "State"
     ],
     "Becoming": [
-      "Transition_to_state",
       "Event",
-      "Event"
+      "Transition_to_state"
     ],
-    "Transition_to_a_quality": [
-      "Becoming",
+    "Becoming_a_member": [
       "Event",
-      "Becoming",
-      "Transition_to_state",
-      "Event"
-    ],
-    "Absorb_heat": [
-      "Becoming",
-      "Event",
-      "Transition_to_a_quality"
-    ],
-    "Becoming_attached": [
-      "Becoming",
-      "Event",
-      "Transition_to_a_quality"
-    ],
-    "Becoming_detached": [
-      "Becoming",
-      "Event",
-      "Transition_to_a_quality"
+      "Intentionally_act"
     ],
     "Becoming_dry": [
       "Becoming",
+      "Event",
       "Transition_to_a_quality",
-      "Becoming",
-      "Transition_to_state",
-      "Event",
-      "Event",
-      "Transition_to_a_quality"
+      "Transition_to_state"
     ],
     "Becoming_visible": [
       "Becoming",
+      "Event",
       "Transition_to_a_quality",
-      "Becoming",
-      "Transition_to_state",
-      "Event",
-      "Event",
-      "Transition_to_a_quality"
-    ],
-    "Becoming_a_member": [
-      "Intentionally_act",
-      "Event",
-      "Event",
-      "Intentionally_act"
+      "Transition_to_state"
     ],
     "Being_attached": [
       "Reciprocality",
@@ -2355,25 +1256,10 @@
     ],
     "Being_born": [
       "Coming_to_be",
-      "Event",
-      "Coming_to_be",
       "Event"
     ],
     "Being_in_control": [
       "Control",
-      "Objective_influence",
-      "Event",
-      "Control",
-      "Event",
-      "Objective_influence"
-    ],
-    "Dominate_competitor": [
-      "Being_in_control",
-      "Control",
-      "Being_in_control",
-      "Control",
-      "Objective_influence",
-      "Event",
       "Event",
       "Objective_influence"
     ],
@@ -2383,359 +1269,209 @@
     "Being_located": [
       "State"
     ],
-    "Presence": [
-      "Being_located",
-      "Being_located",
-      "State"
-    ],
-    "Visiting": [
-      "Being_located",
+    "Besieging": [
+      "Attack",
       "Event",
       "Intentionally_act",
-      "Being_located",
-      "State",
-      "Intentionally_act",
-      "Event",
-      "Visiting_scenario_stay"
-    ],
-    "Temporary_stay": [
-      "Being_located",
-      "Event",
-      "Intentionally_act",
-      "Residence",
-      "Visiting",
-      "Being_located",
-      "State",
-      "Intentionally_act",
-      "Event",
-      "Visiting_scenario_stay",
-      "Visiting"
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
     ],
     "Borrowing": [
-      "Receiving",
-      "Getting",
-      "Event",
       "Event",
       "Getting",
       "Receiving"
     ],
     "Breaking_out_captive": [
+      "Event",
+      "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
       "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Building": [
-      "Intentionally_create",
       "Creating",
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Intentionally_act",
       "Event",
       "Intentionally_act",
       "Intentionally_create",
-      "Objective_influence"
+      "Objective_influence",
+      "Transitive_action"
     ],
     "Burying": [
+      "Event",
+      "Objective_influence",
       "Placing",
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence",
-      "Placing"
+      "Transitive_action"
     ],
     "Causation": [
-      "Eventive_affecting",
       "Event",
-      "Event"
-    ],
-    "Cause_to_start": [
-      "Causation",
-      "Event"
+      "Eventive_affecting"
     ],
     "Cause_change": [
-      "Transitive_action",
+      "Event",
       "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
-    ],
-    "Change_event_duration": [
-      "Cause_change",
-      "Cause_change",
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
-    ],
-    "Change_event_time": [
-      "Cause_change",
-      "Cause_change",
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
-    ],
-    "Exchange_currency": [
-      "Cause_change",
-      "Event",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Cause_change_of_position_on_a_scale": [
-      "Transitive_action",
+      "Event",
       "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
-    ],
-    "Cause_proliferation_in_number": [
-      "Cause_change_of_position_on_a_scale",
-      "Event",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Cause_change_of_strength": [
-      "Transitive_action",
+      "Event",
       "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
-    ],
-    "Change_resistance": [
-      "Cause_change_of_strength",
-      "Event",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Cause_emotion": [
+      "Event",
+      "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
       "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Cause_fluidic_motion": [
       "Cause_motion",
-      "Transitive_action",
+      "Event",
       "Objective_influence",
-      "Event",
-      "Cause_motion",
-      "Event",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Cause_harm": [
       "Cause_bodily_experience",
-      "Transitive_action",
+      "Event",
       "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
-    ],
-    "Corporal_punishment": [
-      "Cause_harm",
-      "Cause_harm",
-      "Cause_bodily_experience",
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Rewards_and_punishments",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Response",
-      "Eventive_affecting",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence",
-      "Response",
-      "Rewards_and_punishments"
+      "Transitive_action"
     ],
     "Cause_impact": [
-      "Transitive_action",
+      "Event",
       "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Cause_motion": [
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
-    ],
-    "Passing": [
-      "Cause_motion",
-      "Event",
-      "Objective_influence"
-    ],
-    "Shoot_projectiles": [
-      "Cause_motion",
       "Event",
       "Objective_influence",
-      "Cause_motion",
-      "Transitive_action",
-      "Objective_influence",
-      "Event"
+      "Transitive_action"
     ],
     "Cause_to_amalgamate": [
+      "Event",
+      "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
       "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Cause_to_be_dry": [
-      "Transitive_action",
+      "Event",
       "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Cause_to_be_included": [
-      "Transitive_action",
+      "Event",
       "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Cause_to_be_sharp": [
-      "Transitive_action",
+      "Event",
       "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Cause_to_be_wet": [
-      "Transitive_action",
+      "Event",
       "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Cause_to_continue": [
-      "Transitive_action",
+      "Event",
       "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Cause_to_end": [
-      "Transitive_action",
+      "Event",
       "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Cause_to_experience": [
+      "Event",
+      "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
       "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Cause_to_fragment": [
-      "Transitive_action",
+      "Event",
       "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Cause_to_make_noise": [
-      "Transitive_action",
+      "Event",
       "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Cause_to_make_progress": [
+      "Event",
+      "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
       "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Cause_to_move_in_place": [
-      "Transitive_action",
+      "Event",
       "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Cause_to_resume": [
-      "Transitive_action",
+      "Event",
       "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Cause_to_wake": [
-      "Transitive_action",
+      "Event",
       "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Change_accessibility": [
+      "Event",
+      "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
       "Objective_influence",
+      "Transitive_action"
+    ],
+    "Change_event_duration": [
+      "Cause_change",
       "Event",
-      "Intentionally_act",
-      "Objective_influence"
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Change_event_time": [
+      "Cause_change",
+      "Event",
+      "Objective_influence",
+      "Transitive_action"
     ],
     "Change_of_consistency": [
-      "Event",
       "Event"
     ],
-    "Change_of_temperature": [
-      "Change_position_on_a_scale",
+    "Change_of_leadership": [
+      "Appointing",
       "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Change_of_temperature": [
       "Change_position_on_a_scale",
       "Event"
     ],
     "Change_operational_state": [
+      "Event",
+      "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
       "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Change_position_on_a_scale": [
-      "Event",
-      "Event"
-    ],
-    "Proliferating_in_number": [
-      "Change_position_on_a_scale",
-      "Event",
-      "Change_position_on_a_scale",
       "Event"
     ],
     "Change_posture": [
-      "Intentionally_act",
-      "Event",
       "Event",
       "Intentionally_act"
     ],
@@ -2744,1599 +1480,999 @@
     ],
     "Choosing": [
       "Deciding",
-      "Intentionally_act",
-      "Event",
       "Event",
       "Intentionally_act"
     ],
     "Clemency": [
-      "Intentionally_act",
-      "Event",
       "Event",
       "Intentionally_act"
     ],
-    "Pardon": [
-      "Clemency",
-      "Event",
-      "Intentionally_act",
-      "Clemency",
-      "Intentionally_act",
-      "Event"
-    ],
     "Coincidence": [
-      "Event",
       "Event"
     ],
     "Collaboration": [
+      "Event",
       "Intentionally_act",
-      "Event",
-      "Reciprocality",
-      "Event",
-      "Intentionally_act"
+      "Reciprocality"
     ],
     "Come_down_with": [
-      "Eventive_affecting",
       "Event",
-      "Event"
+      "Eventive_affecting"
     ],
     "Come_together": [
-      "Event",
-      "Event"
-    ],
-    "Assemble": [
-      "Come_together",
-      "Event",
-      "Intentionally_act"
-    ],
-    "Encounter": [
-      "Come_together",
       "Event"
     ],
     "Coming_to_be": [
-      "Event",
       "Event"
     ],
     "Commerce_buy": [
-      "Getting",
-      "Event",
       "Event",
       "Getting"
     ],
-    "Renting": [
-      "Commerce_buy",
-      "Event",
-      "Getting",
-      "Commerce_buy",
-      "Getting",
-      "Event"
-    ],
     "Commerce_pay": [
+      "Event",
+      "Eventive_affecting",
       "Giving",
       "Intentionally_act",
-      "Event",
-      "Lose_possession",
-      "Eventive_affecting",
-      "Event",
-      "Intentionally_act"
+      "Lose_possession"
     ],
     "Commerce_sell": [
-      "Giving",
-      "Intentionally_act",
       "Event",
-      "Lose_possession",
       "Eventive_affecting",
-      "Event",
-      "Intentionally_act"
-    ],
-    "Renting_out": [
-      "Commerce_sell",
-      "Event",
-      "Intentionally_act",
-      "Commerce_sell",
       "Giving",
       "Intentionally_act",
-      "Event",
-      "Lose_possession",
-      "Eventive_affecting"
+      "Lose_possession"
     ],
     "Committing_crime": [
-      "Misdeed",
       "Event",
-      "Event"
-    ],
-    "Kidnapping": [
-      "Committing_crime",
-      "Event",
-      "Committing_crime",
-      "Misdeed",
-      "Event"
-    ],
-    "Piracy": [
-      "Committing_crime",
-      "Event",
-      "Intentionally_act",
-      "Committing_crime",
-      "Misdeed",
-      "Event",
-      "Intentionally_act"
-    ],
-    "Rape": [
-      "Committing_crime",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence",
-      "Committing_crime",
-      "Misdeed",
-      "Event",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Transitive_action",
-      "Objective_influence"
-    ],
-    "Robbery": [
-      "Committing_crime",
-      "Event"
-    ],
-    "Smuggling": [
-      "Committing_crime",
-      "Event",
-      "Bringing",
-      "Committing_crime",
-      "Misdeed",
-      "Event"
-    ],
-    "Theft": [
-      "Committing_crime",
-      "Event",
-      "Getting",
-      "Intentionally_act",
-      "Objective_influence",
-      "Taking",
-      "Committing_crime",
-      "Misdeed",
-      "Event",
-      "Taking",
-      "Getting",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Transitive_action",
-      "Objective_influence"
+      "Misdeed"
     ],
     "Communication": [
       "Cause_to_perceive",
+      "Event",
+      "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
       "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Communication_manner": [
-      "Communication",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Communication_noise": [
-      "Communication",
-      "Communication",
       "Cause_to_perceive",
+      "Communication",
+      "Event",
+      "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
       "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Communication_response": [
-      "Communication",
-      "Communication",
       "Cause_to_perceive",
-      "Intentionally_affect",
-      "Intentionally_act",
+      "Communication",
       "Event",
-      "Transitive_action",
+      "Eventive_affecting",
+      "Intentionally_act",
+      "Intentionally_affect",
       "Objective_influence",
       "Response",
-      "Eventive_affecting",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence",
-      "Response"
-    ],
-    "Gesture": [
-      "Communication",
-      "Event",
-      "Communication",
-      "Cause_to_perceive",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Reassuring": [
-      "Communication",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence",
-      "Communication",
-      "Cause_to_perceive",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence"
-    ],
-    "Summarizing": [
-      "Communication",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence",
-      "Communication",
-      "Cause_to_perceive",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Confronting_problem": [
-      "Intentionally_act",
-      "Event",
       "Event",
       "Intentionally_act"
     ],
     "Contacting": [
-      "Intentionally_act",
-      "Event",
       "Event",
       "Intentionally_act"
     ],
     "Control": [
-      "Objective_influence",
-      "Event",
       "Event",
       "Objective_influence"
     ],
     "Cooking_creation": [
-      "Intentionally_create",
       "Creating",
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Intentionally_act",
       "Event",
       "Intentionally_act",
       "Intentionally_create",
-      "Objective_influence"
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Corporal_punishment": [
+      "Cause_bodily_experience",
+      "Cause_harm",
+      "Event",
+      "Eventive_affecting",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Response",
+      "Rewards_and_punishments",
+      "Transitive_action"
     ],
     "Corroding_caused": [
-      "Transitive_action",
+      "Event",
       "Objective_influence",
+      "Transitive_action"
+    ],
+    "Counterattack": [
+      "Attack",
       "Event",
-      "Event",
-      "Objective_influence"
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
     ],
     "Create_physical_artwork": [
-      "Intentionally_create",
       "Creating",
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Intentionally_act",
       "Event",
       "Intentionally_act",
       "Intentionally_create",
-      "Objective_influence"
+      "Objective_influence",
+      "Transitive_action"
     ],
     "Cure": [
-      "Transitive_action",
+      "Event",
       "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Cutting": [
+      "Event",
+      "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
       "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Damaging": [
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
-    ],
-    "Reshaping": [
-      "Damaging",
       "Event",
       "Objective_influence",
-      "Damaging",
-      "Transitive_action",
-      "Objective_influence",
-      "Event"
+      "Transitive_action"
     ],
     "Daring": [
-      "Intentionally_act",
-      "Event",
       "Event",
       "Intentionally_act"
     ],
     "Dead_or_alive": [
       "State"
     ],
-    "Subsisting": [
-      "Dead_or_alive",
-      "Dead_or_alive",
-      "State"
-    ],
     "Death": [
       "Ceasing_to_be",
-      "Transition_to_state",
       "Event",
-      "Event"
+      "Transition_to_state"
     ],
     "Destiny": [
-      "Eventive_affecting",
       "Event",
-      "Event"
+      "Eventive_affecting"
     ],
     "Destroying": [
-      "Transitive_action",
+      "Event",
       "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Detaching": [
+      "Event",
+      "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
       "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Detonate_explosive": [
-      "Using",
+      "Event",
+      "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
+      "Objective_influence",
       "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence",
       "Using"
     ],
     "Dispersal": [
+      "Event",
+      "Objective_influence",
       "Placing",
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence",
-      "Placing"
+      "Transitive_action"
     ],
-    "Downing": [
-      "Transitive_action",
-      "Objective_influence",
+    "Dodging": [
+      "Avoiding",
       "Event",
+      "Intentionally_act"
+    ],
+    "Dominate_competitor": [
+      "Being_in_control",
+      "Control",
       "Event",
       "Objective_influence"
     ],
+    "Downing": [
+      "Event",
+      "Objective_influence",
+      "Transitive_action"
+    ],
     "Earnings_and_losses": [
       "Commerce_collect",
-      "Getting",
-      "Event",
       "Event",
       "Getting"
     ],
     "Education_teaching": [
+      "Event",
+      "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
       "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Emotions_by_stimulus": [
       "Emotions",
       "State"
     ],
-    "Emotions_by_possibility": [
-      "Emotions_by_stimulus"
-    ],
-    "Fear": [
-      "Emotions_by_stimulus",
-      "Emotions_by_possibility",
-      "Emotions_by_stimulus",
-      "Emotions",
-      "State"
-    ],
     "Emotions_of_mental_activity": [
-      "Emotions_by_stimulus",
-      "Emotions_by_stimulus",
       "Emotions",
+      "Emotions_by_stimulus",
       "State"
     ],
     "Emotions_success_or_failure": [
-      "Emotions_by_stimulus",
-      "Emotions_by_stimulus",
       "Emotions",
-      "State"
-    ],
-    "Just_found_out": [
       "Emotions_by_stimulus",
-      "Emotions_by_stimulus",
-      "Emotions",
-      "State"
-    ],
-    "Others_situation_as_stimulus": [
-      "Emotions_by_stimulus",
-      "Emotions_by_stimulus",
-      "Emotions",
       "State"
     ],
     "Endangering": [
-      "Transitive_action",
+      "Event",
       "Objective_influence",
-      "Event",
-      "Event",
-      "Objective_influence"
+      "Transitive_action"
     ],
     "Enforcing": [
-      "Execute_plan",
-      "Intentionally_act",
-      "Event",
       "Event",
       "Execute_plan",
       "Intentionally_act"
     ],
     "Escaping": [
       "Departing",
-      "Eventive_affecting",
       "Event",
-      "Event"
-    ],
-    "Birth_scenario": [
-      "Event"
-    ],
-    "Coming_to_believe": [
-      "Event"
-    ],
-    "See_through": [
-      "Event"
-    ],
-    "Emergency": [
-      "Event"
-    ],
-    "Eventive_affecting": [
-      "Event"
-    ],
-    "Aging": [
-      "Event"
-    ],
-    "Departing": [
-      "Event"
-    ],
-    "Quitting_a_place": [
-      "Event",
-      "Departing",
-      "Eventive_affecting",
-      "Event"
-    ],
-    "Setting_out": [
-      "Event",
-      "Quitting_a_place",
-      "Quitting_a_place",
-      "Departing",
-      "Eventive_affecting",
-      "Event"
-    ],
-    "Visiting_scenario_departing": [
-      "Event"
-    ],
-    "Visit_host_departure": [
-      "Event"
-    ],
-    "Visitor_departure": [
-      "Event"
-    ],
-    "Eventive_cognizer_affecting": [
-      "Event"
-    ],
-    "Suasion": [
-      "Event",
-      "Eventive_cognizer_affecting",
-      "Eventive_affecting",
-      "Event",
-      "Telling",
-      "Statement"
-    ],
-    "Explosion": [
-      "Event",
-      "Eventive_affecting",
-      "Event"
-    ],
-    "Historic_event": [
-      "Event",
-      "Eventive_affecting",
-      "Event"
-    ],
-    "Lose_possession": [
-      "Event"
-    ],
-    "Giving": [
-      "Event",
-      "Intentionally_act"
-    ],
-    "Lending": [
-      "Event",
-      "Intentionally_act",
-      "Giving",
-      "Intentionally_act",
-      "Event",
-      "Lose_possession",
       "Eventive_affecting"
-    ],
-    "Submitting_documents": [
-      "Event",
-      "Intentionally_act",
-      "Giving",
-      "Intentionally_act",
-      "Event",
-      "Lose_possession",
-      "Eventive_affecting"
-    ],
-    "Supply": [
-      "Event",
-      "Intentionally_act",
-      "Giving",
-      "Intentionally_act",
-      "Event",
-      "Lose_possession",
-      "Eventive_affecting"
-    ],
-    "Funding": [
-      "Event",
-      "Intentionally_act",
-      "Supply"
-    ],
-    "Surrendering_possession": [
-      "Event",
-      "Intentionally_act",
-      "Giving",
-      "Intentionally_act",
-      "Event",
-      "Lose_possession",
-      "Eventive_affecting"
-    ],
-    "Response": [
-      "Event",
-      "Eventive_affecting",
-      "Event"
-    ],
-    "Rewards_and_punishments": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence",
-      "Response",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Response",
-      "Eventive_affecting"
-    ],
-    "Execution": [
-      "Event",
-      "Killing",
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Rewards_and_punishments",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Response",
-      "Eventive_affecting",
-      "Intentionally_act",
-      "Killing",
-      "Objective_influence",
-      "Response",
-      "Rewards_and_punishments"
-    ],
-    "Fining": [
-      "Event",
-      "Rewards_and_punishments",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Response",
-      "Eventive_affecting",
-      "Intentionally_act",
-      "Objective_influence",
-      "Response",
-      "Rewards_and_punishments"
-    ],
-    "Revenge": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence",
-      "Response",
-      "Rewards_and_punishments",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Response",
-      "Eventive_affecting",
-      "Rewards_and_punishments"
-    ],
-    "Transfer": [
-      "Event",
-      "Eventive_affecting",
-      "Event"
-    ],
-    "Commerce_goods-transfer": [
-      "Event",
-      "Transfer"
-    ],
-    "Commerce_money-transfer": [
-      "Event",
-      "Transfer"
-    ],
-    "Experience_bodily_harm": [
-      "Event",
-      "Event"
-    ],
-    "Getting": [
-      "Event",
-      "Event"
-    ],
-    "Amassing": [
-      "Event",
-      "Getting"
-    ],
-    "Commerce_collect": [
-      "Event",
-      "Getting"
-    ],
-    "Receiving": [
-      "Event",
-      "Getting",
-      "Getting",
-      "Event"
-    ],
-    "Taking": [
-      "Event",
-      "Getting",
-      "Intentionally_act",
-      "Objective_influence",
-      "Getting",
-      "Event",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Transitive_action",
-      "Objective_influence"
-    ],
-    "Go_into_shape": [
-      "Event",
-      "Event"
-    ],
-    "Intentionally_act": [
-      "Event",
-      "Event"
-    ],
-    "Attempting_and_resolving_scenario": [
-      "Event",
-      "Intentionally_act"
-    ],
-    "Attempt_distant_interaction_scenario": [
-      "Event",
-      "Intentionally_act"
-    ],
-    "Shooting_scenario": [
-      "Event",
-      "Intentionally_act"
-    ],
-    "Attempt_obtain_food_scenario": [
-      "Event",
-      "Intentionally_act"
-    ],
-    "Hunting_scenario": [
-      "Event",
-      "Intentionally_act"
-    ],
-    "Attempt_obtain_mineral_scenario": [
-      "Event",
-      "Intentionally_act"
-    ],
-    "Mining": [
-      "Event",
-      "Intentionally_act"
-    ],
-    "Change_tool": [
-      "Event",
-      "Intentionally_act"
     ],
     "Examination": [
-      "Event",
-      "Intentionally_act",
       "Event",
       "Intentionally_act"
     ],
     "Exchange": [
       "Event",
       "Intentionally_act",
-      "Event",
-      "Reciprocality",
-      "Intentionally_act"
+      "Reciprocality"
     ],
     "Execute_plan": [
       "Event",
-      "Intentionally_act",
-      "Event",
       "Intentionally_act"
+    ],
+    "Execution": [
+      "Event",
+      "Eventive_affecting",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Killing",
+      "Objective_influence",
+      "Response",
+      "Rewards_and_punishments",
+      "Transitive_action"
     ],
     "Exercising": [
       "Event",
-      "Intentionally_act",
-      "Event",
       "Intentionally_act"
+    ],
+    "Experience_bodily_harm": [
+      "Event"
+    ],
+    "Explosion": [
+      "Event",
+      "Eventive_affecting"
+    ],
+    "Extradition": [
+      "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Fear": [
+      "Emotions",
+      "Emotions_by_possibility",
+      "Emotions_by_stimulus",
+      "State"
+    ],
+    "Filling": [
+      "Container_focused_placing",
+      "Event",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Fining": [
+      "Event",
+      "Eventive_affecting",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Response",
+      "Rewards_and_punishments",
+      "Transitive_action"
+    ],
+    "Firing": [
+      "Employment_end",
+      "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Fleeing": [
+      "Event",
+      "Intentionally_act",
+      "Motion",
+      "Self_motion"
+    ],
+    "Forging": [
+      "Creating",
+      "Duplication",
+      "Event",
+      "Intentionally_act",
+      "Intentionally_create",
+      "Objective_influence",
+      "Transitive_action"
     ],
     "Forming_relationships": [
       "Event",
-      "Intentionally_act",
-      "Event",
       "Intentionally_act"
     ],
-    "Front_for": [
+    "Gathering_up": [
       "Event",
-      "Intentionally_act"
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Gesture": [
+      "Cause_to_perceive",
+      "Communication",
+      "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
     ],
     "Get_a_job": [
       "Event",
-      "Intentionally_act",
-      "Event",
       "Intentionally_act"
+    ],
+    "Getting": [
+      "Event"
+    ],
+    "Go_into_shape": [
+      "Event"
+    ],
+    "Grinding": [
+      "Event",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Grooming": [
+      "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
     ],
     "Heralding": [
       "Event",
-      "Intentionally_act",
-      "Event",
       "Intentionally_act"
+    ],
+    "Hiring": [
+      "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Historic_event": [
+      "Event",
+      "Eventive_affecting"
+    ],
+    "Hit_target": [
+      "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
     ],
     "Hostile_encounter": [
       "Event",
-      "Intentionally_act",
-      "Event",
       "Intentionally_act"
     ],
-    "Fighting_activity": [
+    "Imposing_obligation": [
       "Event",
-      "Hostile_encounter",
-      "Intentionally_act"
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Imprisonment": [
+      "Event",
+      "Inhibit_movement",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Improvement_or_decline": [
+      "Event",
+      "Transition_to_state",
+      "Undergo_change"
     ],
     "Ingest_substance": [
-      "Event",
-      "Intentionally_act",
       "Event",
       "Intentionally_act"
     ],
     "Ingestion": [
       "Event",
       "Ingest_substance",
-      "Ingest_substance",
-      "Intentionally_act",
-      "Event",
-      "Manipulation",
       "Intentionally_act",
       "Manipulation"
-    ],
-    "Intentionally_affect": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Cause_to_perceive": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Closure": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Extradition": [
-      "Event",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Firing": [
-      "Event",
-      "Employment_end",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Gathering_up": [
-      "Event",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Grooming": [
-      "Event",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Hiding_objects": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Hiring": [
-      "Event",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Hit_target": [
-      "Event",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Immobilization": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
     ],
     "Inhibit_movement": [
       "Event",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Imprisonment": [
-      "Event",
-      "Inhibit_movement",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Inhibit_movement",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Limiting": [
-      "Event",
       "Intentionally_act",
       "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
       "Objective_influence",
-      "Objective_influence"
-    ],
-    "Making_arrangements": [
-      "Event",
-      "Intentionally_act",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Objective_influence"
-    ],
-    "Manipulate_into_doing": [
-      "Event",
-      "Intentionally_act",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Objective_influence"
-    ],
-    "Talking_into": [
-      "Event",
-      "Intentionally_act",
-      "Manipulate_into_doing",
-      "Objective_influence",
-      "Manipulate_into_doing",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence"
-    ],
-    "Manipulate_into_shape": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Rope_manipulation": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Processing_materials": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Preserving": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence",
-      "Processing_materials",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence"
-    ],
-    "Publishing": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Releasing": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Releasing_from_custody": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Reparation": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Replacing": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence"
-    ],
-    "Rescuing": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence"
-    ],
-    "Separating": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence"
-    ],
-    "Short_selling": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Silencing": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence"
-    ],
-    "Soaking": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence"
-    ],
-    "Using": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence"
-    ],
-    "Attempt_means": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence",
-      "Using"
-    ],
-    "Expend_resource": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence",
-      "Using"
-    ],
-    "Operating_a_system": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence",
-      "Using",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Using"
-    ],
-    "Operate_vehicle": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence",
-      "Operating_a_system",
-      "Using",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Operating_a_system",
-      "Using"
-    ],
-    "Use_firearm": [
-      "Event",
-      "Intentionally_act",
-      "Objective_influence",
-      "Using",
-      "Intentionally_affect",
-      "Intentionally_act",
-      "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Using"
-    ],
-    "Intentionally_create": [
-      "Event",
-      "Intentionally_act",
-      "Creating",
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Duplication": [
-      "Event",
-      "Intentionally_act",
-      "Intentionally_create",
-      "Objective_influence"
-    ],
-    "Forging": [
-      "Event",
-      "Duplication",
-      "Intentionally_create",
-      "Creating",
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Intentionally_act",
-      "Intentionally_create",
-      "Objective_influence"
-    ],
-    "Knot_creation": [
-      "Event",
-      "Intentionally_act",
-      "Intentionally_create",
-      "Objective_influence"
-    ],
-    "Manufacturing": [
-      "Event",
-      "Intentionally_act",
-      "Intentionally_create",
-      "Intentionally_create",
-      "Creating",
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Objective_influence"
-    ],
-    "Text_creation": [
-      "Event",
-      "Intentionally_act",
-      "Intentionally_create",
-      "Objective_influence",
-      "Intentionally_create",
-      "Creating",
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Intentionally_act"
-    ],
-    "Sign_agreement": [
-      "Event",
-      "Intentionally_act",
-      "Intentionally_create",
-      "Objective_influence",
-      "Text_creation",
-      "Intentionally_create",
-      "Creating",
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Intentionally_act",
-      "Text_creation"
-    ],
-    "Translating": [
-      "Event",
-      "Intentionally_act",
-      "Intentionally_create",
-      "Objective_influence",
-      "Intentionally_create",
-      "Creating",
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Intentionally_act"
-    ],
-    "Intercepting": [
-      "Event",
-      "Intentionally_act",
-      "Intentionally_act",
-      "Event"
-    ],
-    "Legal_rulings": [
-      "Event",
-      "Intentionally_act",
-      "Intentionally_act",
-      "Event"
-    ],
-    "Verdict": [
-      "Event",
-      "Intentionally_act",
-      "Legal_rulings"
-    ],
-    "Manipulation": [
-      "Event",
-      "Intentionally_act",
-      "Intentionally_act",
-      "Event"
-    ],
-    "Aiming": [
-      "Event",
-      "Intentionally_act",
-      "Manipulation"
-    ],
-    "Military_operation": [
-      "Event",
-      "Intentionally_act",
-      "Intentionally_act",
-      "Event"
-    ],
-    "Name_conferral": [
-      "Event",
-      "Intentionally_act"
-    ],
-    "Passing_off": [
-      "Event",
-      "Intentionally_act"
-    ],
-    "Posing_as": [
-      "Event",
-      "Intentionally_act",
-      "Passing_off",
-      "Intentionally_act",
-      "Event"
-    ],
-    "Perception_active": [
-      "Event",
-      "Intentionally_act"
-    ],
-    "Touring": [
-      "Event",
-      "Intentionally_act"
-    ],
-    "Practice": [
-      "Event",
-      "Intentionally_act",
-      "Intentionally_act",
-      "Event"
-    ],
-    "Quitting": [
-      "Event",
-      "Intentionally_act",
-      "Employment_end",
-      "Intentionally_act",
-      "Event"
-    ],
-    "Resolve_problem": [
-      "Event",
-      "Intentionally_act",
-      "Intentionally_act",
-      "Event"
-    ],
-    "Self_motion": [
-      "Event",
-      "Intentionally_act",
-      "Motion",
-      "Intentionally_act",
-      "Event",
-      "Motion"
-    ],
-    "Cotheme": [
-      "Event",
-      "Intentionally_act",
-      "Motion",
-      "Self_motion"
-    ],
-    "Fleeing": [
-      "Event",
-      "Self_motion",
-      "Intentionally_act",
-      "Event",
-      "Motion",
-      "Intentionally_act",
-      "Motion",
-      "Self_motion"
+      "Transitive_action"
     ],
     "Intentional_traversing": [
       "Event",
-      "Self_motion",
-      "Intentionally_act",
-      "Event",
-      "Motion",
-      "Traversing",
       "Intentionally_act",
       "Motion",
       "Self_motion",
       "Traversing"
     ],
-    "Travel": [
+    "Intentionally_act": [
+      "Event"
+    ],
+    "Intentionally_create": [
+      "Creating",
       "Event",
       "Intentionally_act",
-      "Motion",
-      "Self_motion"
+      "Objective_influence",
+      "Transitive_action"
     ],
-    "Working_a_post": [
+    "Intercepting": [
+      "Event",
+      "Intentionally_act"
+    ],
+    "Interrupt_process": [
+      "Event",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Invading": [
+      "Attack",
       "Event",
       "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Just_found_out": [
+      "Emotions",
+      "Emotions_by_stimulus",
+      "State"
+    ],
+    "Kidnapping": [
+      "Committing_crime",
+      "Event",
+      "Misdeed"
+    ],
+    "Killing": [
+      "Event",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Legal_rulings": [
+      "Event",
+      "Intentionally_act"
+    ],
+    "Lending": [
+      "Event",
+      "Eventive_affecting",
+      "Giving",
       "Intentionally_act",
-      "Event"
+      "Lose_possession"
     ],
-    "Losing_someone": [
-      "Event"
-    ],
-    "Misdeed": [
-      "Event"
-    ],
-    "Motion": [
+    "Limiting": [
       "Event",
-      "Event"
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
     ],
-    "Fluidic_motion": [
+    "Making_arrangements": [
       "Event",
-      "Motion"
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Manipulate_into_doing": [
+      "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Manipulation": [
+      "Event",
+      "Intentionally_act"
+    ],
+    "Manufacturing": [
+      "Creating",
+      "Event",
+      "Intentionally_act",
+      "Intentionally_create",
+      "Objective_influence",
+      "Transitive_action"
     ],
     "Mass_motion": [
       "Event",
-      "Motion",
-      "Event",
       "Motion"
     ],
-    "Motion_directional": [
+    "Military_operation": [
       "Event",
-      "Motion",
-      "Motion",
+      "Intentionally_act"
+    ],
+    "Motion": [
       "Event"
     ],
-    "Motion_noise": [
+    "Motion_directional": [
       "Event",
       "Motion"
     ],
     "Objective_influence": [
-      "Event",
       "Event"
     ],
-    "Transitive_action": [
+    "Operate_vehicle": [
       "Event",
-      "Objective_influence"
-    ],
-    "Cause_bodily_experience": [
-      "Event",
-      "Objective_influence"
-    ],
-    "Cause_change_of_consistency": [
-      "Event",
-      "Objective_influence"
-    ],
-    "Cause_change_of_phase": [
-      "Event",
-      "Objective_influence"
-    ],
-    "Cause_expansion": [
-      "Event",
-      "Objective_influence"
-    ],
-    "Cause_temperature_change": [
-      "Event",
-      "Objective_influence"
-    ],
-    "Cause_to_rot": [
-      "Event",
-      "Objective_influence"
-    ],
-    "Container_focused_placing": [
-      "Event",
-      "Objective_influence"
-    ],
-    "Filling": [
-      "Event",
-      "Container_focused_placing",
-      "Transitive_action",
+      "Intentionally_act",
+      "Intentionally_affect",
       "Objective_influence",
-      "Event",
-      "Objective_influence"
-    ],
-    "Container_focused_removing": [
-      "Event",
-      "Objective_influence"
-    ],
-    "Emptying": [
-      "Event",
-      "Objective_influence"
-    ],
-    "Creating": [
-      "Event",
-      "Objective_influence"
-    ],
-    "Erasing": [
-      "Event",
-      "Objective_influence"
-    ],
-    "Grinding": [
-      "Event",
+      "Operating_a_system",
       "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Objective_influence"
+      "Using"
     ],
-    "Imposing_obligation": [
+    "Operating_a_system": [
       "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
       "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Objective_influence"
+      "Using"
     ],
-    "Infecting": [
-      "Event",
-      "Objective_influence"
+    "Others_situation_as_stimulus": [
+      "Emotions",
+      "Emotions_by_stimulus",
+      "State"
     ],
-    "Interrupt_process": [
+    "Pardon": [
+      "Clemency",
       "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Objective_influence"
+      "Intentionally_act"
     ],
-    "Killing": [
+    "Piracy": [
+      "Committing_crime",
       "Event",
-      "Transitive_action",
-      "Objective_influence",
-      "Event",
-      "Objective_influence"
+      "Intentionally_act",
+      "Misdeed"
     ],
     "Placing": [
       "Event",
       "Objective_influence",
-      "Transitive_action",
-      "Objective_influence",
-      "Event"
+      "Transitive_action"
     ],
-    "Rejuvenation": [
+    "Posing_as": [
       "Event",
-      "Objective_influence",
-      "Transitive_action",
-      "Objective_influence",
-      "Event"
+      "Intentionally_act",
+      "Passing_off"
     ],
-    "Removing": [
+    "Practice": [
       "Event",
-      "Objective_influence",
-      "Transitive_action",
-      "Objective_influence",
-      "Event"
-    ],
-    "Render_nonfunctional": [
-      "Event",
-      "Objective_influence",
-      "Transitive_action",
-      "Objective_influence",
-      "Event"
-    ],
-    "Setting_fire": [
-      "Event",
-      "Objective_influence",
-      "Transitive_action",
-      "Objective_influence",
-      "Event"
-    ],
-    "Setting_back_burn": [
-      "Event",
-      "Objective_influence",
-      "Setting_fire"
-    ],
-    "Process_end": [
-      "Event",
-      "Event"
-    ],
-    "Process_pause": [
-      "Event"
-    ],
-    "Process_resume": [
-      "Event"
-    ],
-    "Process_start": [
-      "Event",
-      "Event"
-    ],
-    "Come_into_effect": [
-      "Event",
-      "Process_start"
-    ],
-    "Process_stop": [
-      "Event",
-      "Event"
-    ],
-    "Rotting": [
-      "Event",
-      "Event"
-    ],
-    "Transition_to_state": [
-      "Event"
-    ],
-    "Ceasing_to_be": [
-      "Event"
-    ],
-    "Transition_to_a_situation": [
-      "Event"
-    ],
-    "Undergo_change": [
-      "Event",
-      "Transition_to_state",
-      "Event"
-    ],
-    "Improvement_or_decline": [
-      "Event",
-      "Undergo_change",
-      "Transition_to_state",
-      "Event",
-      "Undergo_change"
-    ],
-    "Nuclear_process": [
-      "Event",
-      "Undergo_change"
-    ],
-    "Undergo_transformation": [
-      "Event",
-      "Undergo_change",
-      "Undergo_change",
-      "Transition_to_state",
-      "Event"
-    ],
-    "Traversing": [
-      "Event",
-      "Event"
-    ],
-    "Undergoing": [
-      "Event",
-      "Event"
-    ],
-    "Waking_up": [
-      "Event",
-      "Event"
+      "Intentionally_act"
     ],
     "Precipitation": [
       "Process"
     ],
     "Predicament": [
-      "State_of_entity",
       "State",
       "State_of_entity"
+    ],
+    "Presence": [
+      "Being_located",
+      "State"
+    ],
+    "Preserving": [
+      "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Processing_materials",
+      "Transitive_action"
     ],
     "Process_completed_state": [
       "State"
     ],
-    "Activity_done_state": [
-      "Process_completed_state"
+    "Process_end": [
+      "Event"
     ],
-    "Activity_ongoing": [
-      "Process_continue"
+    "Process_start": [
+      "Event"
     ],
-    "Retaining": [
-      "Process_continue"
+    "Process_stop": [
+      "Event"
     ],
-    "Sleep": [
-      "Process_continue"
+    "Proliferating_in_number": [
+      "Change_position_on_a_scale",
+      "Event"
+    ],
+    "Quitting": [
+      "Employment_end",
+      "Event",
+      "Intentionally_act"
+    ],
+    "Quitting_a_place": [
+      "Departing",
+      "Event",
+      "Eventive_affecting"
+    ],
+    "Rape": [
+      "Committing_crime",
+      "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Misdeed",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Reassuring": [
+      "Cause_to_perceive",
+      "Communication",
+      "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Receiving": [
+      "Event",
+      "Getting"
+    ],
+    "Rejuvenation": [
+      "Event",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Removing": [
+      "Event",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Render_nonfunctional": [
+      "Event",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Renting": [
+      "Commerce_buy",
+      "Event",
+      "Getting"
+    ],
+    "Renting_out": [
+      "Commerce_sell",
+      "Event",
+      "Eventive_affecting",
+      "Giving",
+      "Intentionally_act",
+      "Lose_possession"
+    ],
+    "Replacing": [
+      "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Rescuing": [
+      "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Reshaping": [
+      "Damaging",
+      "Event",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Resolve_problem": [
+      "Event",
+      "Intentionally_act"
+    ],
+    "Response": [
+      "Event",
+      "Eventive_affecting"
+    ],
+    "Revenge": [
+      "Event",
+      "Eventive_affecting",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Response",
+      "Rewards_and_punishments",
+      "Transitive_action"
+    ],
+    "Rewards_and_punishments": [
+      "Event",
+      "Eventive_affecting",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Response",
+      "Transitive_action"
+    ],
+    "Rotting": [
+      "Event"
+    ],
+    "Seeking": [
+      "Attempt",
+      "Event",
+      "Intentionally_act",
+      "Seeking_to_achieve",
+      "Work"
+    ],
+    "Seeking_to_achieve": [
+      "Attempt",
+      "Event",
+      "Intentionally_act",
+      "Work"
+    ],
+    "Self_motion": [
+      "Event",
+      "Intentionally_act",
+      "Motion"
+    ],
+    "Separating": [
+      "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Setting_fire": [
+      "Event",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Setting_out": [
+      "Departing",
+      "Event",
+      "Eventive_affecting",
+      "Quitting_a_place"
+    ],
+    "Shoot_projectiles": [
+      "Cause_motion",
+      "Event",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Shopping": [
+      "Attempt",
+      "Event",
+      "Intentionally_act",
+      "Seeking",
+      "Seeking_to_achieve",
+      "Work"
+    ],
+    "Sign_agreement": [
+      "Creating",
+      "Event",
+      "Intentionally_act",
+      "Intentionally_create",
+      "Objective_influence",
+      "Text_creation",
+      "Transitive_action"
+    ],
+    "Silencing": [
+      "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Smuggling": [
+      "Bringing",
+      "Committing_crime",
+      "Event",
+      "Misdeed"
+    ],
+    "Soaking": [
+      "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
     ],
     "State_of_entity": [
       "State"
     ],
+    "Suasion": [
+      "Event",
+      "Eventive_affecting",
+      "Eventive_cognizer_affecting",
+      "Statement",
+      "Telling"
+    ],
+    "Submitting_documents": [
+      "Event",
+      "Eventive_affecting",
+      "Giving",
+      "Intentionally_act",
+      "Lose_possession"
+    ],
+    "Subsisting": [
+      "Dead_or_alive",
+      "State"
+    ],
+    "Suicide_attack": [
+      "Attack",
+      "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Summarizing": [
+      "Cause_to_perceive",
+      "Communication",
+      "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Supply": [
+      "Event",
+      "Eventive_affecting",
+      "Giving",
+      "Intentionally_act",
+      "Lose_possession"
+    ],
+    "Supporting": [
+      "Assistance",
+      "Event",
+      "Intentionally_act"
+    ],
+    "Surrendering_possession": [
+      "Event",
+      "Eventive_affecting",
+      "Giving",
+      "Intentionally_act",
+      "Lose_possession"
+    ],
+    "Taking": [
+      "Event",
+      "Getting",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Talking_into": [
+      "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Manipulate_into_doing",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Temporary_stay": [
+      "Being_located",
+      "Event",
+      "Intentionally_act",
+      "Residence",
+      "State",
+      "Visiting",
+      "Visiting_scenario_stay"
+    ],
+    "Text_creation": [
+      "Creating",
+      "Event",
+      "Intentionally_act",
+      "Intentionally_create",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Theft": [
+      "Committing_crime",
+      "Event",
+      "Getting",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Misdeed",
+      "Objective_influence",
+      "Taking",
+      "Transitive_action"
+    ],
     "Thriving": [
       "State"
     ],
+    "Transfer": [
+      "Event",
+      "Eventive_affecting"
+    ],
+    "Transition_to_a_quality": [
+      "Becoming",
+      "Event",
+      "Transition_to_state"
+    ],
+    "Translating": [
+      "Creating",
+      "Event",
+      "Intentionally_act",
+      "Intentionally_create",
+      "Objective_influence",
+      "Transitive_action"
+    ],
     "Transportation_status": [
       "State"
+    ],
+    "Traversing": [
+      "Event"
+    ],
+    "Undergo_change": [
+      "Event",
+      "Transition_to_state"
+    ],
+    "Undergo_transformation": [
+      "Event",
+      "Transition_to_state",
+      "Undergo_change"
+    ],
+    "Undergoing": [
+      "Event"
+    ],
+    "Use_firearm": [
+      "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action",
+      "Using"
+    ],
+    "Using": [
+      "Event",
+      "Intentionally_act",
+      "Intentionally_affect",
+      "Objective_influence",
+      "Transitive_action"
+    ],
+    "Vehicle_landing": [
+      "Arriving",
+      "Event",
+      "Eventive_affecting"
+    ],
+    "Visiting": [
+      "Being_located",
+      "Event",
+      "Intentionally_act",
+      "State",
+      "Visiting_scenario_stay"
+    ],
+    "Waking_up": [
+      "Event"
+    ],
+    "Work": [
+      "Attempt",
+      "Event",
+      "Intentionally_act"
+    ],
+    "Working_a_post": [
+      "Event",
+      "Intentionally_act"
     ]
   }
 }

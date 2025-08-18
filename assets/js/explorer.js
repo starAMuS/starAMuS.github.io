@@ -240,6 +240,8 @@ const ExplorerApp = {
         const response = await fetch(`${this.dataPath}ontology/hierarchy.json`);
         if (response.ok) {
           this.frameHierarchy = await response.json();
+          // Automatically expand the Event frame
+          this.expandedFrames['Event'] = true;
         }
       } catch (error) {
         console.error('Error loading frame hierarchy:', error);
@@ -1220,7 +1222,9 @@ const ExplorerApp = {
       if (!this.frameHierarchy || !this.frameHierarchy.children) {
         return [];
       }
-      return this.frameHierarchy.children[frameName] || [];
+      const children = this.frameHierarchy.children[frameName] || [];
+      // Deduplicate children array
+      return [...new Set(children)];
     },
     
     addAncestorsToSet(frameName, set) {
