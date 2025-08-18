@@ -1,10 +1,9 @@
 // Service Worker for AMuS Dataset Explorer
-const CACHE_NAME = 'amus-v1';
+const CACHE_NAME = 'amus-v2';
 const urlsToCache = [
   '/',
   '/explorer.html',
   '/benchmarks.html',
-  '/about.html',
   '/assets/js/explorer.js',
   'https://fonts.googleapis.com/icon?family=Material+Icons',
   'https://code.getmdl.io/1.3.0/material.indigo-purple.min.css',
@@ -19,7 +18,14 @@ self.addEventListener('install', event => {
     caches.open(CACHE_NAME)
       .then(cache => {
         console.log('Opened cache');
-        return cache.addAll(urlsToCache);
+        // Try to cache each URL individually to handle failures gracefully
+        const cachePromises = urlsToCache.map(url => {
+          return cache.add(url).catch(err => {
+            console.warn('Failed to cache:', url, err);
+            // Continue even if individual URLs fail
+          });
+        });
+        return Promise.all(cachePromises);
       })
   );
 });
@@ -75,6 +81,7 @@ self.addEventListener('activate', event => {
       return Promise.all(
         cacheNames.map(cacheName => {
           if (cacheWhitelist.indexOf(cacheName) === -1) {
+            console.log('Deleting old cache:', cacheName);
             return caches.delete(cacheName);
           }
         })
