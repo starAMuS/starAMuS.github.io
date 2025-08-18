@@ -357,8 +357,8 @@ const ExplorerApp = {
             frame: unifiedExample.frame,
             frame_gloss: unifiedExample.frame_gloss,
             frame_definition: unifiedExample.frame_definition,
-            frame_ancestors: unifiedExample.frame_ancestors,
-            frame_descendants: unifiedExample.frame_descendants,
+            frame_ancestors: unifiedExample.frame_ancestors ? [...new Set(unifiedExample.frame_ancestors)] : [],
+            frame_descendants: unifiedExample.frame_descendants ? [...new Set(unifiedExample.frame_descendants)] : [],
             has_differences: unifiedExample.has_differences,
             report: versionData.report,
             source: versionData.source,
@@ -371,11 +371,11 @@ const ExplorerApp = {
           // Update toggle state based on differences
           this.versionToggleEnabled = unifiedExample.has_differences;
           
-          // Add frame descendants if available
+          // Add frame descendants if available (and deduplicate)
           if (this.frameHierarchy && this.currentExample.frame) {
             const descendants = this.getFrameDescendants(this.currentExample.frame);
             if (descendants.length > 0) {
-              this.currentExample.frame_descendants = descendants;
+              this.currentExample.frame_descendants = [...new Set(descendants)];
             }
           }
           
@@ -384,6 +384,9 @@ const ExplorerApp = {
           if (instanceId && this.seamusInstanceMapping[instanceId]) {
             await this.enrichWithSeamus(instanceId);
           }
+          
+          // Create role color map for this example
+          this.currentExample.roleColorMap = this.createRoleColorMapForExample();
         }
       } catch (error) {
         this.error = 'Error loading example: ' + error.message;
@@ -444,6 +447,9 @@ const ExplorerApp = {
             this.currentExample.seamus_combined_summary = seamusData.seamus_combined_summary;
             this.currentExample.seamus_combined_template = seamusData.seamus_combined_template;
           }
+          
+          // Regenerate role color map for the new version
+          this.currentExample.roleColorMap = this.createRoleColorMapForExample();
           
           // Setup tooltips for new content
           this.setupRoleTooltips();
@@ -754,12 +760,17 @@ const ExplorerApp = {
       }
     },
     
-    renderAnnotatedText(text, annotations, trigger = null) {
+    renderAnnotatedText(text, annotations, trigger = null, roleColorMap = null) {
       if (!this.showAnnotations) {
         return this.escapeHtml(text);
       }
       
-      // Collect all spans and sort them
+      // Use provided color map or create one if not provided
+      if (!roleColorMap) {
+        roleColorMap = this.createRoleColorMapForExample();
+      }
+      
+      // Collect all spans first (before assigning colors)
       const allSpans = [];
       
       // Add trigger span if it exists
@@ -769,7 +780,6 @@ const ExplorerApp = {
           end: trigger.end_char,
           role: trigger.frame || 'Trigger',
           roleDefinition: `Frame trigger: ${trigger.frame}`,
-          roleColor: 'rgba(211, 47, 47, 0.15)', // Semi-transparent red for triggers
           annotation: trigger,
           isTrigger: true
         });
@@ -779,7 +789,6 @@ const ExplorerApp = {
       for (const annotation of annotations || []) {
         const role = annotation.role || 'unknown';
         const roleDefinition = annotation.role_definition || '';
-        const roleColor = this.getRoleColor(role);
         
         // Skip annotations without span information
         if (!annotation.span) {
@@ -796,7 +805,6 @@ const ExplorerApp = {
             end: span[1],
             role,
             roleDefinition,
-            roleColor,
             annotation
           });
         }
@@ -804,6 +812,28 @@ const ExplorerApp = {
       
       // Sort by start position
       allSpans.sort((a, b) => a.start - b.start);
+      
+      // Assign colors based on role mapping
+      const colors = this.getMaterialDesignColors();
+      
+      for (const span of allSpans) {
+        if (span.isTrigger) {
+          // Triggers always get red color (index 5)
+          span.roleColor = colors[5].light;
+          span.darkerColor = colors[5].dark;
+        } else {
+          // Use consistent color from role map
+          const colorPair = roleColorMap[span.role];
+          if (colorPair) {
+            span.roleColor = colorPair.light;
+            span.darkerColor = colorPair.dark;
+          } else {
+            // Fallback for unmapped roles
+            span.roleColor = 'rgba(158, 158, 158, 0.20)';
+            span.darkerColor = '#424242';
+          }
+        }
+      }
       
       let html = '';
       let lastEnd = 0;
@@ -819,14 +849,12 @@ const ExplorerApp = {
           continue;
         }
         
-        // Add annotated text with popover and subscript like inspiration interface
+        // Add annotated text with popover and subscript
         const tooltipData = span.roleDefinition ? `data-tooltip="${this.escapeHtml(span.roleDefinition)}"` : '';
-        const backgroundColor = span.isTrigger ? 'rgba(211, 47, 47, 0.15)' : span.roleColor;  // Semi-transparent red for triggers
-        const darkerColor = span.isTrigger ? '#d32f2f' : this.getDarkerRoleColor(span.role);  // Darker red for trigger subscript
         
-        html += `<span class="highlight-span role-popover" style="background-color: ${backgroundColor}; position: relative; padding: 4px 8px; border-radius: 4px; margin: 0 2px; display: inline-block;" ${tooltipData}>`;
+        html += `<span class="highlight-span role-popover" style="background-color: ${span.roleColor}; position: relative; padding: 4px 8px; border-radius: 4px; margin: 0 2px; display: inline-block;" ${tooltipData}>`;
         html += this.escapeHtml(text.substring(span.start, span.end + 1));
-        html += `<span class="span-subscript" style="font-size: 0.65rem; font-weight: 500; background-color: ${darkerColor}; color: white; border-radius: 0.75rem; padding: 0.1rem 0.3rem; margin-left: 0.1rem; position: absolute; bottom: -0.5rem; right: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12); display: inline-block; z-index: 1;">${span.role}</span>`;
+        html += `<span class="span-subscript" style="font-size: 0.65rem; font-weight: 500; background-color: ${span.darkerColor}; color: white; border-radius: 0.75rem; padding: 0.1rem 0.3rem; margin-left: 0.1rem; position: absolute; bottom: -0.5rem; right: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12); display: inline-block; z-index: 1;">${span.role}</span>`;
         html += '</span>';
         
         lastEnd = span.end + 1;
@@ -840,129 +868,172 @@ const ExplorerApp = {
       return html;
     },
     
-    highlightRolesInDefinition(definitionText, frameRoles) {
+    highlightRolesInDefinition(definitionText, frameRoles, roleColorMap = null) {
       if (!definitionText || !frameRoles) {
         return this.escapeHtml(definitionText || '');
       }
       
-      // Create a map of role names to their colors and definitions
-      const roleMap = {};
+      // Use provided color map or create one if not provided
+      if (!roleColorMap) {
+        roleColorMap = this.currentExample?.roleColorMap || this.createRoleColorMapForExample();
+      }
+      
+      // Create an array to track all role occurrences with their positions
+      const roleOccurrences = [];
+      
+      // Find all occurrences of each role in the text
       for (const [roleName, roleDefinition] of Object.entries(frameRoles)) {
-        roleMap[roleName] = {
-          color: this.getRoleColor(roleName),
-          definition: roleDefinition
-        };
+        // Create regex to match whole words only - CASE SENSITIVE (no 'i' flag)
+        // Only match sentence-cased role names
+        const regex = new RegExp(`\\b(${this.escapeRegex(roleName)})\\b`, 'g');
+        let match;
+        while ((match = regex.exec(definitionText)) !== null) {
+          // Only add if the match starts with uppercase (sentence-cased)
+          if (match[0][0] === match[0][0].toUpperCase()) {
+            roleOccurrences.push({
+              start: match.index,
+              end: match.index + match[0].length - 1,
+              roleName: roleName,
+              roleDefinition: roleDefinition,
+              originalText: match[0]
+            });
+          }
+        }
       }
       
-      // Sort role names by length (longest first) to handle nested matches
-      const roleNames = Object.keys(roleMap).sort((a, b) => b.length - a.length);
+      // Sort by start position
+      roleOccurrences.sort((a, b) => a.start - b.start);
       
-      // Create a unique placeholder for each role to avoid double-escaping issues
-      const placeholders = {};
-      let workingText = definitionText;
-      
-      // First pass: replace role names with placeholders
-      for (let i = 0; i < roleNames.length; i++) {
-        const roleName = roleNames[i];
-        const placeholder = `__ROLE_PLACEHOLDER_${i}__`;
-        placeholders[placeholder] = roleName;
-        
-        // Match whole words only
-        const regex = new RegExp(`\\b(${this.escapeRegex(roleName)})\\b`, 'gi');
-        workingText = workingText.replace(regex, placeholder);
+      // Remove overlapping occurrences (keep first)
+      const filteredOccurrences = [];
+      let lastEnd = -1;
+      for (const occurrence of roleOccurrences) {
+        if (occurrence.start > lastEnd) {
+          filteredOccurrences.push(occurrence);
+          lastEnd = occurrence.end;
+        }
       }
       
-      // Escape the HTML
-      let html = this.escapeHtml(workingText);
+      // Assign colors based on role mapping
+      filteredOccurrences.forEach((occurrence) => {
+        const colorPair = roleColorMap[occurrence.roleName];
+        if (colorPair) {
+          occurrence.color = colorPair.light;
+          occurrence.darkerColor = colorPair.dark;
+        } else {
+          // Fallback for unmapped roles
+          occurrence.color = 'rgba(158, 158, 158, 0.20)';
+          occurrence.darkerColor = '#424242';
+        }
+      });
       
-      // Second pass: replace placeholders with highlighted HTML
-      for (const [placeholder, roleName] of Object.entries(placeholders)) {
-        const role = roleMap[roleName];
-        const tooltipData = role.definition ? `data-tooltip="${this.escapeHtml(role.definition)}"` : '';
+      // Build the HTML string
+      let html = '';
+      let lastPos = 0;
+      
+      for (const occurrence of filteredOccurrences) {
+        // Add text before this occurrence
+        if (occurrence.start > lastPos) {
+          html += this.escapeHtml(definitionText.substring(lastPos, occurrence.start));
+        }
         
-        const darkerColor = this.getDarkerRoleColor(roleName);
-        const highlightedHtml = `<span class="highlight-span role-popover" style="background-color: ${role.color}; position: relative; padding: 4px 8px; border-radius: 4px; margin: 0 2px; display: inline-block; cursor: help;" ${tooltipData}>${this.escapeHtml(roleName)}<span class="span-subscript" style="font-size: 0.65rem; font-weight: 500; background-color: ${darkerColor}; color: white; border-radius: 0.75rem; padding: 0.1rem 0.3rem; margin-left: 0.1rem; position: absolute; bottom: -0.5rem; right: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12); display: inline-block; z-index: 1;">${this.escapeHtml(roleName)}</span></span>`;
+        // Add highlighted role
+        const tooltipData = occurrence.roleDefinition ? `data-tooltip="${this.escapeHtml(occurrence.roleDefinition)}"` : '';
+        html += `<span class="highlight-span role-popover" style="background-color: ${occurrence.color}; position: relative; padding: 4px 8px; border-radius: 4px; margin: 0 2px; display: inline-block; cursor: help;" ${tooltipData}>${this.escapeHtml(occurrence.originalText)}<span class="span-subscript" style="font-size: 0.65rem; font-weight: 500; background-color: ${occurrence.darkerColor}; color: white; border-radius: 0.75rem; padding: 0.1rem 0.3rem; margin-left: 0.1rem; position: absolute; bottom: -0.5rem; right: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12); display: inline-block; z-index: 1;">${this.escapeHtml(occurrence.roleName)}</span></span>`;
         
-        html = html.replace(new RegExp(placeholder, 'g'), highlightedHtml);
+        lastPos = occurrence.end + 1;
+      }
+      
+      // Add remaining text
+      if (lastPos < definitionText.length) {
+        html += this.escapeHtml(definitionText.substring(lastPos));
       }
       
       return html;
     },
     
-    getRoleColor(role) {
-      // Use the same color system as the inspiration interface
-      // Create consistent role mapping like the inspiration interface
-      if (!this.roleColorMapping) {
-        this.roleColorMapping = this.createRoleColorMapping();
-      }
-      
-      const roleClass = this.roleColorMapping[role] || 'role-default';
-      
-      // Define colors matching the inspiration interface
-      const roleColors = {
-        'role1': 'rgba(59, 130, 246, 0.15)',  // Blue
-        'role2': 'rgba(16, 185, 129, 0.15)',  // Green  
-        'role3': 'rgba(139, 92, 246, 0.15)',  // Violet
-        'role4': 'rgba(239, 68, 68, 0.15)',   // Red
-        'role5': 'rgba(245, 158, 11, 0.15)',  // Yellow
-        'role6': 'rgba(236, 72, 153, 0.15)',  // Pink
-        'role7': 'rgba(59, 130, 246, 0.25)',  // Blue (higher opacity)
-        'role8': 'rgba(16, 185, 129, 0.25)',  // Green (higher opacity)
-        'role9': 'rgba(139, 92, 246, 0.25)',  // Violet (higher opacity)
-        'role10': 'rgba(239, 68, 68, 0.25)',  // Red (higher opacity)
-        'role-default': 'rgba(107, 114, 128, 0.15)' // Gray
-      };
-      
-      return roleColors[roleClass] || roleColors['role-default'];
+    // Material Design color palette for role highlighting - reordered for maximum contrast
+    getMaterialDesignColors() {
+      return [
+        { light: 'rgba(33, 150, 243, 0.20)', dark: '#1565C0' },     // Blue 500/800
+        { light: 'rgba(255, 152, 0, 0.20)', dark: '#E65100' },      // Orange 500/800
+        { light: 'rgba(76, 175, 80, 0.20)', dark: '#2E7D32' },      // Green 500/800
+        { light: 'rgba(156, 39, 176, 0.20)', dark: '#6A1B9A' },     // Purple 500/800
+        { light: 'rgba(121, 85, 72, 0.20)', dark: '#4E342E' },      // Brown 500/800
+        { light: 'rgba(244, 67, 54, 0.20)', dark: '#C62828' },      // Red 500/800 - RESERVED FOR TRIGGERS
+        { light: 'rgba(0, 188, 212, 0.20)', dark: '#00838F' },      // Cyan 500/800
+        { light: 'rgba(233, 30, 99, 0.20)', dark: '#AD1457' },      // Pink 500/800
+        { light: 'rgba(0, 150, 136, 0.20)', dark: '#00695C' },      // Teal 500/800
+        { light: 'rgba(255, 193, 7, 0.20)', dark: '#F57F17' },      // Amber 500/800
+        { light: 'rgba(63, 81, 181, 0.20)', dark: '#283593' },      // Indigo 500/800
+        { light: 'rgba(205, 220, 57, 0.20)', dark: '#827717' },     // Lime 500/800
+        { light: 'rgba(103, 58, 183, 0.20)', dark: '#4527A0' },     // Deep Purple 500/800
+        { light: 'rgba(139, 195, 74, 0.20)', dark: '#558B2F' },     // Light Green 500/800
+        { light: 'rgba(96, 125, 139, 0.20)', dark: '#37474F' },     // Blue Grey 500/800
+        { light: 'rgba(255, 87, 34, 0.20)', dark: '#D84315' },      // Deep Orange 500/800
+        { light: 'rgba(3, 169, 244, 0.20)', dark: '#0277BD' },      // Light Blue 500/800
+        { light: 'rgba(158, 158, 158, 0.20)', dark: '#424242' },    // Grey 500/800
+        { light: 'rgba(255, 110, 64, 0.20)', dark: '#E64A19' },     // Deep Orange A200/800
+        { light: 'rgba(124, 179, 66, 0.20)', dark: '#558B2F' }      // Light Green 600/800
+      ];
     },
     
-    getDarkerRoleColor(role) {
-      // Get darker colors for subscripts matching inspiration interface
-      if (!this.roleColorMapping) {
-        this.roleColorMapping = this.createRoleColorMapping();
+    // Create a consistent role-to-color mapping for an entire example
+    createRoleColorMapForExample() {
+      const roleColorMap = {};
+      const uniqueRoles = new Set();
+      
+      // Collect all unique roles from the current example
+      if (this.currentExample) {
+        // From report annotations
+        if (this.currentExample.report && this.currentExample.report.annotations) {
+          this.currentExample.report.annotations.forEach(ann => {
+            if (ann.role) uniqueRoles.add(ann.role);
+          });
+        }
+        
+        // From source annotations
+        if (this.currentExample.source && this.currentExample.source.annotations) {
+          this.currentExample.source.annotations.forEach(ann => {
+            if (ann.role) uniqueRoles.add(ann.role);
+          });
+        }
+        
+        // From frame roles
+        const frameRoles = this.getFrameRoles();
+        Object.keys(frameRoles).forEach(role => uniqueRoles.add(role));
+        
+        // From SEAMuS templates if present
+        if (this.currentExample.seamus_report_template) {
+          Object.keys(this.currentExample.seamus_report_template).forEach(role => uniqueRoles.add(role));
+        }
+        if (this.currentExample.seamus_combined_template) {
+          Object.keys(this.currentExample.seamus_combined_template).forEach(role => uniqueRoles.add(role));
+        }
       }
       
-      const roleClass = this.roleColorMapping[role] || 'role-default';
+      // Sort roles for consistent ordering
+      const sortedRoles = [...uniqueRoles].sort();
       
-      const darkerColors = {
-        'role1': '#1e40af',   // Darker blue
-        'role2': '#065f46',   // Darker green
-        'role3': '#5b21b6',   // Darker violet
-        'role4': '#991b1b',   // Darker red
-        'role5': '#92400e',   // Darker yellow
-        'role6': '#9d174d',   // Darker pink
-        'role7': '#1e3a8a',   // Darker blue (higher opacity)
-        'role8': '#064e3b',   // Darker green (higher opacity)
-        'role9': '#4c1d95',   // Darker violet (higher opacity)
-        'role10': '#7f1d1d',  // Darker red (higher opacity)
-        'role-default': '#374151' // Darker gray
-      };
+      // Assign colors consistently, skipping the trigger color (index 5)
+      const colors = this.getMaterialDesignColors();
+      let colorIndex = 0;
       
-      return darkerColors[roleClass] || darkerColors['role-default'];
-    },
-    
-    createRoleColorMapping() {
-      // Create role mapping like the inspiration interface
-      const mapping = {};
-      const roleTypes = new Set();
-      
-      // Collect all unique role types from current data
-      if (this.famusSearchIndex) {
-        this.famusSearchIndex.forEach(doc => {
-          if (doc.roles) {
-            doc.roles.forEach(role => roleTypes.add(role));
-          }
-        });
-      }
-      
-      // Assign each role type to a numbered class (like inspiration)
-      Array.from(roleTypes).forEach((roleType, index) => {
-        const roleClass = `role${(index % 10) + 1}`;
-        mapping[roleType] = roleClass;
+      sortedRoles.forEach(role => {
+        // Skip index 5 (red) which is reserved for triggers
+        if (colorIndex === 5) colorIndex++;
+        
+        const colorPair = colors[colorIndex % colors.length];
+        roleColorMap[role] = colorPair;
+        colorIndex++;
+        
+        // Skip index 5 when cycling
+        if ((colorIndex % colors.length) === 5) colorIndex++;
       });
       
-      return mapping;
+      return roleColorMap;
     },
+    
     
     buildFramesWithExamplesSet() {
       // Build a set of all frames that have examples in the dataset
@@ -983,54 +1054,6 @@ const ExplorerApp = {
       return this.framesWithExamples.has(frameName);
     },
     
-    getOldRoleColor(role) {
-      // Keep old system as fallback - but not used anymore
-      const roleColors = {
-        // Core roles  
-        'Agent': '#1e40af',
-        'Theme': '#065f46',
-        'Goal': '#b91c1c',
-        'Path': '#0d9488',
-        'Area': '#6366f1',
-        'Direction': '#10b981',
-        
-        // Temporal roles
-        'Time': '#7c3aed',
-        'Duration': '#f97316',
-        'Frequency': '#84cc16',
-        'Time_span': '#06b6d4',
-        
-        // Other common roles
-        'Manner': '#ea580c',
-        'Means': '#3b82f6',
-        'Purpose': '#e11d48',
-        'Reason': '#8b5cf6',
-        'Cause': '#059669',
-        'Result': '#dc2626',
-        'Degree': '#7c2d12',
-        'Topic': '#0284c7',
-        'Message': '#9333ea',
-        'Medium': '#ca8a04',
-        'Depictive': '#0f766e',
-        'Circumstances': '#7e22ce',
-        'Place': '#c2410c',
-        'State': '#166534',
-        'Event': '#1e293b'
-      };
-      
-      // Return color or generate one based on role name
-      if (roleColors[role]) {
-        return roleColors[role];
-      }
-      
-      // Generate consistent color for unknown roles
-      let hash = 0;
-      for (let i = 0; i < role.length; i++) {
-        hash = role.charCodeAt(i) + ((hash << 5) - hash);
-      }
-      const hue = Math.abs(hash) % 360;
-      return `hsl(${hue}, 70%, 45%)`;
-    },
     
     getResultPreview(result) {
       // Prioritize SEAMuS combined summary when available
@@ -1054,7 +1077,7 @@ const ExplorerApp = {
       return div.innerHTML;
     },
     
-    renderSeamusSummary(type) {
+    renderSeamusSummary(type, roleColorMap = null) {
       let summary, template;
       
       if (type === 'report') {
@@ -1078,6 +1101,11 @@ const ExplorerApp = {
         return this.escapeHtml(summaryText);
       }
       
+      // Use provided color map or create one if not provided
+      if (!roleColorMap) {
+        roleColorMap = this.currentExample?.roleColorMap || this.createRoleColorMapForExample();
+      }
+      
       // Create a map of all annotations
       const annotations = [];
       for (const [role, data] of Object.entries(template)) {
@@ -1099,6 +1127,19 @@ const ExplorerApp = {
       // Sort annotations by start position
       annotations.sort((a, b) => a.start_token - b.start_token);
       
+      // Assign colors based on role mapping
+      annotations.forEach((ann) => {
+        const colorPair = roleColorMap[ann.role];
+        if (colorPair) {
+          ann.backgroundColor = colorPair.light;
+          ann.darkerColor = colorPair.dark;
+        } else {
+          // Fallback for unmapped roles
+          ann.backgroundColor = 'rgba(158, 158, 158, 0.20)';
+          ann.darkerColor = '#424242';
+        }
+      });
+      
       // Split summary into tokens
       const tokens = Array.isArray(summary)
         ? summary
@@ -1113,13 +1154,11 @@ const ExplorerApp = {
           html += this.escapeHtml(tokens[i]) + ' ';
         }
         
-        // Add annotated tokens using inspiration-style rendering
-        const backgroundColor = this.getRoleColor(ann.role);
-        const darkerColor = this.getDarkerRoleColor(ann.role);
+        // Add annotated tokens with unique colors
         const roleDefinition = this.getFrameRoles()[ann.role] || '';
         const tooltipData = roleDefinition ? `data-tooltip="${this.escapeHtml(roleDefinition)}"` : '';
         
-        html += `<span class="highlight-span role-popover" style="background-color: ${backgroundColor}; position: relative; padding: 4px 8px; border-radius: 4px; margin: 0 2px; display: inline-block;" ${tooltipData}>`;
+        html += `<span class="highlight-span role-popover" style="background-color: ${ann.backgroundColor}; position: relative; padding: 4px 8px; border-radius: 4px; margin: 0 2px; display: inline-block;" ${tooltipData}>`;
         
         // Add the tokens for this annotation
         for (let i = ann.start_token; i <= ann.end_token && i < tokens.length; i++) {
@@ -1127,7 +1166,7 @@ const ExplorerApp = {
           if (i < ann.end_token) html += ' ';
         }
         
-        html += `<span class="span-subscript" style="font-size: 0.65rem; font-weight: 500; background-color: ${darkerColor}; color: white; border-radius: 0.75rem; padding: 0.1rem 0.3rem; margin-left: 0.1rem; position: absolute; bottom: -0.5rem; right: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12); display: inline-block; z-index: 1;">${ann.role}</span>`;
+        html += `<span class="span-subscript" style="font-size: 0.65rem; font-weight: 500; background-color: ${ann.darkerColor}; color: white; border-radius: 0.75rem; padding: 0.1rem 0.3rem; margin-left: 0.1rem; position: absolute; bottom: -0.5rem; right: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12); display: inline-block; z-index: 1;">${ann.role}</span>`;
         html += '</span> ';
         
         lastEnd = ann.end_token;

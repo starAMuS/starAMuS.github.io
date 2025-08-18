@@ -134,7 +134,7 @@ description: Explore FAMuS and SEAMuS datasets with interactive annotations
         <div class="mdl-card__supporting-text">
           <div v-if="currentExample.frame_definition" class="frame-definition">
             <h4 class="frame-section-title">Definition</h4>
-            <div class="text-content" v-html="highlightRolesInDefinition(currentExample.frame_definition, getFrameRoles())"></div>
+            <div class="text-content" v-html="highlightRolesInDefinition(currentExample.frame_definition, getFrameRoles(), currentExample.roleColorMap)"></div>
           </div>
           
           <div v-if="currentExample.frame_gloss" class="frame-gloss">
@@ -212,7 +212,7 @@ description: Explore FAMuS and SEAMuS datasets with interactive annotations
             <h3 class="mdl-card__title-text">SEAMuS Report Summary</h3>
           </div>
           <div class="mdl-card__supporting-text">
-            <div class="text-content" v-html="renderSeamusSummary('report')"></div>
+            <div class="text-content" v-html="renderSeamusSummary('report', currentExample.roleColorMap)"></div>
           </div>
         </div>
         
@@ -222,7 +222,7 @@ description: Explore FAMuS and SEAMuS datasets with interactive annotations
             <h3 class="mdl-card__title-text">SEAMuS Combined Summary</h3>
           </div>
           <div class="mdl-card__supporting-text">
-            <div class="text-content" v-html="renderSeamusSummary('combined')"></div>
+            <div class="text-content" v-html="renderSeamusSummary('combined', currentExample.roleColorMap)"></div>
           </div>
         </div>
       </div>
@@ -236,7 +236,7 @@ description: Explore FAMuS and SEAMuS datasets with interactive annotations
           </div>
           <div class="mdl-card__supporting-text">
             <div class="text-content" 
-                 v-html="renderAnnotatedText(currentExample.report.text, currentExample.report.annotations, currentExample.report.trigger)">
+                 v-html="renderAnnotatedText(currentExample.report.text, currentExample.report.annotations, currentExample.report.trigger, currentExample.roleColorMap)">
             </div>
           </div>
         </div>
@@ -248,7 +248,7 @@ description: Explore FAMuS and SEAMuS datasets with interactive annotations
           </div>
           <div class="mdl-card__supporting-text">
             <div class="text-content" 
-                 v-html="renderAnnotatedText(currentExample.source.text, currentExample.source.annotations, currentExample.source.trigger)">
+                 v-html="renderAnnotatedText(currentExample.source.text, currentExample.source.annotations, currentExample.source.trigger, currentExample.roleColorMap)">
             </div>
           </div>
         </div>
