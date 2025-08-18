@@ -678,6 +678,19 @@ document.addEventListener('DOMContentLoaded', function() {
   width: 100% !important;
 }
 
+/* Source documents can have scrolling for long content */
+.source-panel .text-content {
+  max-height: 600px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+/* Report panel should not scroll to show all annotations */
+.report-panel .text-content {
+  overflow-y: visible !important;
+  max-height: none !important;
+}
+
 .seamus-summaries-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -704,6 +717,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .seamus-summary-card .text-content {
   line-height: 1.6;
+  overflow: visible !important;
+  padding-bottom: 40px !important; /* Extra space for span labels */
+}
+
+.seamus-summary-card .mdl-card__supporting-text {
+  overflow: visible !important;
 }
 
 @media (max-width: 768px) {
@@ -717,6 +736,12 @@ document.addEventListener('DOMContentLoaded', function() {
   font-size: 16px;
   line-height: 1.8;
   color: #333;
+  overflow: visible !important;
+  padding-bottom: 30px !important; /* Extra space for span labels */
+}
+
+.frame-info .mdl-card__supporting-text {
+  overflow: visible !important;
 }
 
 .frame-section-title {
@@ -1042,9 +1067,11 @@ document.addEventListener('DOMContentLoaded', function() {
   font-size: 16px;
   line-height: 1.8;
   padding: 15px;
+  padding-bottom: 35px; /* Extra space for span labels that extend below */
   background-color: #fafafa;
   border-radius: 4px;
   overflow-x: auto;
+  overflow-y: visible; /* Never hide content vertically */
   white-space: pre-wrap;
   word-wrap: break-word;
 }
@@ -1191,6 +1218,76 @@ document.addEventListener('DOMContentLoaded', function() {
 /* Improve button icon alignment */
 .mdl-button .material-icons {
   line-height: inherit;
+}
+
+/* Multi-role span styling for overlapping annotations */
+.highlight-span {
+  transition: all 0.2s ease;
+  cursor: help;
+}
+
+.highlight-span:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transform: translateY(-1px);
+}
+
+.highlight-span.multi-role {
+  border: 1px solid rgba(0,0,0,0.1);
+  text-decoration-skip-ink: none;
+}
+
+/* Ensure proper spacing for stacked badges */
+.highlight-span .span-subscript {
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Improve visibility of overlapping annotations */
+.multi-role .span-subscript {
+  opacity: 0.95;
+}
+
+.multi-role:hover .span-subscript {
+  opacity: 1;
+}
+
+/* Ensure text decoration shows properly */
+.multi-role {
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px !important;
+}
+
+/* JavaScript-based tooltip styles */
+.role-tooltip {
+  position: fixed;
+  background: #424242;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 1.4;
+  white-space: pre-line;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 99999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.role-tooltip.visible {
+  opacity: 1;
+}
+
+.role-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #424242;
 }
 </style>
 {% endraw %}

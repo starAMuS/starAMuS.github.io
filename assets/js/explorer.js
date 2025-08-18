@@ -23,7 +23,7 @@ const ExplorerApp = {
       totalExamples: 0,
       
       // Version state
-      currentVersion: '1.0',  // '1.0' or '1.1'
+      currentVersion: '1.1',  // '1.0' or '1.1'
       versionToggleEnabled: true,  // Whether toggle is enabled based on differences
       
       // UI state
@@ -395,7 +395,7 @@ const ExplorerApp = {
       } finally {
         this.loading = false;
         // Setup tooltips for role annotations after content loads
-        this.setupRoleTooltips();
+        this.$nextTick(() => this.setupRoleTooltips());
       }
     },
     
@@ -454,7 +454,7 @@ const ExplorerApp = {
           this.currentExample.roleColorMap = this.createRoleColorMapForExample();
           
           // Setup tooltips for new content
-          this.setupRoleTooltips();
+          this.$nextTick(() => this.setupRoleTooltips());
         }
       }
     },
@@ -812,8 +812,11 @@ const ExplorerApp = {
         }
       }
       
-      // Sort by start position
-      allSpans.sort((a, b) => a.start - b.start);
+      // Sort by start position, then by end position (longer spans first)
+      allSpans.sort((a, b) => {
+        if (a.start !== b.start) return a.start - b.start;
+        return b.end - a.end; // Longer spans first
+      });
       
       // Assign colors based on role mapping
       const colors = this.getMaterialDesignColors();
@@ -837,29 +840,77 @@ const ExplorerApp = {
         }
       }
       
+      // Group overlapping spans
+      const spanGroups = [];
+      let currentGroup = null;
+      
+      for (const span of allSpans) {
+        if (!currentGroup || span.start >= currentGroup.end) {
+          // Start a new group
+          currentGroup = {
+            start: span.start,
+            end: span.end,
+            spans: [span]
+          };
+          spanGroups.push(currentGroup);
+        } else {
+          // Add to current group (overlapping)
+          currentGroup.spans.push(span);
+          currentGroup.end = Math.max(currentGroup.end, span.end);
+        }
+      }
+      
       let html = '';
       let lastEnd = 0;
       
-      for (const span of allSpans) {
-        // Add text before annotation
-        if (span.start > lastEnd) {
-          html += this.escapeHtml(text.substring(lastEnd, span.start));
+      for (const group of spanGroups) {
+        // Add text before annotation group
+        if (group.start > lastEnd) {
+          html += this.escapeHtml(text.substring(lastEnd, group.start));
         }
         
-        // Skip if this span overlaps with previous one
-        if (span.start < lastEnd) {
-          continue;
+        // Render the group of overlapping spans
+        if (group.spans.length === 1) {
+          // Single span - render normally
+          const span = group.spans[0];
+          const tooltipData = span.roleDefinition ? `data-tooltip="${this.escapeHtml(span.roleDefinition)}"` : '';
+          
+          html += `<span class="highlight-span role-popover" style="background-color: ${span.roleColor}; position: relative; padding: 4px 8px; border-radius: 4px; margin: 0 2px; display: inline-block;" ${tooltipData}>`;
+          html += this.escapeHtml(text.substring(span.start, span.end + 1));
+          html += `<span class="span-subscript" style="font-size: 0.65rem; font-weight: 500; background-color: ${span.darkerColor}; color: white; border-radius: 0.75rem; padding: 0.1rem 0.3rem; margin-left: 0.1rem; position: absolute; bottom: -0.5rem; right: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12); display: inline-block; z-index: 1;">${span.role}</span>`;
+          html += '</span>';
+        } else {
+          // Multiple overlapping spans - use layered approach
+          const primarySpan = group.spans[0]; // Longest span (due to sorting)
+          const additionalSpans = group.spans.slice(1);
+          
+          // Combine all role definitions for tooltip
+          const allRoleDefinitions = group.spans
+            .map(s => `${s.role}: ${s.roleDefinition || 'No definition'}`)
+            .join('\n');
+          const tooltipData = `data-tooltip="${this.escapeHtml(allRoleDefinitions)}"`;
+          
+          // Create underline decorations for additional spans
+          const underlineStyles = additionalSpans.map((span, idx) => {
+            const underlineType = idx === 0 ? 'underline' : (idx === 1 ? 'underline dotted' : 'underline dashed');
+            return `text-decoration: ${span.darkerColor} ${underlineType} 2px;`;
+          }).join(' ');
+          
+          // Render with primary background and additional underlines
+          html += `<span class="highlight-span multi-role role-popover" style="background-color: ${primarySpan.roleColor}; position: relative; padding: 4px 8px; border-radius: 4px; margin: 0 2px; display: inline-block; ${underlineStyles}" ${tooltipData}>`;
+          html += this.escapeHtml(text.substring(group.start, group.end + 1));
+          
+          // Stack badges for all roles
+          group.spans.forEach((span, idx) => {
+            const bottomOffset = -0.5 - (idx * 1.2); // Stack badges vertically
+            const zIndex = group.spans.length - idx; // Higher z-index for primary role
+            html += `<span class="span-subscript" style="font-size: 0.65rem; font-weight: 500; background-color: ${span.darkerColor}; color: white; border-radius: 0.75rem; padding: 0.1rem 0.3rem; margin-left: 0.1rem; position: absolute; bottom: ${bottomOffset}rem; right: ${idx * 0.5}rem; box-shadow: 0 1px 3px rgba(0,0,0,0.12); display: inline-block; z-index: ${zIndex};">${span.role}</span>`;
+          });
+          
+          html += '</span>';
         }
         
-        // Add annotated text with popover and subscript
-        const tooltipData = span.roleDefinition ? `data-tooltip="${this.escapeHtml(span.roleDefinition)}"` : '';
-        
-        html += `<span class="highlight-span role-popover" style="background-color: ${span.roleColor}; position: relative; padding: 4px 8px; border-radius: 4px; margin: 0 2px; display: inline-block;" ${tooltipData}>`;
-        html += this.escapeHtml(text.substring(span.start, span.end + 1));
-        html += `<span class="span-subscript" style="font-size: 0.65rem; font-weight: 500; background-color: ${span.darkerColor}; color: white; border-radius: 0.75rem; padding: 0.1rem 0.3rem; margin-left: 0.1rem; position: absolute; bottom: -0.5rem; right: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12); display: inline-block; z-index: 1;">${span.role}</span>`;
-        html += '</span>';
-        
-        lastEnd = span.end + 1;
+        lastEnd = group.end + 1;
       }
       
       // Add remaining text
@@ -1126,8 +1177,11 @@ const ExplorerApp = {
         }
       }
       
-      // Sort annotations by start position
-      annotations.sort((a, b) => a.start_token - b.start_token);
+      // Sort annotations by start position, then by end position (longer spans first)
+      annotations.sort((a, b) => {
+        if (a.start_token !== b.start_token) return a.start_token - b.start_token;
+        return b.end_token - a.end_token; // Longer spans first
+      });
       
       // Assign colors based on role mapping
       annotations.forEach((ann) => {
@@ -1147,31 +1201,92 @@ const ExplorerApp = {
         ? summary
         : summary.split(' ');
       
+      // Group overlapping token spans
+      const tokenGroups = [];
+      let currentGroup = null;
+      
+      for (const ann of annotations) {
+        if (!currentGroup || ann.start_token > currentGroup.end_token) {
+          // Start a new group
+          currentGroup = {
+            start_token: ann.start_token,
+            end_token: ann.end_token,
+            annotations: [ann]
+          };
+          tokenGroups.push(currentGroup);
+        } else {
+          // Add to current group (overlapping)
+          currentGroup.annotations.push(ann);
+          currentGroup.end_token = Math.max(currentGroup.end_token, ann.end_token);
+        }
+      }
+      
       let html = '';
       let lastEnd = -1;
       
-      for (const ann of annotations) {
-        // Add tokens before this annotation
-        for (let i = lastEnd + 1; i < ann.start_token && i < tokens.length; i++) {
+      for (const group of tokenGroups) {
+        // Add tokens before this annotation group
+        for (let i = lastEnd + 1; i < group.start_token && i < tokens.length; i++) {
           html += this.escapeHtml(tokens[i]) + ' ';
         }
         
-        // Add annotated tokens with unique colors
-        const roleDefinition = this.getFrameRoles()[ann.role] || '';
-        const tooltipData = roleDefinition ? `data-tooltip="${this.escapeHtml(roleDefinition)}"` : '';
-        
-        html += `<span class="highlight-span role-popover" style="background-color: ${ann.backgroundColor}; position: relative; padding: 4px 8px; border-radius: 4px; margin: 0 2px; display: inline-block;" ${tooltipData}>`;
-        
-        // Add the tokens for this annotation
-        for (let i = ann.start_token; i <= ann.end_token && i < tokens.length; i++) {
-          html += this.escapeHtml(tokens[i]);
-          if (i < ann.end_token) html += ' ';
+        // Render the group of overlapping annotations
+        if (group.annotations.length === 1) {
+          // Single annotation - render normally
+          const ann = group.annotations[0];
+          const roleDefinition = this.getFrameRoles()[ann.role] || '';
+          const tooltipData = roleDefinition ? `data-tooltip="${this.escapeHtml(roleDefinition)}"` : '';
+          
+          html += `<span class="highlight-span role-popover" style="background-color: ${ann.backgroundColor}; position: relative; padding: 4px 8px; border-radius: 4px; margin: 0 2px; display: inline-block;" ${tooltipData}>`;
+          
+          // Add the tokens for this annotation
+          for (let i = ann.start_token; i <= ann.end_token && i < tokens.length; i++) {
+            html += this.escapeHtml(tokens[i]);
+            if (i < ann.end_token) html += ' ';
+          }
+          
+          html += `<span class="span-subscript" style="font-size: 0.65rem; font-weight: 500; background-color: ${ann.darkerColor}; color: white; border-radius: 0.75rem; padding: 0.1rem 0.3rem; margin-left: 0.1rem; position: absolute; bottom: -0.5rem; right: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12); display: inline-block; z-index: 1;">${ann.role}</span>`;
+          html += '</span> ';
+        } else {
+          // Multiple overlapping annotations - use layered approach
+          const primaryAnn = group.annotations[0]; // Longest span (due to sorting)
+          const additionalAnns = group.annotations.slice(1);
+          
+          // Combine all role definitions for tooltip
+          const allRoleDefinitions = group.annotations
+            .map(a => {
+              const roleDefinition = this.getFrameRoles()[a.role] || '';
+              return `${a.role}: ${roleDefinition || 'No definition'}`;
+            })
+            .join('\n');
+          const tooltipData = `data-tooltip="${this.escapeHtml(allRoleDefinitions)}"`;
+          
+          // Create underline decorations for additional annotations
+          const underlineStyles = additionalAnns.map((ann, idx) => {
+            const underlineType = idx === 0 ? 'underline' : (idx === 1 ? 'underline dotted' : 'underline dashed');
+            return `text-decoration: ${ann.darkerColor} ${underlineType} 2px;`;
+          }).join(' ');
+          
+          // Render with primary background and additional underlines
+          html += `<span class="highlight-span multi-role role-popover" style="background-color: ${primaryAnn.backgroundColor}; position: relative; padding: 4px 8px; border-radius: 4px; margin: 0 2px; display: inline-block; ${underlineStyles}" ${tooltipData}>`;
+          
+          // Add the tokens for this group
+          for (let i = group.start_token; i <= group.end_token && i < tokens.length; i++) {
+            html += this.escapeHtml(tokens[i]);
+            if (i < group.end_token) html += ' ';
+          }
+          
+          // Stack badges for all roles
+          group.annotations.forEach((ann, idx) => {
+            const bottomOffset = -0.5 - (idx * 1.2); // Stack badges vertically
+            const zIndex = group.annotations.length - idx; // Higher z-index for primary role
+            html += `<span class="span-subscript" style="font-size: 0.65rem; font-weight: 500; background-color: ${ann.darkerColor}; color: white; border-radius: 0.75rem; padding: 0.1rem 0.3rem; margin-left: 0.1rem; position: absolute; bottom: ${bottomOffset}rem; right: ${idx * 0.5}rem; box-shadow: 0 1px 3px rgba(0,0,0,0.12); display: inline-block; z-index: ${zIndex};">${ann.role}</span>`;
+          });
+          
+          html += '</span> ';
         }
         
-        html += `<span class="span-subscript" style="font-size: 0.65rem; font-weight: 500; background-color: ${ann.darkerColor}; color: white; border-radius: 0.75rem; padding: 0.1rem 0.3rem; margin-left: 0.1rem; position: absolute; bottom: -0.5rem; right: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12); display: inline-block; z-index: 1;">${ann.role}</span>`;
-        html += '</span> ';
-        
-        lastEnd = ann.end_token;
+        lastEnd = group.end_token;
       }
       
       // Add remaining tokens
@@ -1271,6 +1386,21 @@ const ExplorerApp = {
       this.searchQuery = frameName;
       this.searchFilters.frames = true;
       this.showFrameHierarchy = false;
+      
+      // Update MDL textfield to hide the floating label
+      this.$nextTick(() => {
+        const searchInput = document.getElementById('search-query');
+        const textfield = searchInput ? searchInput.parentElement : null;
+        if (textfield && textfield.classList.contains('mdl-textfield')) {
+          // Add the is-dirty class to indicate the field has content
+          textfield.classList.add('is-dirty');
+          // If MDL is available, upgrade the component
+          if (typeof componentHandler !== 'undefined') {
+            componentHandler.upgradeElement(textfield);
+          }
+        }
+      });
+      
       this.performSearch();
     },
     
@@ -1282,31 +1412,30 @@ const ExplorerApp = {
     initRolePopovers() {
       // Initialize popovers for role annotations
       document.addEventListener('click', (e) => {
-        // Close all open popovers when clicking outside
-        const existingPopover = document.querySelector('.role-tooltip');
-        if (existingPopover && !e.target.closest('.role-popover')) {
-          existingPopover.remove();
+        // Close all open tooltips when clicking outside
+        const existingTooltip = document.querySelector('.role-tooltip');
+        if (existingTooltip && !e.target.closest('.role-popover')) {
+          existingTooltip.remove();
         }
       });
     },
     
     setupRoleTooltips() {
-      // This will be called after the DOM updates with new content
+      // Setup hover tooltips for role annotations
       this.$nextTick(() => {
         const roleElements = document.querySelectorAll('.role-popover[data-tooltip]');
         
-        // Remove existing event listeners to prevent duplicates
-        roleElements.forEach(element => {
-          element.removeEventListener('mouseenter', this.showRoleTooltip);
-          element.removeEventListener('mouseleave', this.hideRoleTooltip);
-          element.removeEventListener('click', this.toggleRolePopover);
-        });
+        // Remove any existing tooltips first
+        document.querySelectorAll('.role-tooltip').forEach(t => t.remove());
         
-        // Add new event listeners
         roleElements.forEach(element => {
-          element.addEventListener('mouseenter', this.showRoleTooltip.bind(this));
-          element.addEventListener('mouseleave', this.hideRoleTooltip.bind(this));
-          element.addEventListener('click', this.toggleRolePopover.bind(this));
+          // Remove existing listeners to prevent duplicates
+          const newElement = element.cloneNode(true);
+          element.parentNode.replaceChild(newElement, element);
+          
+          // Add hover listeners
+          newElement.addEventListener('mouseenter', (e) => this.showRoleTooltip(e));
+          newElement.addEventListener('mouseleave', () => this.hideRoleTooltip());
         });
       });
     },
@@ -1318,9 +1447,8 @@ const ExplorerApp = {
       const tooltipText = element.getAttribute('data-tooltip');
       if (!tooltipText) return;
       
-      // Remove existing tooltip
-      const existingTooltip = document.querySelector('.role-tooltip');
-      if (existingTooltip) existingTooltip.remove();
+      // Remove any existing tooltip
+      this.hideRoleTooltip();
       
       // Create new tooltip
       const tooltip = document.createElement('div');
@@ -1328,11 +1456,31 @@ const ExplorerApp = {
       tooltip.textContent = tooltipText;
       document.body.appendChild(tooltip);
       
-      // Position tooltip
+      // Position tooltip above the element
       const rect = element.getBoundingClientRect();
-      tooltip.style.left = rect.left + (rect.width / 2) - (tooltip.offsetWidth / 2) + 'px';
-      tooltip.style.top = rect.top - tooltip.offsetHeight - 8 + 'px';
-      tooltip.classList.add('visible');
+      const tooltipRect = tooltip.getBoundingClientRect();
+      
+      let left = rect.left + (rect.width / 2) - (tooltipRect.width / 2);
+      let top = rect.top - tooltipRect.height - 10;
+      
+      // Keep tooltip on screen
+      if (left < 10) left = 10;
+      if (left + tooltipRect.width > window.innerWidth - 10) {
+        left = window.innerWidth - tooltipRect.width - 10;
+      }
+      if (top < 10) {
+        // Show below if not enough room above
+        top = rect.bottom + 10;
+        tooltip.style.transform = 'translateY(0)';
+      }
+      
+      tooltip.style.left = left + 'px';
+      tooltip.style.top = top + 'px';
+      
+      // Fade in
+      requestAnimationFrame(() => {
+        tooltip.classList.add('visible');
+      });
     },
     
     hideRoleTooltip() {
@@ -1342,36 +1490,6 @@ const ExplorerApp = {
       }
     },
     
-    toggleRolePopover(event) {
-      event.stopPropagation();
-      const element = event.target.closest('.role-popover');
-      if (!element) return;
-      
-      const tooltipText = element.getAttribute('data-tooltip');
-      if (!tooltipText) return;
-      
-      // Remove existing popover
-      const existingPopover = document.querySelector('.role-tooltip');
-      if (existingPopover) {
-        existingPopover.remove();
-        return;
-      }
-      
-      // Create persistent popover
-      const popover = document.createElement('div');
-      popover.className = 'role-tooltip persistent';
-      popover.innerHTML = `
-        <div class="tooltip-content">${tooltipText}</div>
-        <button class="tooltip-close" onclick="this.parentElement.remove()">×</button>
-      `;
-      document.body.appendChild(popover);
-      
-      // Position popover
-      const rect = element.getBoundingClientRect();
-      popover.style.left = rect.left + (rect.width / 2) - (popover.offsetWidth / 2) + 'px';
-      popover.style.top = rect.top - popover.offsetHeight - 8 + 'px';
-      popover.classList.add('visible');
-    }
   }
 };
 
