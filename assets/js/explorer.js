@@ -50,9 +50,6 @@ const ExplorerApp = {
         summaries: false
       },
       
-      // SEAMuS only toggle
-      seamusOnly: false,
-      
       // Frame hierarchy browser
       showFrameHierarchy: false,
       hierarchyFilter: '',
@@ -640,15 +637,13 @@ const ExplorerApp = {
         let mappedResults = uniqueResults.slice(0, 100).map(result => {
           const doc = searchIndex.find(d => d.id == result.ref);
           
-          // Check if document has SEAMuS summary
-          let hasSeamus = false;
+          // Get SEAMuS summaries
           let seamusCombinedSummary = null;
           let seamusReportSummary = null;
           
           if (doc.instance_id && this.seamusInstanceMapping[doc.instance_id]) {
             const seamusData = this.seamusInstanceMapping[doc.instance_id];
             if (seamusData.length > 0) {
-              hasSeamus = !!(seamusData[0].report_summary || seamusData[0].combined_summary);
               // Store the summaries for preview
               if (seamusData[0].combined_summary) {
                 seamusCombinedSummary = Array.isArray(seamusData[0].combined_summary) 
@@ -667,16 +662,10 @@ const ExplorerApp = {
             ...doc,
             score: result.score,
             frame: doc.frame_name || 'Unknown',
-            has_seamus: hasSeamus,
             seamus_combined_summary: seamusCombinedSummary,
             seamus_report_summary: seamusReportSummary
           };
         });
-        
-        // Filter by SEAMuS only if toggle is on
-        if (this.seamusOnly) {
-          mappedResults = mappedResults.filter(r => r.has_seamus);
-        }
         
         return mappedResults.slice(0, 50);
       } catch (error) {
@@ -727,14 +716,12 @@ const ExplorerApp = {
       
       // Map results and add SEAMuS info
       results = results.map(r => {
-        let hasSeamus = false;
         let seamusCombinedSummary = null;
         let seamusReportSummary = null;
         
         if (r.instance_id && this.seamusInstanceMapping[r.instance_id]) {
           const seamusData = this.seamusInstanceMapping[r.instance_id];
           if (seamusData.length > 0) {
-            hasSeamus = !!(seamusData[0].report_summary || seamusData[0].combined_summary);
             // Store the summaries for preview
             if (seamusData[0].combined_summary) {
               seamusCombinedSummary = Array.isArray(seamusData[0].combined_summary) 
@@ -752,16 +739,10 @@ const ExplorerApp = {
         return {
           ...r,
           frame: r.frame_name || 'Unknown',
-          has_seamus: hasSeamus,
           seamus_combined_summary: seamusCombinedSummary,
           seamus_report_summary: seamusReportSummary
         };
       });
-      
-      // Filter by SEAMuS only if toggle is on
-      if (this.seamusOnly) {
-        results = results.filter(r => r.has_seamus);
-      }
       
       return results.slice(0, 50);
     },

@@ -63,15 +63,6 @@ description: Explore FAMuS and SEAMuS datasets with interactive annotations
               <span>Summaries</span>
             </div>
           </div>
-          
-          <!-- SEAMuS Only Toggle -->
-          <div class="seamus-toggle">
-            <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="seamus-only">
-              <input type="checkbox" id="seamus-only" class="mdl-switch__input" 
-                     v-model="seamusOnly">
-              <span class="mdl-switch__label">Show only examples with SEAMuS summaries</span>
-            </label>
-          </div>
         </div>
         
         <!-- Action Buttons -->
@@ -590,18 +581,6 @@ document.addEventListener('DOMContentLoaded', function() {
   gap: 12px;
   margin-top: 24px;
   justify-content: center;
-}
-
-/* SEAMuS Toggle */
-.seamus-toggle {
-  margin-top: 16px;
-  padding-top: 16px;
-  border-top: 1px solid #e0e0e0;
-}
-
-.seamus-toggle .mdl-switch__label {
-  font-size: 14px;
-  color: rgba(0,0,0,0.87);
 }
 
 /* Back Button */
