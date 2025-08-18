@@ -1,6 +1,6 @@
 # *AMuS Dataset Explorer
 
-An interactive web-based explorer for the FAMuS (Frames Across Multiple Sources) and SEAMuS (Summaries of Events Across Multiple Sentences) datasets, built on MegaWika.
+An interactive web-based explorer for the [FAMuS](https://github.com/factslab/famus) (Frames Across Multiple Sources) and [SEAMuS](https://github.com/wgantt/seamus) (Summaries of Events Across Multiple Sentences) datasets, built on MegaWika.
 
 🌐 **Live Site**: [https://staramus.github.io](https://staramus.github.io)
 
@@ -10,7 +10,6 @@ This website provides an interactive interface for exploring cross-document even
 
 - **FAMuS**: Cross-document event extraction with FrameNet annotations
 - **SEAMuS**: Event-keyed summarization across multiple documents
-- **MegaWika**: The foundation dataset with Wikipedia-source document pairs
 
 ## Features
 
@@ -39,14 +38,101 @@ cd starAMuS.github.io
 # Install dependencies
 bundle install
 pip install -r requirements.txt
+```
 
-# Process datasets with ontology
+### Data Setup
+
+The website requires the FAMuS and SEAMuS datasets to be downloaded and processed. Follow these steps to rebuild the `assets/data/` directory from scratch:
+
+#### 1. Download Datasets
+
+```bash
+# Create data directory
+mkdir -p data
+
+# Download FAMuS 1.0 dataset
+wget https://github.com/FACTSlab/FAMuS/archive/refs/heads/main.zip -O data/FAMuS-data.zip
+# Or use curl: curl -L https://github.com/FACTSlab/FAMuS/archive/refs/heads/main.zip -o data/FAMuS-data.zip
+
+# Download SEAMuS dataset (contains FAMuS 1.1 annotations)
+wget https://github.com/wgantt/SEAMuS/archive/refs/heads/main.zip -O data/SEAMuS-data.zip
+# Or use curl: curl -L https://github.com/wgantt/SEAMuS/archive/refs/heads/main.zip -o data/SEAMuS-data.zip
+
+# Extract FAMuS 1.0 data
+cd data
+unzip FAMuS-data.zip
+cd ..
+
+# Extract SEAMuS data and FAMuS 1.1
+cd data
+unzip SEAMuS-data.zip
+cd SEAMuS-main
+unzip data/seamus.zip
+cd ../..
+
+# Create FAMuS 1.1 directory
+mkdir -p data/famus_v11
+cp data/SEAMuS-main/{train,dev,test}.json data/famus_v11/
+
+# Copy ontology file
+cp data/SEAMuS-main/ontology.json data/
+```
+
+#### 2. Process and Build Assets
+
+```bash
+# Clean existing assets (optional)
+rm -rf assets/data
+
+# Process ontology (FrameNet hierarchy)
 python scripts/process_ontology.py --input-file data/ontology.json
-python scripts/process_famus.py --input-dir data/famus
-python scripts/process_seamus.py --input-dir data/seamus
-python scripts/extract_urls.py --famus-dir assets/data/famus
 
-# Run locally
+# Process unified FAMuS 1.0 and 1.1 data with comparison
+python scripts/process_famus.py \
+  --famus10-dir data/FAMuS-main/data/cross_doc_role_extraction \
+  --famus11-dir data/famus_v11 \
+  --output-dir assets/data/famus \
+  --chunk-size 100
+
+# Process SEAMuS summaries
+python scripts/process_seamus.py \
+  --input-dir data/SEAMuS-main \
+  --output-dir assets/data/seamus
+
+# Extract MegaWika URLs for source links
+python scripts/extract_urls.py --famus-dir assets/data/famus
+```
+
+#### 3. Verify Data
+
+After processing, you should have the following structure:
+
+```
+assets/data/
+├── famus/                 # Unified FAMuS 1.0 and 1.1 data
+│   ├── chunk_0000.json    # Data chunks (100 instances each)
+│   ├── chunk_0001.json
+│   ├── ...
+│   ├── metadata.json      # Dataset metadata
+│   ├── frame_index.json   # Frame to instance mapping
+│   └── search_index.json  # Search index
+├── seamus/                # SEAMuS summaries
+│   ├── chunk_0000.json
+│   ├── ...
+│   ├── metadata.json
+│   ├── instance_mapping.json
+│   └── search_index.json
+├── ontology/              # FrameNet ontology
+│   ├── frames.json
+│   └── hierarchy.json
+└── urls/                  # MegaWika URL mappings
+    └── url_mapping.json
+```
+
+### Run Development Server
+
+```bash
+# Start Jekyll server
 bundle exec jekyll serve
 
 # Visit http://localhost:4000
@@ -216,20 +302,6 @@ If you use these datasets in your research, please cite:
 }
 ```
 
-## Resources
-
-- [FAMuS Paper (NAACL 2024)](https://aclanthology.org/2024.naacl-long.457/)
-- [SEAMuS Paper (XLLM 2025)](https://aclanthology.org/2025.xllm-1.19/)
-- [MegaWika Paper (arXiv)](https://arxiv.org/abs/2307.07049)
-- [MegaWika on HuggingFace](https://huggingface.co/datasets/hltcoe/megawika)
-- [MegaWika GitHub](https://github.com/hltcoe/megawika)
-
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Built with [Jekyll](https://jekyllrb.com/) and [Material Design Lite](https://getmdl.io/)
-- Datasets from Johns Hopkins University HLTCOE
-- Inspired by the likelihood annotation interface design

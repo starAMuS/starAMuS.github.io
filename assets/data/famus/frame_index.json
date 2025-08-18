@@ -2,5567 +2,6832 @@
   "Abandonment": [
     {
       "instance_id": "EN-1282-352-frame-Abandonment",
-      "idx": 0
+      "idx": 0,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2664-342-frame-Abandonment",
-      "idx": 1
+      "idx": 1,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3076-130-frame-Abandonment",
-      "idx": 2
+      "idx": 2,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4363-3-frame-Abandonment",
-      "idx": 759
+      "idx": 759,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1014-80-frame-Abandonment",
-      "idx": 1012
+      "idx": 1012,
+      "has_differences": true
     }
   ],
   "Abusing": [
     {
       "instance_id": "EN-2429-1180-frame-Abusing",
-      "idx": 3
+      "idx": 3,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0006-2846-frame-Abusing",
-      "idx": 4
+      "idx": 4,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0727-213-frame-Abusing",
-      "idx": 5
+      "idx": 5,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1250-499-frame-Abusing",
-      "idx": 760
+      "idx": 760,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2488-151-frame-Abusing",
-      "idx": 1013
+      "idx": 1013,
+      "has_differences": true
     }
   ],
   "Achieving_first": [
     {
       "instance_id": "EN-0116-384-frame-Achieving_first",
-      "idx": 6
+      "idx": 6,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5051-912-frame-Achieving_first",
-      "idx": 7
+      "idx": 7,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0947-218-frame-Achieving_first",
-      "idx": 8
+      "idx": 8,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4898-324-frame-Achieving_first",
-      "idx": 761
+      "idx": 761,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0543-23-frame-Achieving_first",
-      "idx": 1014
+      "idx": 1014,
+      "has_differences": false
     }
   ],
   "Activity_finish": [
     {
       "instance_id": "EN-1585-300-frame-Activity_finish",
-      "idx": 9
+      "idx": 9,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7207-2-frame-Activity_finish",
-      "idx": 10
+      "idx": 10,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4390-12-frame-Activity_finish",
-      "idx": 11
+      "idx": 11,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2050-4-frame-Activity_finish",
-      "idx": 762
+      "idx": 762,
+      "has_differences": false
     },
     {
       "instance_id": "EN-5092-201-frame-Activity_finish",
-      "idx": 1015
+      "idx": 1015,
+      "has_differences": true
     }
   ],
   "Activity_pause": [
     {
       "instance_id": "EN-2845-381-frame-Activity_pause",
-      "idx": 12
+      "idx": 12,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2826-547-frame-Activity_pause",
-      "idx": 13
+      "idx": 13,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0053-734-frame-Activity_pause",
-      "idx": 14
+      "idx": 14,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1337-261-frame-Activity_pause",
-      "idx": 763
+      "idx": 763,
+      "has_differences": true
     },
     {
       "instance_id": "EN-8012-45-frame-Activity_pause",
-      "idx": 1016
+      "idx": 1016,
+      "has_differences": false
     }
   ],
   "Activity_ready_state": [
     {
       "instance_id": "EN-1015-29-frame-Activity_ready_state",
-      "idx": 15
+      "idx": 15,
+      "has_differences": false
     },
     {
       "instance_id": "EN-5514-288-frame-Activity_ready_state",
-      "idx": 16
+      "idx": 16,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2848-1042-frame-Activity_ready_state",
-      "idx": 17
+      "idx": 17,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2677-838-frame-Activity_ready_state",
-      "idx": 764
+      "idx": 764,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2024-646-frame-Activity_ready_state",
-      "idx": 1017
+      "idx": 1017,
+      "has_differences": false
     }
   ],
   "Activity_resume": [
     {
       "instance_id": "EN-7129-15-frame-Activity_resume",
-      "idx": 18
+      "idx": 18,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7052-9-frame-Activity_resume",
-      "idx": 19
+      "idx": 19,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1288-136-frame-Activity_resume",
-      "idx": 20
+      "idx": 20,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4059-473-frame-Activity_resume",
-      "idx": 765
+      "idx": 765,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2497-36-frame-Activity_resume",
-      "idx": 1018
+      "idx": 1018,
+      "has_differences": true
     }
   ],
   "Activity_start": [
     {
       "instance_id": "EN-0584-18-frame-Activity_start",
-      "idx": 21
+      "idx": 21,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2911-61-frame-Activity_start",
-      "idx": 22
+      "idx": 22,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0716-17-frame-Activity_start",
-      "idx": 23
+      "idx": 23,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1734-21-frame-Activity_start",
-      "idx": 766
+      "idx": 766,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5442-52-frame-Activity_start",
-      "idx": 1019
+      "idx": 1019,
+      "has_differences": true
     }
   ],
   "Activity_stop": [
     {
       "instance_id": "EN-0421-808-frame-Activity_stop",
-      "idx": 24
+      "idx": 24,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1201-577-frame-Activity_stop",
-      "idx": 25
+      "idx": 25,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4390-11-frame-Activity_stop",
-      "idx": 26
+      "idx": 26,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0131-494-frame-Activity_stop",
-      "idx": 767
+      "idx": 767,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1074-203-frame-Activity_stop",
-      "idx": 1020
+      "idx": 1020,
+      "has_differences": false
     }
   ],
   "Adjusting": [
     {
       "instance_id": "EN-0678-184-frame-Adjusting",
-      "idx": 27
+      "idx": 27,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1047-222-frame-Adjusting",
-      "idx": 28
+      "idx": 28,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2062-1186-frame-Adjusting",
-      "idx": 29
+      "idx": 29,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0206-1711-frame-Adjusting",
-      "idx": 768
+      "idx": 768,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4067-1138-frame-Adjusting",
-      "idx": 1021
+      "idx": 1021,
+      "has_differences": false
     }
   ],
   "Agriculture": [
     {
       "instance_id": "EN-1376-61-frame-Agriculture",
-      "idx": 30
+      "idx": 30,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0310-575-frame-Agriculture",
-      "idx": 31
+      "idx": 31,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7427-330-frame-Agriculture",
-      "idx": 32
+      "idx": 32,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7407-390-frame-Agriculture",
-      "idx": 769
+      "idx": 769,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7040-1748-frame-Agriculture",
-      "idx": 1022
+      "idx": 1022,
+      "has_differences": false
     }
   ],
   "Annoyance": [
     {
       "instance_id": "EN-2327-367-frame-Annoyance",
-      "idx": 33
+      "idx": 33,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0859-278-frame-Annoyance",
-      "idx": 34
+      "idx": 34,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1002-904-frame-Annoyance",
-      "idx": 35
+      "idx": 35,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0546-168-frame-Annoyance",
-      "idx": 770
+      "idx": 770,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0010-10625-frame-Annoyance",
-      "idx": 1023
+      "idx": 1023,
+      "has_differences": true
     }
   ],
   "Apply_heat": [
     {
       "instance_id": "EN-0539-576-frame-Apply_heat",
-      "idx": 36
+      "idx": 36,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0279-384-frame-Apply_heat",
-      "idx": 37
+      "idx": 37,
+      "has_differences": false
     },
     {
       "instance_id": "EN-3076-17-frame-Apply_heat",
-      "idx": 38
+      "idx": 38,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2537-1492-frame-Apply_heat",
-      "idx": 771
+      "idx": 771,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2409-264-frame-Apply_heat",
-      "idx": 1024
+      "idx": 1024,
+      "has_differences": false
     }
   ],
   "Appointing": [
     {
       "instance_id": "EN-4346-19-frame-Appointing",
-      "idx": 39
+      "idx": 39,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4363-166-frame-Appointing",
-      "idx": 40
+      "idx": 40,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5137-231-frame-Appointing",
-      "idx": 41
+      "idx": 41,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4023-69-frame-Appointing",
-      "idx": 772
+      "idx": 772,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0033-55-frame-Appointing",
-      "idx": 1025
+      "idx": 1025,
+      "has_differences": true
     }
   ],
   "Arraignment": [
     {
       "instance_id": "EN-2421-380-frame-Arraignment",
-      "idx": 42
+      "idx": 42,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4433-160-frame-Arraignment",
-      "idx": 43
+      "idx": 43,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1369-744-frame-Arraignment",
-      "idx": 44
+      "idx": 44,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1142-218-frame-Arraignment",
-      "idx": 773
+      "idx": 773,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1421-33-frame-Arraignment",
-      "idx": 1026
+      "idx": 1026,
+      "has_differences": true
     }
   ],
   "Arranging": [
     {
       "instance_id": "EN-7458-338-frame-Arranging",
-      "idx": 45
+      "idx": 45,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2768-650-frame-Arranging",
-      "idx": 46
+      "idx": 46,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0814-1309-frame-Arranging",
-      "idx": 47
+      "idx": 47,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2476-1477-frame-Arranging",
-      "idx": 774
+      "idx": 774,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2395-586-frame-Arranging",
-      "idx": 1027
+      "idx": 1027,
+      "has_differences": false
     }
   ],
   "Arrest": [
     {
       "instance_id": "EN-4508-1299-frame-Arrest",
-      "idx": 48
+      "idx": 48,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1146-379-frame-Arrest",
-      "idx": 49
+      "idx": 49,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7310-7-frame-Arrest",
-      "idx": 50
+      "idx": 50,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3104-692-frame-Arrest",
-      "idx": 775
+      "idx": 775,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1588-570-frame-Arrest",
-      "idx": 1028
+      "idx": 1028,
+      "has_differences": true
     }
   ],
   "Arriving": [
     {
       "instance_id": "EN-1039-92-frame-Arriving",
-      "idx": 51
+      "idx": 51,
+      "has_differences": false
     },
     {
       "instance_id": "EN-7019-2-frame-Arriving",
-      "idx": 52
+      "idx": 52,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4401-0-frame-Arriving",
-      "idx": 53
+      "idx": 53,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4630-0-frame-Arriving",
-      "idx": 776
+      "idx": 776,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7358-7-frame-Arriving",
-      "idx": 1029
+      "idx": 1029,
+      "has_differences": true
     }
   ],
   "Assistance": [
     {
       "instance_id": "EN-0011-0-frame-Assistance",
-      "idx": 54
+      "idx": 54,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0567-129-frame-Assistance",
-      "idx": 55
+      "idx": 55,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1423-69-frame-Assistance",
-      "idx": 56
+      "idx": 56,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1469-1-frame-Assistance",
-      "idx": 777
+      "idx": 777,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2582-75-frame-Assistance",
-      "idx": 1030
+      "idx": 1030,
+      "has_differences": true
     }
   ],
   "Atonement": [
     {
       "instance_id": "EN-4933-261-frame-Atonement",
-      "idx": 57
+      "idx": 57,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0391-307-frame-Atonement",
-      "idx": 58
+      "idx": 58,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1526-1119-frame-Atonement",
-      "idx": 59
+      "idx": 59,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1722-298-frame-Atonement",
-      "idx": 778
+      "idx": 778,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1342-92-frame-Atonement",
-      "idx": 1031
+      "idx": 1031,
+      "has_differences": true
     }
   ],
   "Attaching": [
     {
       "instance_id": "EN-2751-372-frame-Attaching",
-      "idx": 60
+      "idx": 60,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1176-601-frame-Attaching",
-      "idx": 61
+      "idx": 61,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5538-578-frame-Attaching",
-      "idx": 62
+      "idx": 62,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1405-432-frame-Attaching",
-      "idx": 779
+      "idx": 779,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0702-179-frame-Attaching",
-      "idx": 1032
+      "idx": 1032,
+      "has_differences": true
     }
   ],
   "Attack": [
     {
       "instance_id": "EN-1217-6-frame-Attack",
-      "idx": 63
+      "idx": 63,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0947-698-frame-Attack",
-      "idx": 64
+      "idx": 64,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5048-537-frame-Attack",
-      "idx": 65
+      "idx": 65,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1726-68-frame-Attack",
-      "idx": 780
+      "idx": 780,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1356-97-frame-Attack",
-      "idx": 1033
+      "idx": 1033,
+      "has_differences": false
     }
   ],
   "Attempt": [
     {
       "instance_id": "EN-1357-53-frame-Attempt",
-      "idx": 66
+      "idx": 66,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1329-4-frame-Attempt",
-      "idx": 67
+      "idx": 67,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1082-117-frame-Attempt",
-      "idx": 68
+      "idx": 68,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2705-62-frame-Attempt",
-      "idx": 781
+      "idx": 781,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0515-227-frame-Attempt",
-      "idx": 1034
+      "idx": 1034,
+      "has_differences": true
     }
   ],
   "Attempt_suasion": [
     {
       "instance_id": "EN-1008-445-frame-Attempt_suasion",
-      "idx": 69
+      "idx": 69,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4938-30-frame-Attempt_suasion",
-      "idx": 70
+      "idx": 70,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7447-150-frame-Attempt_suasion",
-      "idx": 71
+      "idx": 71,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4006-283-frame-Attempt_suasion",
-      "idx": 782
+      "idx": 782,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4035-15-frame-Attempt_suasion",
-      "idx": 1035
+      "idx": 1035,
+      "has_differences": true
     }
   ],
   "Attending": [
     {
       "instance_id": "EN-2685-7-frame-Attending",
-      "idx": 72
+      "idx": 72,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1002-183-frame-Attending",
-      "idx": 73
+      "idx": 73,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0923-5-frame-Attending",
-      "idx": 74
+      "idx": 74,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0134-189-frame-Attending",
-      "idx": 783
+      "idx": 783,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4923-53-frame-Attending",
-      "idx": 1036
+      "idx": 1036,
+      "has_differences": true
     }
   ],
   "Attention": [
     {
       "instance_id": "EN-1094-1193-frame-Attention",
-      "idx": 75
+      "idx": 75,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2871-201-frame-Attention",
-      "idx": 76
+      "idx": 76,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2805-258-frame-Attention",
-      "idx": 77
+      "idx": 77,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2039-734-frame-Attention",
-      "idx": 784
+      "idx": 784,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3068-793-frame-Attention",
-      "idx": 1037
+      "idx": 1037,
+      "has_differences": false
     }
   ],
   "Avoiding": [
     {
       "instance_id": "EN-4021-838-frame-Avoiding",
-      "idx": 78
+      "idx": 78,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2451-475-frame-Avoiding",
-      "idx": 79
+      "idx": 79,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4361-452-frame-Avoiding",
-      "idx": 80
+      "idx": 80,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0928-144-frame-Avoiding",
-      "idx": 785
+      "idx": 785,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0071-132-frame-Avoiding",
-      "idx": 1038
+      "idx": 1038,
+      "has_differences": false
     }
   ],
   "Bail_decision": [
     {
       "instance_id": "EN-2787-2-frame-Bail_decision",
-      "idx": 81
+      "idx": 81,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2651-300-frame-Bail_decision",
-      "idx": 82
+      "idx": 82,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7025-1437-frame-Bail_decision",
-      "idx": 83
+      "idx": 83,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0672-934-frame-Bail_decision",
-      "idx": 786
+      "idx": 786,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2419-333-frame-Bail_decision",
-      "idx": 1039
+      "idx": 1039,
+      "has_differences": false
     }
   ],
   "Bearing_arms": [
     {
       "instance_id": "EN-3000-165-frame-Bearing_arms",
-      "idx": 84
+      "idx": 84,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1524-1152-frame-Bearing_arms",
-      "idx": 85
+      "idx": 85,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5439-910-frame-Bearing_arms",
-      "idx": 86
+      "idx": 86,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2378-280-frame-Bearing_arms",
-      "idx": 787
+      "idx": 787,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3105-610-frame-Bearing_arms",
-      "idx": 1040
+      "idx": 1040,
+      "has_differences": true
     }
   ],
   "Becoming": [
     {
       "instance_id": "EN-0961-7-frame-Becoming",
-      "idx": 87
+      "idx": 87,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2616-63-frame-Becoming",
-      "idx": 88
+      "idx": 88,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1605-157-frame-Becoming",
-      "idx": 89
+      "idx": 89,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1431-23-frame-Becoming",
-      "idx": 788
+      "idx": 788,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4539-159-frame-Becoming",
-      "idx": 1041
+      "idx": 1041,
+      "has_differences": true
     }
   ],
   "Becoming_a_member": [
     {
       "instance_id": "EN-1064-71-frame-Becoming_a_member",
-      "idx": 90
+      "idx": 90,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1710-603-frame-Becoming_a_member",
-      "idx": 91
+      "idx": 91,
+      "has_differences": false
     },
     {
       "instance_id": "EN-5504-174-frame-Becoming_a_member",
-      "idx": 92
+      "idx": 92,
+      "has_differences": true
     },
     {
       "instance_id": "EN-8075-34-frame-Becoming_a_member",
-      "idx": 789
+      "idx": 789,
+      "has_differences": false
     },
     {
       "instance_id": "EN-3023-450-frame-Becoming_a_member",
-      "idx": 1042
+      "idx": 1042,
+      "has_differences": true
     }
   ],
   "Becoming_dry": [
     {
       "instance_id": "EN-1099-980-frame-Becoming_dry",
-      "idx": 93
+      "idx": 93,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0827-607-frame-Becoming_dry",
-      "idx": 94
+      "idx": 94,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1057-417-frame-Becoming_dry",
-      "idx": 95
+      "idx": 95,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1364-789-frame-Becoming_dry",
-      "idx": 790
+      "idx": 790,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2753-432-frame-Becoming_dry",
-      "idx": 1043
+      "idx": 1043,
+      "has_differences": false
     }
   ],
   "Becoming_visible": [
     {
       "instance_id": "EN-1021-446-frame-Becoming_visible",
-      "idx": 96
+      "idx": 96,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0629-38-frame-Becoming_visible",
-      "idx": 97
+      "idx": 97,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2890-285-frame-Becoming_visible",
-      "idx": 98
+      "idx": 98,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2399-187-frame-Becoming_visible",
-      "idx": 791
+      "idx": 791,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0651-378-frame-Becoming_visible",
-      "idx": 1044
+      "idx": 1044,
+      "has_differences": true
     }
   ],
   "Being_attached": [
     {
       "instance_id": "EN-1138-50-frame-Being_attached",
-      "idx": 99
+      "idx": 99,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0806-659-frame-Being_attached",
-      "idx": 100
+      "idx": 100,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0993-567-frame-Being_attached",
-      "idx": 101
+      "idx": 101,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0821-606-frame-Being_attached",
-      "idx": 792
+      "idx": 792,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1624-110-frame-Being_attached",
-      "idx": 1045
+      "idx": 1045,
+      "has_differences": false
     }
   ],
   "Being_born": [
     {
       "instance_id": "EN-0962-29-frame-Being_born",
-      "idx": 102
+      "idx": 102,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1566-1-frame-Being_born",
-      "idx": 103
+      "idx": 103,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0145-5-frame-Being_born",
-      "idx": 104
+      "idx": 104,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2727-132-frame-Being_born",
-      "idx": 793
+      "idx": 793,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4495-106-frame-Being_born",
-      "idx": 1046
+      "idx": 1046,
+      "has_differences": false
     }
   ],
   "Being_in_control": [
     {
       "instance_id": "EN-4511-482-frame-Being_in_control",
-      "idx": 105
+      "idx": 105,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0526-94-frame-Being_in_control",
-      "idx": 106
+      "idx": 106,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1541-589-frame-Being_in_control",
-      "idx": 107
+      "idx": 107,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4484-1123-frame-Being_in_control",
-      "idx": 794
+      "idx": 794,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0666-1055-frame-Being_in_control",
-      "idx": 1047
+      "idx": 1047,
+      "has_differences": true
     }
   ],
   "Being_in_operation": [
     {
       "instance_id": "EN-2911-342-frame-Being_in_operation",
-      "idx": 108
+      "idx": 108,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0366-135-frame-Being_in_operation",
-      "idx": 109
+      "idx": 109,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0225-1461-frame-Being_in_operation",
-      "idx": 110
+      "idx": 110,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2860-337-frame-Being_in_operation",
-      "idx": 795
+      "idx": 795,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1692-683-frame-Being_in_operation",
-      "idx": 1048
+      "idx": 1048,
+      "has_differences": false
     }
   ],
   "Being_located": [
     {
       "instance_id": "EN-1275-71-frame-Being_located",
-      "idx": 111
+      "idx": 111,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0022-110-frame-Being_located",
-      "idx": 112
+      "idx": 112,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0028-22-frame-Being_located",
-      "idx": 113
+      "idx": 113,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0453-135-frame-Being_located",
-      "idx": 796
+      "idx": 796,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2347-23-frame-Being_located",
-      "idx": 1049
+      "idx": 1049,
+      "has_differences": true
     }
   ],
   "Besieging": [
     {
       "instance_id": "EN-0091-358-frame-Besieging",
-      "idx": 114
+      "idx": 114,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0370-804-frame-Besieging",
-      "idx": 115
+      "idx": 115,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4578-364-frame-Besieging",
-      "idx": 116
+      "idx": 116,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2483-382-frame-Besieging",
-      "idx": 797
+      "idx": 797,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1168-841-frame-Besieging",
-      "idx": 1050
+      "idx": 1050,
+      "has_differences": true
     }
   ],
   "Borrowing": [
     {
       "instance_id": "EN-4965-1154-frame-Borrowing",
-      "idx": 117
+      "idx": 117,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5103-610-frame-Borrowing",
-      "idx": 118
+      "idx": 118,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2831-234-frame-Borrowing",
-      "idx": 119
+      "idx": 119,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2334-390-frame-Borrowing",
-      "idx": 798
+      "idx": 798,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1571-51-frame-Borrowing",
-      "idx": 1051
+      "idx": 1051,
+      "has_differences": false
     }
   ],
   "Breaking_out_captive": [
     {
       "instance_id": "EN-0853-1017-frame-Breaking_out_captive",
-      "idx": 120
+      "idx": 120,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0699-166-frame-Breaking_out_captive",
-      "idx": 121
+      "idx": 121,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7052-259-frame-Breaking_out_captive",
-      "idx": 122
+      "idx": 122,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4349-526-frame-Breaking_out_captive",
-      "idx": 799
+      "idx": 799,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0705-1012-frame-Breaking_out_captive",
-      "idx": 1052
+      "idx": 1052,
+      "has_differences": true
     }
   ],
   "Building": [
     {
       "instance_id": "EN-0911-22-frame-Building",
-      "idx": 123
+      "idx": 123,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0128-38-frame-Building",
-      "idx": 124
+      "idx": 124,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1563-0-frame-Building",
-      "idx": 125
+      "idx": 125,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5027-59-frame-Building",
-      "idx": 800
+      "idx": 800,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2726-43-frame-Building",
-      "idx": 1053
+      "idx": 1053,
+      "has_differences": true
     }
   ],
   "Burying": [
     {
       "instance_id": "EN-0777-511-frame-Burying",
-      "idx": 126
+      "idx": 126,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2874-1503-frame-Burying",
-      "idx": 127
+      "idx": 127,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0890-199-frame-Burying",
-      "idx": 128
+      "idx": 128,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4998-28-frame-Burying",
-      "idx": 801
+      "idx": 801,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1317-792-frame-Burying",
-      "idx": 1054
+      "idx": 1054,
+      "has_differences": false
     }
   ],
   "Causation": [
     {
       "instance_id": "EN-3092-1-frame-Causation",
-      "idx": 129
+      "idx": 129,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0830-26-frame-Causation",
-      "idx": 130
+      "idx": 130,
+      "has_differences": false
     },
     {
       "instance_id": "EN-7434-75-frame-Causation",
-      "idx": 131
+      "idx": 131,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4215-1-frame-Causation",
-      "idx": 802
+      "idx": 802,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4426-52-frame-Causation",
-      "idx": 1055
+      "idx": 1055,
+      "has_differences": true
     }
   ],
   "Cause_change": [
     {
       "instance_id": "EN-7416-131-frame-Cause_change",
-      "idx": 132
+      "idx": 132,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0392-601-frame-Cause_change",
-      "idx": 133
+      "idx": 133,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1243-161-frame-Cause_change",
-      "idx": 134
+      "idx": 134,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2461-3-frame-Cause_change",
-      "idx": 803
+      "idx": 803,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2953-126-frame-Cause_change",
-      "idx": 1056
+      "idx": 1056,
+      "has_differences": true
     }
   ],
   "Cause_change_of_position_on_a_scale": [
     {
       "instance_id": "EN-0364-101-frame-Cause_change_of_position_on_a_scale",
-      "idx": 135
+      "idx": 135,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4064-147-frame-Cause_change_of_position_on_a_scale",
-      "idx": 136
+      "idx": 136,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5518-3-frame-Cause_change_of_position_on_a_scale",
-      "idx": 137
+      "idx": 137,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4960-445-frame-Cause_change_of_position_on_a_scale",
-      "idx": 804
+      "idx": 804,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1070-344-frame-Cause_change_of_position_on_a_scale",
-      "idx": 1057
+      "idx": 1057,
+      "has_differences": true
     }
   ],
   "Cause_change_of_strength": [
     {
       "instance_id": "EN-4521-82-frame-Cause_change_of_strength",
-      "idx": 138
+      "idx": 138,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0356-549-frame-Cause_change_of_strength",
-      "idx": 139
+      "idx": 139,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4387-714-frame-Cause_change_of_strength",
-      "idx": 140
+      "idx": 140,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2486-899-frame-Cause_change_of_strength",
-      "idx": 805
+      "idx": 805,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1547-460-frame-Cause_change_of_strength",
-      "idx": 1058
+      "idx": 1058,
+      "has_differences": true
     }
   ],
   "Cause_emotion": [
     {
       "instance_id": "EN-2871-411-frame-Cause_emotion",
-      "idx": 141
+      "idx": 141,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3053-247-frame-Cause_emotion",
-      "idx": 142
+      "idx": 142,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4591-423-frame-Cause_emotion",
-      "idx": 143
+      "idx": 143,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0033-320-frame-Cause_emotion",
-      "idx": 806
+      "idx": 806,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1451-1384-frame-Cause_emotion",
-      "idx": 1059
+      "idx": 1059,
+      "has_differences": true
     }
   ],
   "Cause_fluidic_motion": [
     {
       "instance_id": "EN-0083-854-frame-Cause_fluidic_motion",
-      "idx": 144
+      "idx": 144,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1083-705-frame-Cause_fluidic_motion",
-      "idx": 145
+      "idx": 145,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0618-154-frame-Cause_fluidic_motion",
-      "idx": 146
+      "idx": 146,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7413-1390-frame-Cause_fluidic_motion",
-      "idx": 807
+      "idx": 807,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4081-7-frame-Cause_fluidic_motion",
-      "idx": 1060
+      "idx": 1060,
+      "has_differences": true
     }
   ],
   "Cause_harm": [
     {
       "instance_id": "EN-0591-491-frame-Cause_harm",
-      "idx": 147
+      "idx": 147,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0520-867-frame-Cause_harm",
-      "idx": 148
+      "idx": 148,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3106-14-frame-Cause_harm",
-      "idx": 149
+      "idx": 149,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2450-22-frame-Cause_harm",
-      "idx": 808
+      "idx": 808,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4553-274-frame-Cause_harm",
-      "idx": 1061
+      "idx": 1061,
+      "has_differences": true
     }
   ],
   "Cause_impact": [
     {
       "instance_id": "EN-0902-1016-frame-Cause_impact",
-      "idx": 150
+      "idx": 150,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4961-1919-frame-Cause_impact",
-      "idx": 151
+      "idx": 151,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0481-757-frame-Cause_impact",
-      "idx": 152
+      "idx": 152,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4560-188-frame-Cause_impact",
-      "idx": 809
+      "idx": 809,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7416-710-frame-Cause_impact",
-      "idx": 1062
+      "idx": 1062,
+      "has_differences": true
     }
   ],
   "Cause_motion": [
     {
       "instance_id": "EN-3145-184-frame-Cause_motion",
-      "idx": 153
+      "idx": 153,
+      "has_differences": true
     },
     {
       "instance_id": "EN-8154-339-frame-Cause_motion",
-      "idx": 154
+      "idx": 154,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2908-15-frame-Cause_motion",
-      "idx": 155
+      "idx": 155,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4519-32-frame-Cause_motion",
-      "idx": 810
+      "idx": 810,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1222-16-frame-Cause_motion",
-      "idx": 1063
+      "idx": 1063,
+      "has_differences": true
     }
   ],
   "Cause_to_amalgamate": [
     {
       "instance_id": "EN-4458-108-frame-Cause_to_amalgamate",
-      "idx": 156
+      "idx": 156,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2753-156-frame-Cause_to_amalgamate",
-      "idx": 157
+      "idx": 157,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1459-419-frame-Cause_to_amalgamate",
-      "idx": 158
+      "idx": 158,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1434-410-frame-Cause_to_amalgamate",
-      "idx": 811
+      "idx": 811,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1139-633-frame-Cause_to_amalgamate",
-      "idx": 1064
+      "idx": 1064,
+      "has_differences": true
     }
   ],
   "Cause_to_be_dry": [
     {
       "instance_id": "EN-0683-806-frame-Cause_to_be_dry",
-      "idx": 159
+      "idx": 159,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4588-27-frame-Cause_to_be_dry",
-      "idx": 160
+      "idx": 160,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0706-668-frame-Cause_to_be_dry",
-      "idx": 161
+      "idx": 161,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0797-178-frame-Cause_to_be_dry",
-      "idx": 812
+      "idx": 812,
+      "has_differences": false
     },
     {
       "instance_id": "EN-3133-106-frame-Cause_to_be_dry",
-      "idx": 1065
+      "idx": 1065,
+      "has_differences": false
     }
   ],
   "Cause_to_be_included": [
     {
       "instance_id": "EN-4354-533-frame-Cause_to_be_included",
-      "idx": 162
+      "idx": 162,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7463-901-frame-Cause_to_be_included",
-      "idx": 163
+      "idx": 163,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2831-1240-frame-Cause_to_be_included",
-      "idx": 164
+      "idx": 164,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2914-620-frame-Cause_to_be_included",
-      "idx": 813
+      "idx": 813,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4063-22-frame-Cause_to_be_included",
-      "idx": 1066
+      "idx": 1066,
+      "has_differences": true
     }
   ],
   "Cause_to_be_sharp": [
     {
       "instance_id": "EN-0673-522-frame-Cause_to_be_sharp",
-      "idx": 165
+      "idx": 165,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7006-651-frame-Cause_to_be_sharp",
-      "idx": 166
+      "idx": 166,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2893-986-frame-Cause_to_be_sharp",
-      "idx": 167
+      "idx": 167,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1188-1448-frame-Cause_to_be_sharp",
-      "idx": 814
+      "idx": 814,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0442-151-frame-Cause_to_be_sharp",
-      "idx": 1067
+      "idx": 1067,
+      "has_differences": false
     }
   ],
   "Cause_to_be_wet": [
     {
       "instance_id": "EN-4516-1036-frame-Cause_to_be_wet",
-      "idx": 168
+      "idx": 168,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1070-423-frame-Cause_to_be_wet",
-      "idx": 169
+      "idx": 169,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1399-48-frame-Cause_to_be_wet",
-      "idx": 170
+      "idx": 170,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1703-746-frame-Cause_to_be_wet",
-      "idx": 815
+      "idx": 815,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1353-160-frame-Cause_to_be_wet",
-      "idx": 1068
+      "idx": 1068,
+      "has_differences": true
     }
   ],
   "Cause_to_continue": [
     {
       "instance_id": "EN-2666-45-frame-Cause_to_continue",
-      "idx": 171
+      "idx": 171,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2474-421-frame-Cause_to_continue",
-      "idx": 172
+      "idx": 172,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2449-736-frame-Cause_to_continue",
-      "idx": 173
+      "idx": 173,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0238-147-frame-Cause_to_continue",
-      "idx": 816
+      "idx": 816,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5460-167-frame-Cause_to_continue",
-      "idx": 1069
+      "idx": 1069,
+      "has_differences": true
     }
   ],
   "Cause_to_end": [
     {
       "instance_id": "EN-1559-621-frame-Cause_to_end",
-      "idx": 174
+      "idx": 174,
+      "has_differences": false
     },
     {
       "instance_id": "EN-3155-6-frame-Cause_to_end",
-      "idx": 175
+      "idx": 175,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2640-673-frame-Cause_to_end",
-      "idx": 176
+      "idx": 176,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0124-767-frame-Cause_to_end",
-      "idx": 817
+      "idx": 817,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7415-573-frame-Cause_to_end",
-      "idx": 1070
+      "idx": 1070,
+      "has_differences": true
     }
   ],
   "Cause_to_experience": [
     {
       "instance_id": "EN-2613-314-frame-Cause_to_experience",
-      "idx": 177
+      "idx": 177,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3042-232-frame-Cause_to_experience",
-      "idx": 178
+      "idx": 178,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7381-653-frame-Cause_to_experience",
-      "idx": 179
+      "idx": 179,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0529-584-frame-Cause_to_experience",
-      "idx": 818
+      "idx": 818,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1610-428-frame-Cause_to_experience",
-      "idx": 1071
+      "idx": 1071,
+      "has_differences": true
     }
   ],
   "Cause_to_fragment": [
     {
       "instance_id": "EN-3133-159-frame-Cause_to_fragment",
-      "idx": 180
+      "idx": 180,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1486-459-frame-Cause_to_fragment",
-      "idx": 181
+      "idx": 181,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0410-580-frame-Cause_to_fragment",
-      "idx": 182
+      "idx": 182,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1696-1750-frame-Cause_to_fragment",
-      "idx": 819
+      "idx": 819,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2473-194-frame-Cause_to_fragment",
-      "idx": 1072
+      "idx": 1072,
+      "has_differences": true
     }
   ],
   "Cause_to_make_noise": [
     {
       "instance_id": "EN-0166-2110-frame-Cause_to_make_noise",
-      "idx": 183
+      "idx": 183,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4919-304-frame-Cause_to_make_noise",
-      "idx": 184
+      "idx": 184,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0748-208-frame-Cause_to_make_noise",
-      "idx": 185
+      "idx": 185,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0416-1408-frame-Cause_to_make_noise",
-      "idx": 820
+      "idx": 820,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0609-728-frame-Cause_to_make_noise",
-      "idx": 1073
+      "idx": 1073,
+      "has_differences": true
     }
   ],
   "Cause_to_make_progress": [
     {
       "instance_id": "EN-4521-98-frame-Cause_to_make_progress",
-      "idx": 186
+      "idx": 186,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2884-340-frame-Cause_to_make_progress",
-      "idx": 187
+      "idx": 187,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1123-861-frame-Cause_to_make_progress",
-      "idx": 188
+      "idx": 188,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3125-175-frame-Cause_to_make_progress",
-      "idx": 821
+      "idx": 821,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4431-74-frame-Cause_to_make_progress",
-      "idx": 1074
+      "idx": 1074,
+      "has_differences": true
     }
   ],
   "Cause_to_move_in_place": [
     {
       "instance_id": "EN-4409-1247-frame-Cause_to_move_in_place",
-      "idx": 189
+      "idx": 189,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0388-75-frame-Cause_to_move_in_place",
-      "idx": 190
+      "idx": 190,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0810-1077-frame-Cause_to_move_in_place",
-      "idx": 191
+      "idx": 191,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2630-629-frame-Cause_to_move_in_place",
-      "idx": 822
+      "idx": 822,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7025-195-frame-Cause_to_move_in_place",
-      "idx": 1075
+      "idx": 1075,
+      "has_differences": true
     }
   ],
   "Cause_to_resume": [
     {
       "instance_id": "EN-1667-651-frame-Cause_to_resume",
-      "idx": 192
+      "idx": 192,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1258-641-frame-Cause_to_resume",
-      "idx": 193
+      "idx": 193,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0155-927-frame-Cause_to_resume",
-      "idx": 194
+      "idx": 194,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0935-83-frame-Cause_to_resume",
-      "idx": 823
+      "idx": 823,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4395-629-frame-Cause_to_resume",
-      "idx": 1076
+      "idx": 1076,
+      "has_differences": true
     }
   ],
   "Cause_to_wake": [
     {
       "instance_id": "EN-7350-25-frame-Cause_to_wake",
-      "idx": 195
+      "idx": 195,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0203-1272-frame-Cause_to_wake",
-      "idx": 196
+      "idx": 196,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1423-76-frame-Cause_to_wake",
-      "idx": 197
+      "idx": 197,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7090-1078-frame-Cause_to_wake",
-      "idx": 824
+      "idx": 824,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1440-1127-frame-Cause_to_wake",
-      "idx": 1077
+      "idx": 1077,
+      "has_differences": true
     }
   ],
   "Change_accessibility": [
     {
       "instance_id": "EN-2848-882-frame-Change_accessibility",
-      "idx": 198
+      "idx": 198,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0284-1244-frame-Change_accessibility",
-      "idx": 199
+      "idx": 199,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0173-1104-frame-Change_accessibility",
-      "idx": 200
+      "idx": 200,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0291-268-frame-Change_accessibility",
-      "idx": 825
+      "idx": 825,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1383-567-frame-Change_accessibility",
-      "idx": 1078
+      "idx": 1078,
+      "has_differences": true
     }
   ],
   "Change_event_duration": [
     {
       "instance_id": "EN-0089-145-frame-Change_event_duration",
-      "idx": 201
+      "idx": 201,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2592-848-frame-Change_event_duration",
-      "idx": 202
+      "idx": 202,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1554-708-frame-Change_event_duration",
-      "idx": 203
+      "idx": 203,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1077-224-frame-Change_event_duration",
-      "idx": 826
+      "idx": 826,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4431-884-frame-Change_event_duration",
-      "idx": 1079
+      "idx": 1079,
+      "has_differences": true
     }
   ],
   "Change_event_time": [
     {
       "instance_id": "EN-2587-794-frame-Change_event_time",
-      "idx": 204
+      "idx": 204,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2009-511-frame-Change_event_time",
-      "idx": 205
+      "idx": 205,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4991-987-frame-Change_event_time",
-      "idx": 206
+      "idx": 206,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2608-199-frame-Change_event_time",
-      "idx": 827
+      "idx": 827,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4550-88-frame-Change_event_time",
-      "idx": 1080
+      "idx": 1080,
+      "has_differences": true
     }
   ],
   "Change_of_consistency": [
     {
       "instance_id": "EN-4958-961-frame-Change_of_consistency",
-      "idx": 207
+      "idx": 207,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0580-702-frame-Change_of_consistency",
-      "idx": 208
+      "idx": 208,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0509-258-frame-Change_of_consistency",
-      "idx": 209
+      "idx": 209,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0012-2883-frame-Change_of_consistency",
-      "idx": 828
+      "idx": 828,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0772-1083-frame-Change_of_consistency",
-      "idx": 1081
+      "idx": 1081,
+      "has_differences": false
     }
   ],
   "Change_of_leadership": [
     {
       "instance_id": "EN-1652-38-frame-Change_of_leadership",
-      "idx": 210
+      "idx": 210,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2789-122-frame-Change_of_leadership",
-      "idx": 211
+      "idx": 211,
+      "has_differences": false
     },
     {
       "instance_id": "EN-3108-371-frame-Change_of_leadership",
-      "idx": 212
+      "idx": 212,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2516-7-frame-Change_of_leadership",
-      "idx": 829
+      "idx": 829,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1089-124-frame-Change_of_leadership",
-      "idx": 1082
+      "idx": 1082,
+      "has_differences": true
     }
   ],
   "Change_of_temperature": [
     {
       "instance_id": "EN-0654-37-frame-Change_of_temperature",
-      "idx": 213
+      "idx": 213,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7024-774-frame-Change_of_temperature",
-      "idx": 214
+      "idx": 214,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0573-341-frame-Change_of_temperature",
-      "idx": 215
+      "idx": 215,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2875-15-frame-Change_of_temperature",
-      "idx": 830
+      "idx": 830,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0629-407-frame-Change_of_temperature",
-      "idx": 1083
+      "idx": 1083,
+      "has_differences": true
     }
   ],
   "Change_operational_state": [
     {
       "instance_id": "EN-1535-2027-frame-Change_operational_state",
-      "idx": 216
+      "idx": 216,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4029-403-frame-Change_operational_state",
-      "idx": 217
+      "idx": 217,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0604-977-frame-Change_operational_state",
-      "idx": 218
+      "idx": 218,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1652-1019-frame-Change_operational_state",
-      "idx": 831
+      "idx": 831,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2863-715-frame-Change_operational_state",
-      "idx": 1084
+      "idx": 1084,
+      "has_differences": true
     }
   ],
   "Change_position_on_a_scale": [
     {
       "instance_id": "EN-1607-147-frame-Change_position_on_a_scale",
-      "idx": 219
+      "idx": 219,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2519-58-frame-Change_position_on_a_scale",
-      "idx": 220
+      "idx": 220,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0430-700-frame-Change_position_on_a_scale",
-      "idx": 221
+      "idx": 221,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4930-320-frame-Change_position_on_a_scale",
-      "idx": 832
+      "idx": 832,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2453-504-frame-Change_position_on_a_scale",
-      "idx": 1085
+      "idx": 1085,
+      "has_differences": true
     }
   ],
   "Change_posture": [
     {
       "instance_id": "EN-2695-907-frame-Change_posture",
-      "idx": 222
+      "idx": 222,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0922-118-frame-Change_posture",
-      "idx": 223
+      "idx": 223,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0236-900-frame-Change_posture",
-      "idx": 224
+      "idx": 224,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2087-12-frame-Change_posture",
-      "idx": 833
+      "idx": 833,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1511-686-frame-Change_posture",
-      "idx": 1086
+      "idx": 1086,
+      "has_differences": true
     }
   ],
   "Chaos": [
     {
       "instance_id": "EN-2393-720-frame-Chaos",
-      "idx": 225
+      "idx": 225,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0196-885-frame-Chaos",
-      "idx": 226
+      "idx": 226,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0057-590-frame-Chaos",
-      "idx": 227
+      "idx": 227,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2504-202-frame-Chaos",
-      "idx": 834
+      "idx": 834,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3124-489-frame-Chaos",
-      "idx": 1087
+      "idx": 1087,
+      "has_differences": true
     }
   ],
   "Choosing": [
     {
       "instance_id": "EN-7459-63-frame-Choosing",
-      "idx": 228
+      "idx": 228,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4350-23-frame-Choosing",
-      "idx": 229
+      "idx": 229,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4662-13-frame-Choosing",
-      "idx": 230
+      "idx": 230,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4546-305-frame-Choosing",
-      "idx": 835
+      "idx": 835,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7147-3-frame-Choosing",
-      "idx": 1088
+      "idx": 1088,
+      "has_differences": true
     }
   ],
   "Clemency": [
     {
       "instance_id": "EN-0935-83-frame-Clemency",
-      "idx": 231
+      "idx": 231,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4378-36-frame-Clemency",
-      "idx": 232
+      "idx": 232,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2875-67-frame-Clemency",
-      "idx": 233
+      "idx": 233,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4969-404-frame-Clemency",
-      "idx": 836
+      "idx": 836,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2494-980-frame-Clemency",
-      "idx": 1089
+      "idx": 1089,
+      "has_differences": false
     }
   ],
   "Coincidence": [
     {
       "instance_id": "EN-1589-949-frame-Coincidence",
-      "idx": 234
+      "idx": 234,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5131-485-frame-Coincidence",
-      "idx": 235
+      "idx": 235,
+      "has_differences": false
     },
     {
       "instance_id": "EN-5441-33-frame-Coincidence",
-      "idx": 236
+      "idx": 236,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4334-95-frame-Coincidence",
-      "idx": 837
+      "idx": 837,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2474-1510-frame-Coincidence",
-      "idx": 1090
+      "idx": 1090,
+      "has_differences": false
     }
   ],
   "Collaboration": [
     {
       "instance_id": "EN-7081-325-frame-Collaboration",
-      "idx": 237
+      "idx": 237,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0808-86-frame-Collaboration",
-      "idx": 238
+      "idx": 238,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0967-170-frame-Collaboration",
-      "idx": 239
+      "idx": 239,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2389-145-frame-Collaboration",
-      "idx": 838
+      "idx": 838,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2652-46-frame-Collaboration",
-      "idx": 1091
+      "idx": 1091,
+      "has_differences": true
     }
   ],
   "Come_down_with": [
     {
       "instance_id": "EN-0627-946-frame-Come_down_with",
-      "idx": 240
+      "idx": 240,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1521-952-frame-Come_down_with",
-      "idx": 241
+      "idx": 241,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0880-697-frame-Come_down_with",
-      "idx": 242
+      "idx": 242,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2607-803-frame-Come_down_with",
-      "idx": 839
+      "idx": 839,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2502-268-frame-Come_down_with",
-      "idx": 1092
+      "idx": 1092,
+      "has_differences": false
     }
   ],
   "Come_together": [
     {
       "instance_id": "EN-4531-714-frame-Come_together",
-      "idx": 243
+      "idx": 243,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2898-817-frame-Come_together",
-      "idx": 244
+      "idx": 244,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1341-84-frame-Come_together",
-      "idx": 245
+      "idx": 245,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0044-487-frame-Come_together",
-      "idx": 840
+      "idx": 840,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7494-195-frame-Come_together",
-      "idx": 1093
+      "idx": 1093,
+      "has_differences": true
     }
   ],
   "Coming_to_be": [
     {
       "instance_id": "EN-3022-379-frame-Coming_to_be",
-      "idx": 246
+      "idx": 246,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2663-31-frame-Coming_to_be",
-      "idx": 247
+      "idx": 247,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0815-993-frame-Coming_to_be",
-      "idx": 248
+      "idx": 248,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1536-1940-frame-Coming_to_be",
-      "idx": 841
+      "idx": 841,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1172-780-frame-Coming_to_be",
-      "idx": 1094
+      "idx": 1094,
+      "has_differences": true
     }
   ],
   "Commerce_buy": [
     {
       "instance_id": "EN-0195-310-frame-Commerce_buy",
-      "idx": 249
+      "idx": 249,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0146-55-frame-Commerce_buy",
-      "idx": 250
+      "idx": 250,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4488-513-frame-Commerce_buy",
-      "idx": 251
+      "idx": 251,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1138-129-frame-Commerce_buy",
-      "idx": 842
+      "idx": 842,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1307-17-frame-Commerce_buy",
-      "idx": 1095
+      "idx": 1095,
+      "has_differences": true
     }
   ],
   "Commerce_pay": [
     {
       "instance_id": "EN-1651-253-frame-Commerce_pay",
-      "idx": 252
+      "idx": 252,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0581-17-frame-Commerce_pay",
-      "idx": 253
+      "idx": 253,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2856-1227-frame-Commerce_pay",
-      "idx": 254
+      "idx": 254,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2716-40-frame-Commerce_pay",
-      "idx": 843
+      "idx": 843,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1480-243-frame-Commerce_pay",
-      "idx": 1096
+      "idx": 1096,
+      "has_differences": false
     }
   ],
   "Commerce_sell": [
     {
       "instance_id": "EN-0303-186-frame-Commerce_sell",
-      "idx": 255
+      "idx": 255,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1135-191-frame-Commerce_sell",
-      "idx": 256
+      "idx": 256,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2793-267-frame-Commerce_sell",
-      "idx": 257
+      "idx": 257,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2484-120-frame-Commerce_sell",
-      "idx": 844
+      "idx": 844,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1222-23-frame-Commerce_sell",
-      "idx": 1097
+      "idx": 1097,
+      "has_differences": true
     }
   ],
   "Committing_crime": [
     {
       "instance_id": "EN-7054-60-frame-Committing_crime",
-      "idx": 258
+      "idx": 258,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0632-591-frame-Committing_crime",
-      "idx": 259
+      "idx": 259,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2349-796-frame-Committing_crime",
-      "idx": 260
+      "idx": 260,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3151-47-frame-Committing_crime",
-      "idx": 845
+      "idx": 845,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1447-823-frame-Committing_crime",
-      "idx": 1098
+      "idx": 1098,
+      "has_differences": true
     }
   ],
   "Communication": [
     {
       "instance_id": "EN-1269-92-frame-Communication",
-      "idx": 261
+      "idx": 261,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2558-442-frame-Communication",
-      "idx": 262
+      "idx": 262,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1383-447-frame-Communication",
-      "idx": 263
+      "idx": 263,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0262-469-frame-Communication",
-      "idx": 846
+      "idx": 846,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4342-201-frame-Communication",
-      "idx": 1099
+      "idx": 1099,
+      "has_differences": false
     }
   ],
   "Communication_noise": [
     {
       "instance_id": "EN-0360-566-frame-Communication_noise",
-      "idx": 264
+      "idx": 264,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0965-45-frame-Communication_noise",
-      "idx": 265
+      "idx": 265,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0012-2147-frame-Communication_noise",
-      "idx": 266
+      "idx": 266,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4986-1315-frame-Communication_noise",
-      "idx": 847
+      "idx": 847,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1016-1219-frame-Communication_noise",
-      "idx": 1100
+      "idx": 1100,
+      "has_differences": true
     }
   ],
   "Communication_response": [
     {
       "instance_id": "EN-2534-1197-frame-Communication_response",
-      "idx": 267
+      "idx": 267,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0465-122-frame-Communication_response",
-      "idx": 268
+      "idx": 268,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0313-68-frame-Communication_response",
-      "idx": 269
+      "idx": 269,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1104-392-frame-Communication_response",
-      "idx": 848
+      "idx": 848,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2375-491-frame-Communication_response",
-      "idx": 1101
+      "idx": 1101,
+      "has_differences": true
     }
   ],
   "Confronting_problem": [
     {
       "instance_id": "EN-1250-616-frame-Confronting_problem",
-      "idx": 270
+      "idx": 270,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0010-11697-frame-Confronting_problem",
-      "idx": 271
+      "idx": 271,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2585-849-frame-Confronting_problem",
-      "idx": 272
+      "idx": 272,
+      "has_differences": false
     },
     {
       "instance_id": "EN-7062-642-frame-Confronting_problem",
-      "idx": 849
+      "idx": 849,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2064-466-frame-Confronting_problem",
-      "idx": 1102
+      "idx": 1102,
+      "has_differences": false
     }
   ],
   "Contacting": [
     {
       "instance_id": "EN-1647-146-frame-Contacting",
-      "idx": 273
+      "idx": 273,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1733-174-frame-Contacting",
-      "idx": 274
+      "idx": 274,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4476-3-frame-Contacting",
-      "idx": 275
+      "idx": 275,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2404-222-frame-Contacting",
-      "idx": 850
+      "idx": 850,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4879-147-frame-Contacting",
-      "idx": 1103
+      "idx": 1103,
+      "has_differences": true
     }
   ],
   "Control": [
     {
       "instance_id": "EN-1253-1015-frame-Control",
-      "idx": 276
+      "idx": 276,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0085-1309-frame-Control",
-      "idx": 277
+      "idx": 277,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0108-915-frame-Control",
-      "idx": 278
+      "idx": 278,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4922-978-frame-Control",
-      "idx": 851
+      "idx": 851,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2998-115-frame-Control",
-      "idx": 1104
+      "idx": 1104,
+      "has_differences": true
     }
   ],
   "Cooking_creation": [
     {
       "instance_id": "EN-2450-742-frame-Cooking_creation",
-      "idx": 279
+      "idx": 279,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0293-1085-frame-Cooking_creation",
-      "idx": 280
+      "idx": 280,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0821-615-frame-Cooking_creation",
-      "idx": 281
+      "idx": 281,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0852-1613-frame-Cooking_creation",
-      "idx": 852
+      "idx": 852,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0161-196-frame-Cooking_creation",
-      "idx": 1105
+      "idx": 1105,
+      "has_differences": true
     }
   ],
   "Corporal_punishment": [
     {
       "instance_id": "EN-7392-690-frame-Corporal_punishment",
-      "idx": 282
+      "idx": 282,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1540-1081-frame-Corporal_punishment",
-      "idx": 283
+      "idx": 283,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0924-694-frame-Corporal_punishment",
-      "idx": 284
+      "idx": 284,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1443-857-frame-Corporal_punishment",
-      "idx": 853
+      "idx": 853,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0615-417-frame-Corporal_punishment",
-      "idx": 1106
+      "idx": 1106,
+      "has_differences": true
     }
   ],
   "Corroding_caused": [
     {
       "instance_id": "EN-4573-949-frame-Corroding_caused",
-      "idx": 285
+      "idx": 285,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2334-549-frame-Corroding_caused",
-      "idx": 286
+      "idx": 286,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1237-752-frame-Corroding_caused",
-      "idx": 287
+      "idx": 287,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1424-687-frame-Corroding_caused",
-      "idx": 854
+      "idx": 854,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2518-400-frame-Corroding_caused",
-      "idx": 1107
+      "idx": 1107,
+      "has_differences": true
     }
   ],
   "Counterattack": [
     {
       "instance_id": "EN-4422-1236-frame-Counterattack",
-      "idx": 288
+      "idx": 288,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0012-13108-frame-Counterattack",
-      "idx": 289
+      "idx": 289,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0941-202-frame-Counterattack",
-      "idx": 290
+      "idx": 290,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4472-508-frame-Counterattack",
-      "idx": 855
+      "idx": 855,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4913-133-frame-Counterattack",
-      "idx": 1108
+      "idx": 1108,
+      "has_differences": true
     }
   ],
   "Create_physical_artwork": [
     {
       "instance_id": "EN-1631-455-frame-Create_physical_artwork",
-      "idx": 291
+      "idx": 291,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5008-775-frame-Create_physical_artwork",
-      "idx": 292
+      "idx": 292,
+      "has_differences": false
     },
     {
       "instance_id": "EN-5201-35-frame-Create_physical_artwork",
-      "idx": 293
+      "idx": 293,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1130-753-frame-Create_physical_artwork",
-      "idx": 856
+      "idx": 856,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2934-341-frame-Create_physical_artwork",
-      "idx": 1109
+      "idx": 1109,
+      "has_differences": false
     }
   ],
   "Cure": [
     {
       "instance_id": "EN-0426-696-frame-Cure",
-      "idx": 294
+      "idx": 294,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1415-585-frame-Cure",
-      "idx": 295
+      "idx": 295,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0298-527-frame-Cure",
-      "idx": 296
+      "idx": 296,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0946-511-frame-Cure",
-      "idx": 857
+      "idx": 857,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3108-332-frame-Cure",
-      "idx": 1110
+      "idx": 1110,
+      "has_differences": true
     }
   ],
   "Cutting": [
     {
       "instance_id": "EN-4959-373-frame-Cutting",
-      "idx": 297
+      "idx": 297,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4359-102-frame-Cutting",
-      "idx": 298
+      "idx": 298,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4040-327-frame-Cutting",
-      "idx": 299
+      "idx": 299,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1502-47-frame-Cutting",
-      "idx": 858
+      "idx": 858,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4600-243-frame-Cutting",
-      "idx": 1111
+      "idx": 1111,
+      "has_differences": true
     }
   ],
   "Damaging": [
     {
       "instance_id": "EN-2821-232-frame-Damaging",
-      "idx": 300
+      "idx": 300,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1043-413-frame-Damaging",
-      "idx": 301
+      "idx": 301,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4346-329-frame-Damaging",
-      "idx": 302
+      "idx": 302,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1448-715-frame-Damaging",
-      "idx": 859
+      "idx": 859,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0820-109-frame-Damaging",
-      "idx": 1112
+      "idx": 1112,
+      "has_differences": true
     }
   ],
   "Daring": [
     {
       "instance_id": "EN-2852-350-frame-Daring",
-      "idx": 303
+      "idx": 303,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0601-1123-frame-Daring",
-      "idx": 304
+      "idx": 304,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1467-871-frame-Daring",
-      "idx": 305
+      "idx": 305,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4481-985-frame-Daring",
-      "idx": 860
+      "idx": 860,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2679-570-frame-Daring",
-      "idx": 1113
+      "idx": 1113,
+      "has_differences": false
     }
   ],
   "Dead_or_alive": [
     {
       "instance_id": "EN-3060-81-frame-Dead_or_alive",
-      "idx": 306
+      "idx": 306,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0111-592-frame-Dead_or_alive",
-      "idx": 307
+      "idx": 307,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2568-429-frame-Dead_or_alive",
-      "idx": 308
+      "idx": 308,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0736-222-frame-Dead_or_alive",
-      "idx": 861
+      "idx": 861,
+      "has_differences": false
     },
     {
       "instance_id": "EN-7480-300-frame-Dead_or_alive",
-      "idx": 1114
+      "idx": 1114,
+      "has_differences": true
     }
   ],
   "Death": [
     {
       "instance_id": "EN-4401-197-frame-Death",
-      "idx": 309
+      "idx": 309,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7401-23-frame-Death",
-      "idx": 310
+      "idx": 310,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4497-32-frame-Death",
-      "idx": 311
+      "idx": 311,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2008-50-frame-Death",
-      "idx": 862
+      "idx": 862,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1254-26-frame-Death",
-      "idx": 1115
+      "idx": 1115,
+      "has_differences": true
     }
   ],
   "Destiny": [
     {
       "instance_id": "EN-0404-34-frame-Destiny",
-      "idx": 312
+      "idx": 312,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0238-1092-frame-Destiny",
-      "idx": 313
+      "idx": 313,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1309-441-frame-Destiny",
-      "idx": 314
+      "idx": 314,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0332-510-frame-Destiny",
-      "idx": 863
+      "idx": 863,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1085-373-frame-Destiny",
-      "idx": 1116
+      "idx": 1116,
+      "has_differences": true
     }
   ],
   "Destroying": [
     {
       "instance_id": "EN-0695-121-frame-Destroying",
-      "idx": 315
+      "idx": 315,
+      "has_differences": false
     },
     {
       "instance_id": "EN-7391-545-frame-Destroying",
-      "idx": 316
+      "idx": 316,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2026-1275-frame-Destroying",
-      "idx": 317
+      "idx": 317,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4419-40-frame-Destroying",
-      "idx": 864
+      "idx": 864,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1543-1234-frame-Destroying",
-      "idx": 1117
+      "idx": 1117,
+      "has_differences": true
     }
   ],
   "Detaching": [
     {
       "instance_id": "EN-0009-6639-frame-Detaching",
-      "idx": 318
+      "idx": 318,
+      "has_differences": false
     },
     {
       "instance_id": "EN-5121-633-frame-Detaching",
-      "idx": 319
+      "idx": 319,
+      "has_differences": true
     },
     {
       "instance_id": "EN-8210-1142-frame-Detaching",
-      "idx": 320
+      "idx": 320,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1179-255-frame-Detaching",
-      "idx": 865
+      "idx": 865,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2354-662-frame-Detaching",
-      "idx": 1118
+      "idx": 1118,
+      "has_differences": true
     }
   ],
   "Detonate_explosive": [
     {
       "instance_id": "EN-2526-619-frame-Detonate_explosive",
-      "idx": 321
+      "idx": 321,
+      "has_differences": false
     },
     {
       "instance_id": "EN-5115-376-frame-Detonate_explosive",
-      "idx": 322
+      "idx": 322,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7030-443-frame-Detonate_explosive",
-      "idx": 323
+      "idx": 323,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1725-213-frame-Detonate_explosive",
-      "idx": 866
+      "idx": 866,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2630-51-frame-Detonate_explosive",
-      "idx": 1119
+      "idx": 1119,
+      "has_differences": true
     }
   ],
   "Dispersal": [
     {
       "instance_id": "EN-1037-390-frame-Dispersal",
-      "idx": 324
+      "idx": 324,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2356-591-frame-Dispersal",
-      "idx": 325
+      "idx": 325,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4938-39-frame-Dispersal",
-      "idx": 326
+      "idx": 326,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0738-291-frame-Dispersal",
-      "idx": 867
+      "idx": 867,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4452-124-frame-Dispersal",
-      "idx": 1120
+      "idx": 1120,
+      "has_differences": true
     }
   ],
   "Dodging": [
     {
       "instance_id": "EN-0968-659-frame-Dodging",
-      "idx": 327
+      "idx": 327,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2611-35-frame-Dodging",
-      "idx": 328
+      "idx": 328,
+      "has_differences": false
     },
     {
       "instance_id": "EN-7029-1730-frame-Dodging",
-      "idx": 329
+      "idx": 329,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2933-937-frame-Dodging",
-      "idx": 868
+      "idx": 868,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0859-1651-frame-Dodging",
-      "idx": 1121
+      "idx": 1121,
+      "has_differences": false
     }
   ],
   "Dominate_competitor": [
     {
       "instance_id": "EN-1729-159-frame-Dominate_competitor",
-      "idx": 330
+      "idx": 330,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4951-855-frame-Dominate_competitor",
-      "idx": 331
+      "idx": 331,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1694-828-frame-Dominate_competitor",
-      "idx": 332
+      "idx": 332,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2527-532-frame-Dominate_competitor",
-      "idx": 869
+      "idx": 869,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2780-724-frame-Dominate_competitor",
-      "idx": 1122
+      "idx": 1122,
+      "has_differences": true
     }
   ],
   "Downing": [
     {
       "instance_id": "EN-2812-76-frame-Downing",
-      "idx": 333
+      "idx": 333,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0750-701-frame-Downing",
-      "idx": 334
+      "idx": 334,
+      "has_differences": false
     },
     {
       "instance_id": "EN-7457-617-frame-Downing",
-      "idx": 335
+      "idx": 335,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1037-414-frame-Downing",
-      "idx": 870
+      "idx": 870,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2610-792-frame-Downing",
-      "idx": 1123
+      "idx": 1123,
+      "has_differences": true
     }
   ],
   "Earnings_and_losses": [
     {
       "instance_id": "EN-2206-1-frame-Earnings_and_losses",
-      "idx": 336
+      "idx": 336,
+      "has_differences": false
     },
     {
       "instance_id": "EN-5490-1514-frame-Earnings_and_losses",
-      "idx": 337
+      "idx": 337,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2720-94-frame-Earnings_and_losses",
-      "idx": 338
+      "idx": 338,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1578-32-frame-Earnings_and_losses",
-      "idx": 871
+      "idx": 871,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2027-19-frame-Earnings_and_losses",
-      "idx": 1124
+      "idx": 1124,
+      "has_differences": false
     }
   ],
   "Education_teaching": [
     {
       "instance_id": "EN-4981-19-frame-Education_teaching",
-      "idx": 339
+      "idx": 339,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4715-7-frame-Education_teaching",
-      "idx": 340
+      "idx": 340,
+      "has_differences": false
     },
     {
       "instance_id": "EN-7495-69-frame-Education_teaching",
-      "idx": 341
+      "idx": 341,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0573-2-frame-Education_teaching",
-      "idx": 872
+      "idx": 872,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2550-70-frame-Education_teaching",
-      "idx": 1125
+      "idx": 1125,
+      "has_differences": true
     }
   ],
   "Emotions_by_stimulus": [
     {
       "instance_id": "EN-2795-1268-frame-Emotions_by_stimulus",
-      "idx": 342
+      "idx": 342,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3149-419-frame-Emotions_by_stimulus",
-      "idx": 343
+      "idx": 343,
+      "has_differences": false
     },
     {
       "instance_id": "EN-7464-321-frame-Emotions_by_stimulus",
-      "idx": 344
+      "idx": 344,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1519-1379-frame-Emotions_by_stimulus",
-      "idx": 873
+      "idx": 873,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1328-1205-frame-Emotions_by_stimulus",
-      "idx": 1126
+      "idx": 1126,
+      "has_differences": true
     }
   ],
   "Emotions_of_mental_activity": [
     {
       "instance_id": "EN-4554-915-frame-Emotions_of_mental_activity",
-      "idx": 345
+      "idx": 345,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0011-7640-frame-Emotions_of_mental_activity",
-      "idx": 346
+      "idx": 346,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3163-456-frame-Emotions_of_mental_activity",
-      "idx": 347
+      "idx": 347,
+      "has_differences": true
     },
     {
       "instance_id": "EN-8103-176-frame-Emotions_of_mental_activity",
-      "idx": 874
+      "idx": 874,
+      "has_differences": false
     },
     {
       "instance_id": "EN-3162-497-frame-Emotions_of_mental_activity",
-      "idx": 1127
+      "idx": 1127,
+      "has_differences": false
     }
   ],
   "Emotions_success_or_failure": [
     {
       "instance_id": "EN-2824-879-frame-Emotions_success_or_failure",
-      "idx": 348
+      "idx": 348,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4880-764-frame-Emotions_success_or_failure",
-      "idx": 349
+      "idx": 349,
+      "has_differences": false
     },
     {
       "instance_id": "EN-3080-225-frame-Emotions_success_or_failure",
-      "idx": 350
+      "idx": 350,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4992-441-frame-Emotions_success_or_failure",
-      "idx": 875
+      "idx": 875,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4042-245-frame-Emotions_success_or_failure",
-      "idx": 1128
+      "idx": 1128,
+      "has_differences": true
     }
   ],
   "Endangering": [
     {
       "instance_id": "EN-0721-428-frame-Endangering",
-      "idx": 351
+      "idx": 351,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2611-152-frame-Endangering",
-      "idx": 352
+      "idx": 352,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0910-332-frame-Endangering",
-      "idx": 353
+      "idx": 353,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0415-693-frame-Endangering",
-      "idx": 876
+      "idx": 876,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1491-644-frame-Endangering",
-      "idx": 1129
+      "idx": 1129,
+      "has_differences": true
     }
   ],
   "Enforcing": [
     {
       "instance_id": "EN-0434-666-frame-Enforcing",
-      "idx": 354
+      "idx": 354,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0419-755-frame-Enforcing",
-      "idx": 355
+      "idx": 355,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1113-756-frame-Enforcing",
-      "idx": 356
+      "idx": 356,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7457-773-frame-Enforcing",
-      "idx": 877
+      "idx": 877,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7417-451-frame-Enforcing",
-      "idx": 1130
+      "idx": 1130,
+      "has_differences": true
     }
   ],
   "Escaping": [
     {
       "instance_id": "EN-0854-124-frame-Escaping",
-      "idx": 357
+      "idx": 357,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4968-874-frame-Escaping",
-      "idx": 358
+      "idx": 358,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2883-149-frame-Escaping",
-      "idx": 359
+      "idx": 359,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1150-191-frame-Escaping",
-      "idx": 878
+      "idx": 878,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1635-840-frame-Escaping",
-      "idx": 1131
+      "idx": 1131,
+      "has_differences": true
     }
   ],
   "Event": [
     {
       "instance_id": "EN-3160-73-frame-Event",
-      "idx": 360
+      "idx": 360,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2922-626-frame-Event",
-      "idx": 361
+      "idx": 361,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7371-56-frame-Event",
-      "idx": 362
+      "idx": 362,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0190-129-frame-Event",
-      "idx": 879
+      "idx": 879,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1195-38-frame-Event",
-      "idx": 1132
+      "idx": 1132,
+      "has_differences": false
     }
   ],
   "Examination": [
     {
       "instance_id": "EN-2454-125-frame-Examination",
-      "idx": 363
+      "idx": 363,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1665-54-frame-Examination",
-      "idx": 364
+      "idx": 364,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4005-537-frame-Examination",
-      "idx": 365
+      "idx": 365,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0634-1419-frame-Examination",
-      "idx": 880
+      "idx": 880,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3150-273-frame-Examination",
-      "idx": 1133
+      "idx": 1133,
+      "has_differences": true
     }
   ],
   "Exchange": [
     {
       "instance_id": "EN-3116-574-frame-Exchange",
-      "idx": 366
+      "idx": 366,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0083-890-frame-Exchange",
-      "idx": 367
+      "idx": 367,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0611-293-frame-Exchange",
-      "idx": 368
+      "idx": 368,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1679-55-frame-Exchange",
-      "idx": 881
+      "idx": 881,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2385-666-frame-Exchange",
-      "idx": 1134
+      "idx": 1134,
+      "has_differences": true
     }
   ],
   "Execute_plan": [
     {
       "instance_id": "EN-0929-90-frame-Execute_plan",
-      "idx": 369
+      "idx": 369,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0369-33-frame-Execute_plan",
-      "idx": 370
+      "idx": 370,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3013-308-frame-Execute_plan",
-      "idx": 371
+      "idx": 371,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0659-670-frame-Execute_plan",
-      "idx": 882
+      "idx": 882,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0084-287-frame-Execute_plan",
-      "idx": 1135
+      "idx": 1135,
+      "has_differences": true
     }
   ],
   "Execution": [
     {
       "instance_id": "EN-2471-86-frame-Execution",
-      "idx": 372
+      "idx": 372,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7001-724-frame-Execution",
-      "idx": 373
+      "idx": 373,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2596-986-frame-Execution",
-      "idx": 374
+      "idx": 374,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2520-597-frame-Execution",
-      "idx": 883
+      "idx": 883,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0987-1179-frame-Execution",
-      "idx": 1136
+      "idx": 1136,
+      "has_differences": true
     }
   ],
   "Exercising": [
     {
       "instance_id": "EN-0032-286-frame-Exercising",
-      "idx": 375
+      "idx": 375,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0240-1077-frame-Exercising",
-      "idx": 376
+      "idx": 376,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2376-225-frame-Exercising",
-      "idx": 377
+      "idx": 377,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1204-78-frame-Exercising",
-      "idx": 884
+      "idx": 884,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0458-673-frame-Exercising",
-      "idx": 1137
+      "idx": 1137,
+      "has_differences": true
     }
   ],
   "Experience_bodily_harm": [
     {
       "instance_id": "EN-1059-1210-frame-Experience_bodily_harm",
-      "idx": 378
+      "idx": 378,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2372-1460-frame-Experience_bodily_harm",
-      "idx": 379
+      "idx": 379,
+      "has_differences": false
     },
     {
       "instance_id": "EN-7014-1357-frame-Experience_bodily_harm",
-      "idx": 380
+      "idx": 380,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0647-199-frame-Experience_bodily_harm",
-      "idx": 885
+      "idx": 885,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0342-157-frame-Experience_bodily_harm",
-      "idx": 1138
+      "idx": 1138,
+      "has_differences": true
     }
   ],
   "Explosion": [
     {
       "instance_id": "EN-3049-794-frame-Explosion",
-      "idx": 381
+      "idx": 381,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0469-308-frame-Explosion",
-      "idx": 382
+      "idx": 382,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4034-361-frame-Explosion",
-      "idx": 383
+      "idx": 383,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1481-768-frame-Explosion",
-      "idx": 886
+      "idx": 886,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4368-66-frame-Explosion",
-      "idx": 1139
+      "idx": 1139,
+      "has_differences": true
     }
   ],
   "Extradition": [
     {
       "instance_id": "EN-1700-765-frame-Extradition",
-      "idx": 384
+      "idx": 384,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2976-701-frame-Extradition",
-      "idx": 385
+      "idx": 385,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0179-543-frame-Extradition",
-      "idx": 386
+      "idx": 386,
+      "has_differences": false
     },
     {
       "instance_id": "EN-5052-149-frame-Extradition",
-      "idx": 887
+      "idx": 887,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1512-69-frame-Extradition",
-      "idx": 1140
+      "idx": 1140,
+      "has_differences": false
     }
   ],
   "Fear": [
     {
       "instance_id": "EN-0381-1044-frame-Fear",
-      "idx": 387
+      "idx": 387,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2641-480-frame-Fear",
-      "idx": 388
+      "idx": 388,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1194-579-frame-Fear",
-      "idx": 389
+      "idx": 389,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4944-802-frame-Fear",
-      "idx": 888
+      "idx": 888,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1366-482-frame-Fear",
-      "idx": 1141
+      "idx": 1141,
+      "has_differences": true
     }
   ],
   "Filling": [
     {
       "instance_id": "EN-2773-800-frame-Filling",
-      "idx": 390
+      "idx": 390,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2954-677-frame-Filling",
-      "idx": 391
+      "idx": 391,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4334-94-frame-Filling",
-      "idx": 392
+      "idx": 392,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2446-114-frame-Filling",
-      "idx": 889
+      "idx": 889,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0756-10-frame-Filling",
-      "idx": 1142
+      "idx": 1142,
+      "has_differences": true
     }
   ],
   "Fining": [
     {
       "instance_id": "EN-0466-808-frame-Fining",
-      "idx": 393
+      "idx": 393,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0569-1232-frame-Fining",
-      "idx": 394
+      "idx": 394,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0155-1233-frame-Fining",
-      "idx": 395
+      "idx": 395,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0690-1187-frame-Fining",
-      "idx": 890
+      "idx": 890,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0033-504-frame-Fining",
-      "idx": 1143
+      "idx": 1143,
+      "has_differences": false
     }
   ],
   "Firing": [
     {
       "instance_id": "EN-1349-588-frame-Firing",
-      "idx": 396
+      "idx": 396,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0892-120-frame-Firing",
-      "idx": 397
+      "idx": 397,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1375-16-frame-Firing",
-      "idx": 398
+      "idx": 398,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1453-33-frame-Firing",
-      "idx": 891
+      "idx": 891,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3124-882-frame-Firing",
-      "idx": 1144
+      "idx": 1144,
+      "has_differences": true
     }
   ],
   "Fleeing": [
     {
       "instance_id": "EN-1323-309-frame-Fleeing",
-      "idx": 399
+      "idx": 399,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1582-715-frame-Fleeing",
-      "idx": 400
+      "idx": 400,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4251-0-frame-Fleeing",
-      "idx": 401
+      "idx": 401,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0359-163-frame-Fleeing",
-      "idx": 892
+      "idx": 892,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0238-1097-frame-Fleeing",
-      "idx": 1145
+      "idx": 1145,
+      "has_differences": false
     }
   ],
   "Forging": [
     {
       "instance_id": "EN-2019-1018-frame-Forging",
-      "idx": 402
+      "idx": 402,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2794-772-frame-Forging",
-      "idx": 403
+      "idx": 403,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2058-1202-frame-Forging",
-      "idx": 404
+      "idx": 404,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0571-163-frame-Forging",
-      "idx": 893
+      "idx": 893,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3036-519-frame-Forging",
-      "idx": 1146
+      "idx": 1146,
+      "has_differences": false
     }
   ],
   "Forming_relationships": [
     {
       "instance_id": "EN-4454-614-frame-Forming_relationships",
-      "idx": 405
+      "idx": 405,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4476-363-frame-Forming_relationships",
-      "idx": 406
+      "idx": 406,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2760-360-frame-Forming_relationships",
-      "idx": 407
+      "idx": 407,
+      "has_differences": false
     },
     {
       "instance_id": "EN-7444-444-frame-Forming_relationships",
-      "idx": 894
+      "idx": 894,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2083-69-frame-Forming_relationships",
-      "idx": 1147
+      "idx": 1147,
+      "has_differences": false
     }
   ],
   "Gathering_up": [
     {
       "instance_id": "EN-0156-1767-frame-Gathering_up",
-      "idx": 408
+      "idx": 408,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0080-167-frame-Gathering_up",
-      "idx": 409
+      "idx": 409,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2871-29-frame-Gathering_up",
-      "idx": 410
+      "idx": 410,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4068-302-frame-Gathering_up",
-      "idx": 895
+      "idx": 895,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0089-945-frame-Gathering_up",
-      "idx": 1148
+      "idx": 1148,
+      "has_differences": true
     }
   ],
   "Gesture": [
     {
       "instance_id": "EN-1367-569-frame-Gesture",
-      "idx": 411
+      "idx": 411,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0494-528-frame-Gesture",
-      "idx": 412
+      "idx": 412,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0102-565-frame-Gesture",
-      "idx": 413
+      "idx": 413,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0284-1203-frame-Gesture",
-      "idx": 896
+      "idx": 896,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2717-606-frame-Gesture",
-      "idx": 1149
+      "idx": 1149,
+      "has_differences": true
     }
   ],
   "Get_a_job": [
     {
       "instance_id": "EN-8032-397-frame-Get_a_job",
-      "idx": 414
+      "idx": 414,
+      "has_differences": false
     },
     {
       "instance_id": "EN-5012-106-frame-Get_a_job",
-      "idx": 415
+      "idx": 415,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1368-50-frame-Get_a_job",
-      "idx": 416
+      "idx": 416,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3053-918-frame-Get_a_job",
-      "idx": 897
+      "idx": 897,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4412-472-frame-Get_a_job",
-      "idx": 1150
+      "idx": 1150,
+      "has_differences": false
     }
   ],
   "Getting": [
     {
       "instance_id": "EN-4564-42-frame-Getting",
-      "idx": 417
+      "idx": 417,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2044-18-frame-Getting",
-      "idx": 418
+      "idx": 418,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0499-526-frame-Getting",
-      "idx": 419
+      "idx": 419,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0763-7-frame-Getting",
-      "idx": 898
+      "idx": 898,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0296-107-frame-Getting",
-      "idx": 1151
+      "idx": 1151,
+      "has_differences": false
     }
   ],
   "Go_into_shape": [
     {
       "instance_id": "EN-0172-723-frame-Go_into_shape",
-      "idx": 420
+      "idx": 420,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4486-10-frame-Go_into_shape",
-      "idx": 421
+      "idx": 421,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0402-328-frame-Go_into_shape",
-      "idx": 422
+      "idx": 422,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0398-707-frame-Go_into_shape",
-      "idx": 899
+      "idx": 899,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1177-1897-frame-Go_into_shape",
-      "idx": 1152
+      "idx": 1152,
+      "has_differences": false
     }
   ],
   "Grinding": [
     {
       "instance_id": "EN-4413-988-frame-Grinding",
-      "idx": 423
+      "idx": 423,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1131-1368-frame-Grinding",
-      "idx": 424
+      "idx": 424,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1065-431-frame-Grinding",
-      "idx": 425
+      "idx": 425,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0968-705-frame-Grinding",
-      "idx": 900
+      "idx": 900,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0416-318-frame-Grinding",
-      "idx": 1153
+      "idx": 1153,
+      "has_differences": false
     }
   ],
   "Grooming": [
     {
       "instance_id": "EN-1187-772-frame-Grooming",
-      "idx": 426
+      "idx": 426,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2934-590-frame-Grooming",
-      "idx": 427
+      "idx": 427,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1175-503-frame-Grooming",
-      "idx": 428
+      "idx": 428,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0523-531-frame-Grooming",
-      "idx": 901
+      "idx": 901,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2608-464-frame-Grooming",
-      "idx": 1154
+      "idx": 1154,
+      "has_differences": true
     }
   ],
   "Heralding": [
     {
       "instance_id": "EN-2837-1075-frame-Heralding",
-      "idx": 429
+      "idx": 429,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0008-2751-frame-Heralding",
-      "idx": 430
+      "idx": 430,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3109-52-frame-Heralding",
-      "idx": 431
+      "idx": 431,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3126-1095-frame-Heralding",
-      "idx": 902
+      "idx": 902,
+      "has_differences": true
     },
     {
       "instance_id": "EN-8193-171-frame-Heralding",
-      "idx": 1155
+      "idx": 1155,
+      "has_differences": true
     }
   ],
   "Hiring": [
     {
       "instance_id": "EN-0685-77-frame-Hiring",
-      "idx": 432
+      "idx": 432,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0263-234-frame-Hiring",
-      "idx": 433
+      "idx": 433,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4904-398-frame-Hiring",
-      "idx": 434
+      "idx": 434,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2953-358-frame-Hiring",
-      "idx": 903
+      "idx": 903,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3148-96-frame-Hiring",
-      "idx": 1156
+      "idx": 1156,
+      "has_differences": true
     }
   ],
   "Historic_event": [
     {
       "instance_id": "EN-4900-77-frame-Historic_event",
-      "idx": 435
+      "idx": 435,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4881-486-frame-Historic_event",
-      "idx": 436
+      "idx": 436,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1245-685-frame-Historic_event",
-      "idx": 437
+      "idx": 437,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2397-149-frame-Historic_event",
-      "idx": 904
+      "idx": 904,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7384-65-frame-Historic_event",
-      "idx": 1157
+      "idx": 1157,
+      "has_differences": true
     }
   ],
   "Hit_target": [
     {
       "instance_id": "EN-2563-231-frame-Hit_target",
-      "idx": 438
+      "idx": 438,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1550-29-frame-Hit_target",
-      "idx": 439
+      "idx": 439,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2815-821-frame-Hit_target",
-      "idx": 440
+      "idx": 440,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2441-1467-frame-Hit_target",
-      "idx": 905
+      "idx": 905,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2399-986-frame-Hit_target",
-      "idx": 1158
+      "idx": 1158,
+      "has_differences": false
     }
   ],
   "Hostile_encounter": [
     {
       "instance_id": "EN-0922-297-frame-Hostile_encounter",
-      "idx": 441
+      "idx": 441,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2820-129-frame-Hostile_encounter",
-      "idx": 442
+      "idx": 442,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0008-918-frame-Hostile_encounter",
-      "idx": 443
+      "idx": 443,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1110-397-frame-Hostile_encounter",
-      "idx": 906
+      "idx": 906,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4428-477-frame-Hostile_encounter",
-      "idx": 1159
+      "idx": 1159,
+      "has_differences": true
     }
   ],
   "Imposing_obligation": [
     {
       "instance_id": "EN-4030-471-frame-Imposing_obligation",
-      "idx": 444
+      "idx": 444,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0663-718-frame-Imposing_obligation",
-      "idx": 445
+      "idx": 445,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1439-1056-frame-Imposing_obligation",
-      "idx": 446
+      "idx": 446,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0758-700-frame-Imposing_obligation",
-      "idx": 907
+      "idx": 907,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2128-6-frame-Imposing_obligation",
-      "idx": 1160
+      "idx": 1160,
+      "has_differences": false
     }
   ],
   "Imprisonment": [
     {
       "instance_id": "EN-0538-61-frame-Imprisonment",
-      "idx": 447
+      "idx": 447,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4031-1373-frame-Imprisonment",
-      "idx": 448
+      "idx": 448,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4584-254-frame-Imprisonment",
-      "idx": 449
+      "idx": 449,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4452-286-frame-Imprisonment",
-      "idx": 908
+      "idx": 908,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2465-284-frame-Imprisonment",
-      "idx": 1161
+      "idx": 1161,
+      "has_differences": true
     }
   ],
   "Improvement_or_decline": [
     {
       "instance_id": "EN-2460-1072-frame-Improvement_or_decline",
-      "idx": 450
+      "idx": 450,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1531-5-frame-Improvement_or_decline",
-      "idx": 451
+      "idx": 451,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0763-1315-frame-Improvement_or_decline",
-      "idx": 452
+      "idx": 452,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2198-24-frame-Improvement_or_decline",
-      "idx": 909
+      "idx": 909,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2599-54-frame-Improvement_or_decline",
-      "idx": 1162
+      "idx": 1162,
+      "has_differences": true
     }
   ],
   "Ingest_substance": [
     {
       "instance_id": "EN-0080-317-frame-Ingest_substance",
-      "idx": 453
+      "idx": 453,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1500-248-frame-Ingest_substance",
-      "idx": 454
+      "idx": 454,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0892-513-frame-Ingest_substance",
-      "idx": 455
+      "idx": 455,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0527-944-frame-Ingest_substance",
-      "idx": 910
+      "idx": 910,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0960-122-frame-Ingest_substance",
-      "idx": 1163
+      "idx": 1163,
+      "has_differences": true
     }
   ],
   "Ingestion": [
     {
       "instance_id": "EN-1281-333-frame-Ingestion",
-      "idx": 456
+      "idx": 456,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0741-4-frame-Ingestion",
-      "idx": 457
+      "idx": 457,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0398-132-frame-Ingestion",
-      "idx": 458
+      "idx": 458,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0507-809-frame-Ingestion",
-      "idx": 911
+      "idx": 911,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2968-281-frame-Ingestion",
-      "idx": 1164
+      "idx": 1164,
+      "has_differences": false
     }
   ],
   "Inhibit_movement": [
     {
       "instance_id": "EN-4863-21-frame-Inhibit_movement",
-      "idx": 459
+      "idx": 459,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4505-557-frame-Inhibit_movement",
-      "idx": 460
+      "idx": 460,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0716-9-frame-Inhibit_movement",
-      "idx": 461
+      "idx": 461,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2865-14-frame-Inhibit_movement",
-      "idx": 912
+      "idx": 912,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7408-1837-frame-Inhibit_movement",
-      "idx": 1165
+      "idx": 1165,
+      "has_differences": true
     }
   ],
   "Intentional_traversing": [
     {
       "instance_id": "EN-1631-581-frame-Intentional_traversing",
-      "idx": 462
+      "idx": 462,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0548-981-frame-Intentional_traversing",
-      "idx": 463
+      "idx": 463,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1252-2-frame-Intentional_traversing",
-      "idx": 464
+      "idx": 464,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5505-1087-frame-Intentional_traversing",
-      "idx": 913
+      "idx": 913,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2780-721-frame-Intentional_traversing",
-      "idx": 1166
+      "idx": 1166,
+      "has_differences": false
     }
   ],
   "Intentionally_act": [
     {
       "instance_id": "EN-3126-361-frame-Intentionally_act",
-      "idx": 465
+      "idx": 465,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1399-131-frame-Intentionally_act",
-      "idx": 466
+      "idx": 466,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2820-130-frame-Intentionally_act",
-      "idx": 467
+      "idx": 467,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0662-65-frame-Intentionally_act",
-      "idx": 914
+      "idx": 914,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0908-1197-frame-Intentionally_act",
-      "idx": 1167
+      "idx": 1167,
+      "has_differences": true
     }
   ],
   "Intentionally_create": [
     {
       "instance_id": "EN-2482-29-frame-Intentionally_create",
-      "idx": 468
+      "idx": 468,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1184-21-frame-Intentionally_create",
-      "idx": 469
+      "idx": 469,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0635-1225-frame-Intentionally_create",
-      "idx": 470
+      "idx": 470,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4739-25-frame-Intentionally_create",
-      "idx": 915
+      "idx": 915,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2013-106-frame-Intentionally_create",
-      "idx": 1168
+      "idx": 1168,
+      "has_differences": true
     }
   ],
   "Intercepting": [
     {
       "instance_id": "EN-1473-261-frame-Intercepting",
-      "idx": 471
+      "idx": 471,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4553-401-frame-Intercepting",
-      "idx": 472
+      "idx": 472,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2780-724-frame-Intercepting",
-      "idx": 473
+      "idx": 473,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5192-36-frame-Intercepting",
-      "idx": 916
+      "idx": 916,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4349-523-frame-Intercepting",
-      "idx": 1169
+      "idx": 1169,
+      "has_differences": true
     }
   ],
   "Interrupt_process": [
     {
       "instance_id": "EN-2588-1045-frame-Interrupt_process",
-      "idx": 474
+      "idx": 474,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2461-26-frame-Interrupt_process",
-      "idx": 475
+      "idx": 475,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1226-1074-frame-Interrupt_process",
-      "idx": 476
+      "idx": 476,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0109-1061-frame-Interrupt_process",
-      "idx": 917
+      "idx": 917,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4469-592-frame-Interrupt_process",
-      "idx": 1170
+      "idx": 1170,
+      "has_differences": false
     }
   ],
   "Invading": [
     {
       "instance_id": "EN-2042-359-frame-Invading",
-      "idx": 477
+      "idx": 477,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0057-590-frame-Invading",
-      "idx": 478
+      "idx": 478,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3005-1096-frame-Invading",
-      "idx": 479
+      "idx": 479,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1155-1694-frame-Invading",
-      "idx": 918
+      "idx": 918,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7420-136-frame-Invading",
-      "idx": 1171
+      "idx": 1171,
+      "has_differences": false
     }
   ],
   "Just_found_out": [
     {
       "instance_id": "EN-2706-1162-frame-Just_found_out",
-      "idx": 480
+      "idx": 480,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2016-234-frame-Just_found_out",
-      "idx": 481
+      "idx": 481,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2757-635-frame-Just_found_out",
-      "idx": 482
+      "idx": 482,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0333-273-frame-Just_found_out",
-      "idx": 919
+      "idx": 919,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7373-697-frame-Just_found_out",
-      "idx": 1172
+      "idx": 1172,
+      "has_differences": true
     }
   ],
   "Kidnapping": [
     {
       "instance_id": "EN-7256-4-frame-Kidnapping",
-      "idx": 483
+      "idx": 483,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2504-574-frame-Kidnapping",
-      "idx": 484
+      "idx": 484,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1331-587-frame-Kidnapping",
-      "idx": 485
+      "idx": 485,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1273-77-frame-Kidnapping",
-      "idx": 920
+      "idx": 920,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4908-87-frame-Kidnapping",
-      "idx": 1173
+      "idx": 1173,
+      "has_differences": true
     }
   ],
   "Killing": [
     {
       "instance_id": "EN-2061-166-frame-Killing",
-      "idx": 486
+      "idx": 486,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0620-3-frame-Killing",
-      "idx": 487
+      "idx": 487,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1498-1764-frame-Killing",
-      "idx": 488
+      "idx": 488,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0002-599-frame-Killing",
-      "idx": 921
+      "idx": 921,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2918-758-frame-Killing",
-      "idx": 1174
+      "idx": 1174,
+      "has_differences": true
     }
   ],
   "Legal_rulings": [
     {
       "instance_id": "EN-2740-329-frame-Legal_rulings",
-      "idx": 489
+      "idx": 489,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1337-1140-frame-Legal_rulings",
-      "idx": 490
+      "idx": 490,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0510-609-frame-Legal_rulings",
-      "idx": 491
+      "idx": 491,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5110-450-frame-Legal_rulings",
-      "idx": 922
+      "idx": 922,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0355-677-frame-Legal_rulings",
-      "idx": 1175
+      "idx": 1175,
+      "has_differences": true
     }
   ],
   "Lending": [
     {
       "instance_id": "EN-2518-77-frame-Lending",
-      "idx": 492
+      "idx": 492,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0925-146-frame-Lending",
-      "idx": 493
+      "idx": 493,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1360-952-frame-Lending",
-      "idx": 494
+      "idx": 494,
+      "has_differences": false
     },
     {
       "instance_id": "EN-5077-817-frame-Lending",
-      "idx": 923
+      "idx": 923,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7384-395-frame-Lending",
-      "idx": 1176
+      "idx": 1176,
+      "has_differences": true
     }
   ],
   "Limiting": [
     {
       "instance_id": "EN-4480-80-frame-Limiting",
-      "idx": 495
+      "idx": 495,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0659-408-frame-Limiting",
-      "idx": 496
+      "idx": 496,
+      "has_differences": false
     },
     {
       "instance_id": "EN-3132-622-frame-Limiting",
-      "idx": 497
+      "idx": 497,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0068-272-frame-Limiting",
-      "idx": 924
+      "idx": 924,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2534-954-frame-Limiting",
-      "idx": 1177
+      "idx": 1177,
+      "has_differences": true
     }
   ],
   "Making_arrangements": [
     {
       "instance_id": "EN-4112-12-frame-Making_arrangements",
-      "idx": 498
+      "idx": 498,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1127-901-frame-Making_arrangements",
-      "idx": 499
+      "idx": 499,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2753-335-frame-Making_arrangements",
-      "idx": 500
+      "idx": 500,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4006-53-frame-Making_arrangements",
-      "idx": 925
+      "idx": 925,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2414-676-frame-Making_arrangements",
-      "idx": 1178
+      "idx": 1178,
+      "has_differences": true
     }
   ],
   "Manipulate_into_doing": [
     {
       "instance_id": "EN-2840-209-frame-Manipulate_into_doing",
-      "idx": 501
+      "idx": 501,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4898-523-frame-Manipulate_into_doing",
-      "idx": 502
+      "idx": 502,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2015-1349-frame-Manipulate_into_doing",
-      "idx": 503
+      "idx": 503,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0178-829-frame-Manipulate_into_doing",
-      "idx": 926
+      "idx": 926,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0091-382-frame-Manipulate_into_doing",
-      "idx": 1179
+      "idx": 1179,
+      "has_differences": true
     }
   ],
   "Manipulation": [
     {
       "instance_id": "EN-1347-632-frame-Manipulation",
-      "idx": 504
+      "idx": 504,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2755-1522-frame-Manipulation",
-      "idx": 505
+      "idx": 505,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2365-145-frame-Manipulation",
-      "idx": 506
+      "idx": 506,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2758-942-frame-Manipulation",
-      "idx": 927
+      "idx": 927,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2510-224-frame-Manipulation",
-      "idx": 1180
+      "idx": 1180,
+      "has_differences": false
     }
   ],
   "Manufacturing": [
     {
       "instance_id": "EN-4342-22-frame-Manufacturing",
-      "idx": 507
+      "idx": 507,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0649-64-frame-Manufacturing",
-      "idx": 508
+      "idx": 508,
+      "has_differences": false
     },
     {
       "instance_id": "EN-3064-36-frame-Manufacturing",
-      "idx": 509
+      "idx": 509,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0856-229-frame-Manufacturing",
-      "idx": 928
+      "idx": 928,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2614-369-frame-Manufacturing",
-      "idx": 1181
+      "idx": 1181,
+      "has_differences": true
     }
   ],
   "Mass_motion": [
     {
       "instance_id": "EN-2617-220-frame-Mass_motion",
-      "idx": 510
+      "idx": 510,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0605-456-frame-Mass_motion",
-      "idx": 511
+      "idx": 511,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1302-589-frame-Mass_motion",
-      "idx": 512
+      "idx": 512,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2843-780-frame-Mass_motion",
-      "idx": 929
+      "idx": 929,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0782-299-frame-Mass_motion",
-      "idx": 1182
+      "idx": 1182,
+      "has_differences": true
     }
   ],
   "Military_operation": [
     {
       "instance_id": "EN-2821-986-frame-Military_operation",
-      "idx": 513
+      "idx": 513,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1089-1413-frame-Military_operation",
-      "idx": 514
+      "idx": 514,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0758-760-frame-Military_operation",
-      "idx": 515
+      "idx": 515,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4953-62-frame-Military_operation",
-      "idx": 930
+      "idx": 930,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4897-324-frame-Military_operation",
-      "idx": 1183
+      "idx": 1183,
+      "has_differences": true
     }
   ],
   "Motion": [
     {
       "instance_id": "EN-4361-134-frame-Motion",
-      "idx": 516
+      "idx": 516,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2484-247-frame-Motion",
-      "idx": 517
+      "idx": 517,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1731-913-frame-Motion",
-      "idx": 518
+      "idx": 518,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7440-1-frame-Motion",
-      "idx": 931
+      "idx": 931,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4562-14-frame-Motion",
-      "idx": 1184
+      "idx": 1184,
+      "has_differences": false
     }
   ],
   "Motion_directional": [
     {
       "instance_id": "EN-3042-1089-frame-Motion_directional",
-      "idx": 519
+      "idx": 519,
+      "has_differences": false
     },
     {
       "instance_id": "EN-5445-40-frame-Motion_directional",
-      "idx": 520
+      "idx": 520,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1670-325-frame-Motion_directional",
-      "idx": 521
+      "idx": 521,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1537-1419-frame-Motion_directional",
-      "idx": 932
+      "idx": 932,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7492-235-frame-Motion_directional",
-      "idx": 1185
+      "idx": 1185,
+      "has_differences": true
     }
   ],
   "Objective_influence": [
     {
       "instance_id": "EN-7463-202-frame-Objective_influence",
-      "idx": 522
+      "idx": 522,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0228-934-frame-Objective_influence",
-      "idx": 523
+      "idx": 523,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2673-1032-frame-Objective_influence",
-      "idx": 524
+      "idx": 524,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4441-638-frame-Objective_influence",
-      "idx": 933
+      "idx": 933,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1496-561-frame-Objective_influence",
-      "idx": 1186
+      "idx": 1186,
+      "has_differences": true
     }
   ],
   "Operate_vehicle": [
     {
       "instance_id": "EN-1252-240-frame-Operate_vehicle",
-      "idx": 525
+      "idx": 525,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1191-240-frame-Operate_vehicle",
-      "idx": 526
+      "idx": 526,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5419-12-frame-Operate_vehicle",
-      "idx": 527
+      "idx": 527,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0725-670-frame-Operate_vehicle",
-      "idx": 934
+      "idx": 934,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4434-339-frame-Operate_vehicle",
-      "idx": 1187
+      "idx": 1187,
+      "has_differences": true
     }
   ],
   "Operating_a_system": [
     {
       "instance_id": "EN-0696-506-frame-Operating_a_system",
-      "idx": 528
+      "idx": 528,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4494-307-frame-Operating_a_system",
-      "idx": 529
+      "idx": 529,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0218-205-frame-Operating_a_system",
-      "idx": 530
+      "idx": 530,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2042-348-frame-Operating_a_system",
-      "idx": 935
+      "idx": 935,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0390-838-frame-Operating_a_system",
-      "idx": 1188
+      "idx": 1188,
+      "has_differences": true
     }
   ],
   "Others_situation_as_stimulus": [
     {
       "instance_id": "EN-4498-161-frame-Others_situation_as_stimulus",
-      "idx": 531
+      "idx": 531,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0428-684-frame-Others_situation_as_stimulus",
-      "idx": 532
+      "idx": 532,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2366-527-frame-Others_situation_as_stimulus",
-      "idx": 533
+      "idx": 533,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1336-1077-frame-Others_situation_as_stimulus",
-      "idx": 936
+      "idx": 936,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0693-209-frame-Others_situation_as_stimulus",
-      "idx": 1189
+      "idx": 1189,
+      "has_differences": true
     }
   ],
   "Pardon": [
     {
       "instance_id": "EN-2054-54-frame-Pardon",
-      "idx": 534
+      "idx": 534,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0911-511-frame-Pardon",
-      "idx": 535
+      "idx": 535,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0891-240-frame-Pardon",
-      "idx": 536
+      "idx": 536,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0470-816-frame-Pardon",
-      "idx": 937
+      "idx": 937,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4580-337-frame-Pardon",
-      "idx": 1190
+      "idx": 1190,
+      "has_differences": true
     }
   ],
   "Piracy": [
     {
       "instance_id": "EN-3074-174-frame-Piracy",
-      "idx": 537
+      "idx": 537,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2692-818-frame-Piracy",
-      "idx": 538
+      "idx": 538,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0780-198-frame-Piracy",
-      "idx": 539
+      "idx": 539,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2244-15-frame-Piracy",
-      "idx": 938
+      "idx": 938,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4901-877-frame-Piracy",
-      "idx": 1191
+      "idx": 1191,
+      "has_differences": true
     }
   ],
   "Placing": [
     {
       "instance_id": "EN-0545-238-frame-Placing",
-      "idx": 540
+      "idx": 540,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1258-228-frame-Placing",
-      "idx": 541
+      "idx": 541,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1518-77-frame-Placing",
-      "idx": 542
+      "idx": 542,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1441-71-frame-Placing",
-      "idx": 939
+      "idx": 939,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0885-6-frame-Placing",
-      "idx": 1192
+      "idx": 1192,
+      "has_differences": false
     }
   ],
   "Posing_as": [
     {
       "instance_id": "EN-0540-235-frame-Posing_as",
-      "idx": 543
+      "idx": 543,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4034-979-frame-Posing_as",
-      "idx": 544
+      "idx": 544,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0637-257-frame-Posing_as",
-      "idx": 545
+      "idx": 545,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1523-610-frame-Posing_as",
-      "idx": 940
+      "idx": 940,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4571-653-frame-Posing_as",
-      "idx": 1193
+      "idx": 1193,
+      "has_differences": false
     }
   ],
   "Practice": [
     {
       "instance_id": "EN-2715-501-frame-Practice",
-      "idx": 546
+      "idx": 546,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1258-327-frame-Practice",
-      "idx": 547
+      "idx": 547,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1214-699-frame-Practice",
-      "idx": 548
+      "idx": 548,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4033-191-frame-Practice",
-      "idx": 941
+      "idx": 941,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1206-202-frame-Practice",
-      "idx": 1194
+      "idx": 1194,
+      "has_differences": false
     }
   ],
   "Precipitation": [
     {
       "instance_id": "EN-0167-104-frame-Precipitation",
-      "idx": 549
+      "idx": 549,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7466-966-frame-Precipitation",
-      "idx": 550
+      "idx": 550,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1159-323-frame-Precipitation",
-      "idx": 551
+      "idx": 551,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0008-1246-frame-Precipitation",
-      "idx": 942
+      "idx": 942,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0530-249-frame-Precipitation",
-      "idx": 1195
+      "idx": 1195,
+      "has_differences": false
     }
   ],
   "Predicament": [
     {
       "instance_id": "EN-2835-241-frame-Predicament",
-      "idx": 552
+      "idx": 552,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0746-215-frame-Predicament",
-      "idx": 553
+      "idx": 553,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1091-12-frame-Predicament",
-      "idx": 554
+      "idx": 554,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0968-193-frame-Predicament",
-      "idx": 943
+      "idx": 943,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2860-81-frame-Predicament",
-      "idx": 1196
+      "idx": 1196,
+      "has_differences": true
     }
   ],
   "Presence": [
     {
       "instance_id": "EN-0307-677-frame-Presence",
-      "idx": 555
+      "idx": 555,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4536-328-frame-Presence",
-      "idx": 556
+      "idx": 556,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1232-983-frame-Presence",
-      "idx": 557
+      "idx": 557,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2705-764-frame-Presence",
-      "idx": 944
+      "idx": 944,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1311-66-frame-Presence",
-      "idx": 1197
+      "idx": 1197,
+      "has_differences": true
     }
   ],
   "Preserving": [
     {
       "instance_id": "EN-4442-785-frame-Preserving",
-      "idx": 558
+      "idx": 558,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7069-293-frame-Preserving",
-      "idx": 559
+      "idx": 559,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1258-788-frame-Preserving",
-      "idx": 560
+      "idx": 560,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1497-1042-frame-Preserving",
-      "idx": 945
+      "idx": 945,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5042-541-frame-Preserving",
-      "idx": 1198
+      "idx": 1198,
+      "has_differences": true
     }
   ],
   "Process_completed_state": [
     {
       "instance_id": "EN-2048-760-frame-Process_completed_state",
-      "idx": 561
+      "idx": 561,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2515-543-frame-Process_completed_state",
-      "idx": 562
+      "idx": 562,
+      "has_differences": false
     },
     {
       "instance_id": "EN-8121-695-frame-Process_completed_state",
-      "idx": 563
+      "idx": 563,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0210-843-frame-Process_completed_state",
-      "idx": 946
+      "idx": 946,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4886-1075-frame-Process_completed_state",
-      "idx": 1199
+      "idx": 1199,
+      "has_differences": false
     }
   ],
   "Process_continue": [
     {
       "instance_id": "EN-5525-734-frame-Process_continue",
-      "idx": 564
+      "idx": 564,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2586-274-frame-Process_continue",
-      "idx": 565
+      "idx": 565,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4673-13-frame-Process_continue",
-      "idx": 566
+      "idx": 566,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2533-82-frame-Process_continue",
-      "idx": 947
+      "idx": 947,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2456-331-frame-Process_continue",
-      "idx": 1200
+      "idx": 1200,
+      "has_differences": true
     }
   ],
   "Process_end": [
     {
       "instance_id": "EN-7041-72-frame-Process_end",
-      "idx": 567
+      "idx": 567,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0681-1165-frame-Process_end",
-      "idx": 568
+      "idx": 568,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0982-1171-frame-Process_end",
-      "idx": 569
+      "idx": 569,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2920-17-frame-Process_end",
-      "idx": 948
+      "idx": 948,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0054-499-frame-Process_end",
-      "idx": 1201
+      "idx": 1201,
+      "has_differences": true
     }
   ],
   "Process_start": [
     {
       "instance_id": "EN-1268-22-frame-Process_start",
-      "idx": 570
+      "idx": 570,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5378-1-frame-Process_start",
-      "idx": 571
+      "idx": 571,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2980-153-frame-Process_start",
-      "idx": 572
+      "idx": 572,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0910-46-frame-Process_start",
-      "idx": 949
+      "idx": 949,
+      "has_differences": false
     },
     {
       "instance_id": "EN-3076-316-frame-Process_start",
-      "idx": 1202
+      "idx": 1202,
+      "has_differences": true
     }
   ],
   "Process_stop": [
     {
       "instance_id": "EN-3153-200-frame-Process_stop",
-      "idx": 573
+      "idx": 573,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2769-347-frame-Process_stop",
-      "idx": 574
+      "idx": 574,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5011-874-frame-Process_stop",
-      "idx": 575
+      "idx": 575,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0241-273-frame-Process_stop",
-      "idx": 950
+      "idx": 950,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5048-444-frame-Process_stop",
-      "idx": 1203
+      "idx": 1203,
+      "has_differences": true
     }
   ],
   "Proliferating_in_number": [
     {
       "instance_id": "EN-1255-436-frame-Proliferating_in_number",
-      "idx": 576
+      "idx": 576,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1497-1245-frame-Proliferating_in_number",
-      "idx": 577
+      "idx": 577,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2854-1232-frame-Proliferating_in_number",
-      "idx": 578
+      "idx": 578,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0669-627-frame-Proliferating_in_number",
-      "idx": 951
+      "idx": 951,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0880-600-frame-Proliferating_in_number",
-      "idx": 1204
+      "idx": 1204,
+      "has_differences": false
     }
   ],
   "Quitting": [
     {
       "instance_id": "EN-2019-45-frame-Quitting",
-      "idx": 579
+      "idx": 579,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0769-228-frame-Quitting",
-      "idx": 580
+      "idx": 580,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7045-394-frame-Quitting",
-      "idx": 581
+      "idx": 581,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1702-5-frame-Quitting",
-      "idx": 952
+      "idx": 952,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4556-121-frame-Quitting",
-      "idx": 1205
+      "idx": 1205,
+      "has_differences": false
     }
   ],
   "Quitting_a_place": [
     {
       "instance_id": "EN-4594-780-frame-Quitting_a_place",
-      "idx": 582
+      "idx": 582,
+      "has_differences": false
     },
     {
       "instance_id": "EN-5123-974-frame-Quitting_a_place",
-      "idx": 583
+      "idx": 583,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1141-163-frame-Quitting_a_place",
-      "idx": 584
+      "idx": 584,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0958-524-frame-Quitting_a_place",
-      "idx": 953
+      "idx": 953,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0120-137-frame-Quitting_a_place",
-      "idx": 1206
+      "idx": 1206,
+      "has_differences": true
     }
   ],
   "Rape": [
     {
       "instance_id": "EN-0765-94-frame-Rape",
-      "idx": 585
+      "idx": 585,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1374-980-frame-Rape",
-      "idx": 586
+      "idx": 586,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2346-511-frame-Rape",
-      "idx": 587
+      "idx": 587,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0615-425-frame-Rape",
-      "idx": 954
+      "idx": 954,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5521-412-frame-Rape",
-      "idx": 1207
+      "idx": 1207,
+      "has_differences": false
     }
   ],
   "Reassuring": [
     {
       "instance_id": "EN-1546-650-frame-Reassuring",
-      "idx": 588
+      "idx": 588,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4484-258-frame-Reassuring",
-      "idx": 589
+      "idx": 589,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0881-166-frame-Reassuring",
-      "idx": 590
+      "idx": 590,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1728-573-frame-Reassuring",
-      "idx": 955
+      "idx": 955,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1312-1345-frame-Reassuring",
-      "idx": 1208
+      "idx": 1208,
+      "has_differences": true
     }
   ],
   "Receiving": [
     {
       "instance_id": "EN-2765-28-frame-Receiving",
-      "idx": 591
+      "idx": 591,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4405-28-frame-Receiving",
-      "idx": 592
+      "idx": 592,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0120-32-frame-Receiving",
-      "idx": 593
+      "idx": 593,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2925-230-frame-Receiving",
-      "idx": 956
+      "idx": 956,
+      "has_differences": false
     },
     {
       "instance_id": "EN-7180-6-frame-Receiving",
-      "idx": 1209
+      "idx": 1209,
+      "has_differences": true
     }
   ],
   "Rejuvenation": [
     {
       "instance_id": "EN-2012-430-frame-Rejuvenation",
-      "idx": 594
+      "idx": 594,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0025-854-frame-Rejuvenation",
-      "idx": 595
+      "idx": 595,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1358-745-frame-Rejuvenation",
-      "idx": 596
+      "idx": 596,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1407-623-frame-Rejuvenation",
-      "idx": 957
+      "idx": 957,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2805-140-frame-Rejuvenation",
-      "idx": 1210
+      "idx": 1210,
+      "has_differences": true
     }
   ],
   "Removing": [
     {
       "instance_id": "EN-1099-634-frame-Removing",
-      "idx": 597
+      "idx": 597,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1321-142-frame-Removing",
-      "idx": 598
+      "idx": 598,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0823-4-frame-Removing",
-      "idx": 599
+      "idx": 599,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4997-32-frame-Removing",
-      "idx": 958
+      "idx": 958,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0179-214-frame-Removing",
-      "idx": 1211
+      "idx": 1211,
+      "has_differences": true
     }
   ],
   "Render_nonfunctional": [
     {
       "instance_id": "EN-4039-647-frame-Render_nonfunctional",
-      "idx": 600
+      "idx": 600,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7421-1010-frame-Render_nonfunctional",
-      "idx": 601
+      "idx": 601,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2946-1304-frame-Render_nonfunctional",
-      "idx": 602
+      "idx": 602,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1550-247-frame-Render_nonfunctional",
-      "idx": 959
+      "idx": 959,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2836-794-frame-Render_nonfunctional",
-      "idx": 1212
+      "idx": 1212,
+      "has_differences": false
     }
   ],
   "Renting": [
     {
       "instance_id": "EN-1661-81-frame-Renting",
-      "idx": 603
+      "idx": 603,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1641-302-frame-Renting",
-      "idx": 604
+      "idx": 604,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2877-91-frame-Renting",
-      "idx": 605
+      "idx": 605,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2455-628-frame-Renting",
-      "idx": 960
+      "idx": 960,
+      "has_differences": false
     },
     {
       "instance_id": "EN-5017-497-frame-Renting",
-      "idx": 1213
+      "idx": 1213,
+      "has_differences": true
     }
   ],
   "Renting_out": [
     {
       "instance_id": "EN-0085-883-frame-Renting_out",
-      "idx": 606
+      "idx": 606,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0007-600-frame-Renting_out",
-      "idx": 607
+      "idx": 607,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4438-1834-frame-Renting_out",
-      "idx": 608
+      "idx": 608,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0448-289-frame-Renting_out",
-      "idx": 961
+      "idx": 961,
+      "has_differences": true
     },
     {
       "instance_id": "EN-8245-519-frame-Renting_out",
-      "idx": 1214
+      "idx": 1214,
+      "has_differences": true
     }
   ],
   "Replacing": [
     {
       "instance_id": "EN-0301-60-frame-Replacing",
-      "idx": 609
+      "idx": 609,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2650-940-frame-Replacing",
-      "idx": 610
+      "idx": 610,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1343-105-frame-Replacing",
-      "idx": 611
+      "idx": 611,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4376-591-frame-Replacing",
-      "idx": 962
+      "idx": 962,
+      "has_differences": false
     },
     {
       "instance_id": "EN-7460-661-frame-Replacing",
-      "idx": 1215
+      "idx": 1215,
+      "has_differences": true
     }
   ],
   "Rescuing": [
     {
       "instance_id": "EN-2029-45-frame-Rescuing",
-      "idx": 612
+      "idx": 612,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2396-279-frame-Rescuing",
-      "idx": 613
+      "idx": 613,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2572-188-frame-Rescuing",
-      "idx": 614
+      "idx": 614,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1328-1386-frame-Rescuing",
-      "idx": 963
+      "idx": 963,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4426-363-frame-Rescuing",
-      "idx": 1216
+      "idx": 1216,
+      "has_differences": false
     }
   ],
   "Reshaping": [
     {
       "instance_id": "EN-2850-281-frame-Reshaping",
-      "idx": 615
+      "idx": 615,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0613-1404-frame-Reshaping",
-      "idx": 616
+      "idx": 616,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0977-801-frame-Reshaping",
-      "idx": 617
+      "idx": 617,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4034-791-frame-Reshaping",
-      "idx": 964
+      "idx": 964,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2372-674-frame-Reshaping",
-      "idx": 1217
+      "idx": 1217,
+      "has_differences": true
     }
   ],
   "Resolve_problem": [
     {
       "instance_id": "EN-1302-40-frame-Resolve_problem",
-      "idx": 618
+      "idx": 618,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4055-12-frame-Resolve_problem",
-      "idx": 619
+      "idx": 619,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2486-889-frame-Resolve_problem",
-      "idx": 620
+      "idx": 620,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0712-177-frame-Resolve_problem",
-      "idx": 965
+      "idx": 965,
+      "has_differences": false
     },
     {
       "instance_id": "EN-3040-245-frame-Resolve_problem",
-      "idx": 1218
+      "idx": 1218,
+      "has_differences": true
     }
   ],
   "Response": [
     {
       "instance_id": "EN-0678-528-frame-Response",
-      "idx": 621
+      "idx": 621,
+      "has_differences": true
     },
     {
       "instance_id": "EN-8240-624-frame-Response",
-      "idx": 622
+      "idx": 622,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1656-702-frame-Response",
-      "idx": 623
+      "idx": 623,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0615-303-frame-Response",
-      "idx": 966
+      "idx": 966,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0364-9-frame-Response",
-      "idx": 1219
+      "idx": 1219,
+      "has_differences": false
     }
   ],
   "Revenge": [
     {
       "instance_id": "EN-7095-1073-frame-Revenge",
-      "idx": 624
+      "idx": 624,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4388-1007-frame-Revenge",
-      "idx": 625
+      "idx": 625,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0654-324-frame-Revenge",
-      "idx": 626
+      "idx": 626,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0616-367-frame-Revenge",
-      "idx": 967
+      "idx": 967,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4353-646-frame-Revenge",
-      "idx": 1220
+      "idx": 1220,
+      "has_differences": true
     }
   ],
   "Rewards_and_punishments": [
     {
       "instance_id": "EN-2644-310-frame-Rewards_and_punishments",
-      "idx": 627
+      "idx": 627,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0124-708-frame-Rewards_and_punishments",
-      "idx": 628
+      "idx": 628,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1156-724-frame-Rewards_and_punishments",
-      "idx": 629
+      "idx": 629,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1431-87-frame-Rewards_and_punishments",
-      "idx": 968
+      "idx": 968,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0906-517-frame-Rewards_and_punishments",
-      "idx": 1221
+      "idx": 1221,
+      "has_differences": true
     }
   ],
   "Rotting": [
     {
       "instance_id": "EN-2039-184-frame-Rotting",
-      "idx": 630
+      "idx": 630,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5487-710-frame-Rotting",
-      "idx": 631
+      "idx": 631,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0657-143-frame-Rotting",
-      "idx": 632
+      "idx": 632,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2439-908-frame-Rotting",
-      "idx": 969
+      "idx": 969,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4382-1220-frame-Rotting",
-      "idx": 1222
+      "idx": 1222,
+      "has_differences": false
     }
   ],
   "Seeking": [
     {
       "instance_id": "EN-7445-160-frame-Seeking",
-      "idx": 633
+      "idx": 633,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2813-1056-frame-Seeking",
-      "idx": 634
+      "idx": 634,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2920-1167-frame-Seeking",
-      "idx": 635
+      "idx": 635,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1031-9-frame-Seeking",
-      "idx": 970
+      "idx": 970,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4496-325-frame-Seeking",
-      "idx": 1223
+      "idx": 1223,
+      "has_differences": false
     }
   ],
   "Seeking_to_achieve": [
     {
       "instance_id": "EN-7042-498-frame-Seeking_to_achieve",
-      "idx": 636
+      "idx": 636,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4490-359-frame-Seeking_to_achieve",
-      "idx": 637
+      "idx": 637,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0812-25-frame-Seeking_to_achieve",
-      "idx": 638
+      "idx": 638,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2676-246-frame-Seeking_to_achieve",
-      "idx": 971
+      "idx": 971,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1296-687-frame-Seeking_to_achieve",
-      "idx": 1224
+      "idx": 1224,
+      "has_differences": false
     }
   ],
   "Self_motion": [
     {
       "instance_id": "EN-4421-4-frame-Self_motion",
-      "idx": 639
+      "idx": 639,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2044-74-frame-Self_motion",
-      "idx": 640
+      "idx": 640,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4344-47-frame-Self_motion",
-      "idx": 641
+      "idx": 641,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5392-5-frame-Self_motion",
-      "idx": 972
+      "idx": 972,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4480-30-frame-Self_motion",
-      "idx": 1225
+      "idx": 1225,
+      "has_differences": true
     }
   ],
   "Separating": [
     {
       "instance_id": "EN-1200-58-frame-Separating",
-      "idx": 642
+      "idx": 642,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1208-656-frame-Separating",
-      "idx": 643
+      "idx": 643,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0987-494-frame-Separating",
-      "idx": 644
+      "idx": 644,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2593-709-frame-Separating",
-      "idx": 973
+      "idx": 973,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5108-728-frame-Separating",
-      "idx": 1226
+      "idx": 1226,
+      "has_differences": true
     }
   ],
   "Setting_fire": [
     {
       "instance_id": "EN-1732-55-frame-Setting_fire",
-      "idx": 645
+      "idx": 645,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4022-543-frame-Setting_fire",
-      "idx": 646
+      "idx": 646,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2611-728-frame-Setting_fire",
-      "idx": 647
+      "idx": 647,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1214-574-frame-Setting_fire",
-      "idx": 974
+      "idx": 974,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0962-1068-frame-Setting_fire",
-      "idx": 1227
+      "idx": 1227,
+      "has_differences": true
     }
   ],
   "Setting_out": [
     {
       "instance_id": "EN-4410-1356-frame-Setting_out",
-      "idx": 648
+      "idx": 648,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2840-866-frame-Setting_out",
-      "idx": 649
+      "idx": 649,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2628-88-frame-Setting_out",
-      "idx": 650
+      "idx": 650,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0209-584-frame-Setting_out",
-      "idx": 975
+      "idx": 975,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2371-616-frame-Setting_out",
-      "idx": 1228
+      "idx": 1228,
+      "has_differences": true
     }
   ],
   "Shoot_projectiles": [
     {
       "instance_id": "EN-0441-979-frame-Shoot_projectiles",
-      "idx": 651
+      "idx": 651,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1425-352-frame-Shoot_projectiles",
-      "idx": 652
+      "idx": 652,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1657-625-frame-Shoot_projectiles",
-      "idx": 653
+      "idx": 653,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2525-582-frame-Shoot_projectiles",
-      "idx": 976
+      "idx": 976,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2046-84-frame-Shoot_projectiles",
-      "idx": 1229
+      "idx": 1229,
+      "has_differences": true
     }
   ],
   "Shopping": [
     {
       "instance_id": "EN-0233-59-frame-Shopping",
-      "idx": 654
+      "idx": 654,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4066-201-frame-Shopping",
-      "idx": 655
+      "idx": 655,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1581-45-frame-Shopping",
-      "idx": 656
+      "idx": 656,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1277-1054-frame-Shopping",
-      "idx": 977
+      "idx": 977,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1223-112-frame-Shopping",
-      "idx": 1230
+      "idx": 1230,
+      "has_differences": true
     }
   ],
   "Sign_agreement": [
     {
       "instance_id": "EN-2063-1415-frame-Sign_agreement",
-      "idx": 657
+      "idx": 657,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2781-305-frame-Sign_agreement",
-      "idx": 658
+      "idx": 658,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0224-193-frame-Sign_agreement",
-      "idx": 659
+      "idx": 659,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4027-537-frame-Sign_agreement",
-      "idx": 978
+      "idx": 978,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2823-115-frame-Sign_agreement",
-      "idx": 1231
+      "idx": 1231,
+      "has_differences": true
     }
   ],
   "Silencing": [
     {
       "instance_id": "EN-1685-1406-frame-Silencing",
-      "idx": 660
+      "idx": 660,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2699-1088-frame-Silencing",
-      "idx": 661
+      "idx": 661,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4475-52-frame-Silencing",
-      "idx": 662
+      "idx": 662,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0710-445-frame-Silencing",
-      "idx": 979
+      "idx": 979,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0034-1014-frame-Silencing",
-      "idx": 1232
+      "idx": 1232,
+      "has_differences": true
     }
   ],
   "Smuggling": [
     {
       "instance_id": "EN-0032-694-frame-Smuggling",
-      "idx": 663
+      "idx": 663,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1375-458-frame-Smuggling",
-      "idx": 664
+      "idx": 664,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2709-203-frame-Smuggling",
-      "idx": 665
+      "idx": 665,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2969-1086-frame-Smuggling",
-      "idx": 980
+      "idx": 980,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0754-994-frame-Smuggling",
-      "idx": 1233
+      "idx": 1233,
+      "has_differences": false
     }
   ],
   "Soaking": [
     {
       "instance_id": "EN-2379-10-frame-Soaking",
-      "idx": 666
+      "idx": 666,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2576-813-frame-Soaking",
-      "idx": 667
+      "idx": 667,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3112-1045-frame-Soaking",
-      "idx": 668
+      "idx": 668,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2994-3-frame-Soaking",
-      "idx": 981
+      "idx": 981,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2713-632-frame-Soaking",
-      "idx": 1234
+      "idx": 1234,
+      "has_differences": true
     }
   ],
   "State_of_entity": [
     {
       "instance_id": "EN-4554-572-frame-State_of_entity",
-      "idx": 669
+      "idx": 669,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0169-826-frame-State_of_entity",
-      "idx": 670
+      "idx": 670,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0642-350-frame-State_of_entity",
-      "idx": 671
+      "idx": 671,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0058-474-frame-State_of_entity",
-      "idx": 982
+      "idx": 982,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4739-16-frame-State_of_entity",
-      "idx": 1235
+      "idx": 1235,
+      "has_differences": false
     }
   ],
   "Suasion": [
     {
       "instance_id": "EN-0962-1020-frame-Suasion",
-      "idx": 672
+      "idx": 672,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7090-1891-frame-Suasion",
-      "idx": 673
+      "idx": 673,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0759-912-frame-Suasion",
-      "idx": 674
+      "idx": 674,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1484-1242-frame-Suasion",
-      "idx": 983
+      "idx": 983,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3132-631-frame-Suasion",
-      "idx": 1236
+      "idx": 1236,
+      "has_differences": true
     }
   ],
   "Submitting_documents": [
     {
       "instance_id": "EN-2946-1303-frame-Submitting_documents",
-      "idx": 675
+      "idx": 675,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7420-498-frame-Submitting_documents",
-      "idx": 676
+      "idx": 676,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2987-61-frame-Submitting_documents",
-      "idx": 677
+      "idx": 677,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3062-259-frame-Submitting_documents",
-      "idx": 984
+      "idx": 984,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2679-180-frame-Submitting_documents",
-      "idx": 1237
+      "idx": 1237,
+      "has_differences": true
     }
   ],
   "Subsisting": [
     {
       "instance_id": "EN-1682-192-frame-Subsisting",
-      "idx": 678
+      "idx": 678,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2990-819-frame-Subsisting",
-      "idx": 679
+      "idx": 679,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0871-74-frame-Subsisting",
-      "idx": 680
+      "idx": 680,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0302-703-frame-Subsisting",
-      "idx": 985
+      "idx": 985,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2805-1026-frame-Subsisting",
-      "idx": 1238
+      "idx": 1238,
+      "has_differences": false
     }
   ],
   "Suicide_attack": [
     {
       "instance_id": "EN-0840-524-frame-Suicide_attack",
-      "idx": 681
+      "idx": 681,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0116-1250-frame-Suicide_attack",
-      "idx": 682
+      "idx": 682,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4357-985-frame-Suicide_attack",
-      "idx": 683
+      "idx": 683,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2754-967-frame-Suicide_attack",
-      "idx": 986
+      "idx": 986,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1078-1230-frame-Suicide_attack",
-      "idx": 1239
+      "idx": 1239,
+      "has_differences": false
     }
   ],
   "Summarizing": [
     {
       "instance_id": "EN-4883-88-frame-Summarizing",
-      "idx": 684
+      "idx": 684,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4351-206-frame-Summarizing",
-      "idx": 685
+      "idx": 685,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1256-447-frame-Summarizing",
-      "idx": 686
+      "idx": 686,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1411-683-frame-Summarizing",
-      "idx": 987
+      "idx": 987,
+      "has_differences": false
     },
     {
       "instance_id": "EN-5455-553-frame-Summarizing",
-      "idx": 1240
+      "idx": 1240,
+      "has_differences": true
     }
   ],
   "Supply": [
     {
       "instance_id": "EN-1717-28-frame-Supply",
-      "idx": 687
+      "idx": 687,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1295-298-frame-Supply",
-      "idx": 688
+      "idx": 688,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2520-33-frame-Supply",
-      "idx": 689
+      "idx": 689,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4096-11-frame-Supply",
-      "idx": 988
+      "idx": 988,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2875-108-frame-Supply",
-      "idx": 1241
+      "idx": 1241,
+      "has_differences": true
     }
   ],
   "Supporting": [
     {
       "instance_id": "EN-1189-70-frame-Supporting",
-      "idx": 690
+      "idx": 690,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1709-388-frame-Supporting",
-      "idx": 691
+      "idx": 691,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2972-1012-frame-Supporting",
-      "idx": 692
+      "idx": 692,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3044-19-frame-Supporting",
-      "idx": 989
+      "idx": 989,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4527-563-frame-Supporting",
-      "idx": 1242
+      "idx": 1242,
+      "has_differences": true
     }
   ],
   "Surrendering_possession": [
     {
       "instance_id": "EN-3041-430-frame-Surrendering_possession",
-      "idx": 693
+      "idx": 693,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2404-67-frame-Surrendering_possession",
-      "idx": 694
+      "idx": 694,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5461-932-frame-Surrendering_possession",
-      "idx": 695
+      "idx": 695,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1549-372-frame-Surrendering_possession",
-      "idx": 990
+      "idx": 990,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1212-127-frame-Surrendering_possession",
-      "idx": 1243
+      "idx": 1243,
+      "has_differences": true
     }
   ],
   "Taking": [
     {
       "instance_id": "EN-2544-221-frame-Taking",
-      "idx": 696
+      "idx": 696,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2950-333-frame-Taking",
-      "idx": 697
+      "idx": 697,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2390-446-frame-Taking",
-      "idx": 698
+      "idx": 698,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2414-395-frame-Taking",
-      "idx": 991
+      "idx": 991,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1095-740-frame-Taking",
-      "idx": 1244
+      "idx": 1244,
+      "has_differences": true
     }
   ],
   "Talking_into": [
     {
       "instance_id": "EN-1029-368-frame-Talking_into",
-      "idx": 699
+      "idx": 699,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4342-522-frame-Talking_into",
-      "idx": 700
+      "idx": 700,
+      "has_differences": false
     },
     {
       "instance_id": "EN-8190-207-frame-Talking_into",
-      "idx": 701
+      "idx": 701,
+      "has_differences": false
     },
     {
       "instance_id": "EN-7015-810-frame-Talking_into",
-      "idx": 992
+      "idx": 992,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1542-665-frame-Talking_into",
-      "idx": 1245
+      "idx": 1245,
+      "has_differences": false
     }
   ],
   "Temporary_stay": [
     {
       "instance_id": "EN-2632-723-frame-Temporary_stay",
-      "idx": 702
+      "idx": 702,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0616-1906-frame-Temporary_stay",
-      "idx": 703
+      "idx": 703,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1558-1339-frame-Temporary_stay",
-      "idx": 704
+      "idx": 704,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0875-184-frame-Temporary_stay",
-      "idx": 993
+      "idx": 993,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0317-1005-frame-Temporary_stay",
-      "idx": 1246
+      "idx": 1246,
+      "has_differences": true
     }
   ],
   "Text_creation": [
     {
       "instance_id": "EN-1625-29-frame-Text_creation",
-      "idx": 705
+      "idx": 705,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1405-294-frame-Text_creation",
-      "idx": 706
+      "idx": 706,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1583-32-frame-Text_creation",
-      "idx": 707
+      "idx": 707,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0221-118-frame-Text_creation",
-      "idx": 994
+      "idx": 994,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4963-35-frame-Text_creation",
-      "idx": 1247
+      "idx": 1247,
+      "has_differences": true
     }
   ],
   "Theft": [
     {
       "instance_id": "EN-1649-202-frame-Theft",
-      "idx": 708
+      "idx": 708,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0881-818-frame-Theft",
-      "idx": 709
+      "idx": 709,
+      "has_differences": false
     },
     {
       "instance_id": "EN-7099-930-frame-Theft",
-      "idx": 710
+      "idx": 710,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1040-155-frame-Theft",
-      "idx": 995
+      "idx": 995,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4056-442-frame-Theft",
-      "idx": 1248
+      "idx": 1248,
+      "has_differences": false
     }
   ],
   "Thriving": [
     {
       "instance_id": "EN-0953-812-frame-Thriving",
-      "idx": 711
+      "idx": 711,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0067-441-frame-Thriving",
-      "idx": 712
+      "idx": 712,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0683-527-frame-Thriving",
-      "idx": 713
+      "idx": 713,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1316-235-frame-Thriving",
-      "idx": 996
+      "idx": 996,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0394-1041-frame-Thriving",
-      "idx": 1249
+      "idx": 1249,
+      "has_differences": true
     }
   ],
   "Transfer": [
     {
       "instance_id": "EN-1525-140-frame-Transfer",
-      "idx": 714
+      "idx": 714,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0910-795-frame-Transfer",
-      "idx": 715
+      "idx": 715,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2069-584-frame-Transfer",
-      "idx": 716
+      "idx": 716,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1015-619-frame-Transfer",
-      "idx": 997
+      "idx": 997,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0194-47-frame-Transfer",
-      "idx": 1250
+      "idx": 1250,
+      "has_differences": true
     }
   ],
   "Transition_to_a_quality": [
     {
       "instance_id": "EN-4448-1214-frame-Transition_to_a_quality",
-      "idx": 717
+      "idx": 717,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1089-452-frame-Transition_to_a_quality",
-      "idx": 718
+      "idx": 718,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1432-183-frame-Transition_to_a_quality",
-      "idx": 719
+      "idx": 719,
+      "has_differences": false
     },
     {
       "instance_id": "EN-3009-679-frame-Transition_to_a_quality",
-      "idx": 998
+      "idx": 998,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2739-28-frame-Transition_to_a_quality",
-      "idx": 1251
+      "idx": 1251,
+      "has_differences": false
     }
   ],
   "Translating": [
     {
       "instance_id": "EN-1129-653-frame-Translating",
-      "idx": 720
+      "idx": 720,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4405-78-frame-Translating",
-      "idx": 721
+      "idx": 721,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3109-1069-frame-Translating",
-      "idx": 722
+      "idx": 722,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2851-1031-frame-Translating",
-      "idx": 999
+      "idx": 999,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1729-37-frame-Translating",
-      "idx": 1252
+      "idx": 1252,
+      "has_differences": false
     }
   ],
   "Transportation_status": [
     {
       "instance_id": "EN-1683-91-frame-Transportation_status",
-      "idx": 723
+      "idx": 723,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0379-796-frame-Transportation_status",
-      "idx": 724
+      "idx": 724,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1724-1335-frame-Transportation_status",
-      "idx": 725
+      "idx": 725,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1182-469-frame-Transportation_status",
-      "idx": 1000
+      "idx": 1000,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2543-248-frame-Transportation_status",
-      "idx": 1253
+      "idx": 1253,
+      "has_differences": true
     }
   ],
   "Traversing": [
     {
       "instance_id": "EN-2362-814-frame-Traversing",
-      "idx": 726
+      "idx": 726,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4472-44-frame-Traversing",
-      "idx": 727
+      "idx": 727,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1221-266-frame-Traversing",
-      "idx": 728
+      "idx": 728,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2377-836-frame-Traversing",
-      "idx": 1001
+      "idx": 1001,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7108-0-frame-Traversing",
-      "idx": 1254
+      "idx": 1254,
+      "has_differences": true
     }
   ],
   "Undergo_change": [
     {
       "instance_id": "EN-0466-310-frame-Undergo_change",
-      "idx": 729
+      "idx": 729,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2770-148-frame-Undergo_change",
-      "idx": 730
+      "idx": 730,
+      "has_differences": true
     },
     {
       "instance_id": "EN-5034-286-frame-Undergo_change",
-      "idx": 731
+      "idx": 731,
+      "has_differences": true
     },
     {
       "instance_id": "EN-2660-130-frame-Undergo_change",
-      "idx": 1002
+      "idx": 1002,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0944-378-frame-Undergo_change",
-      "idx": 1255
+      "idx": 1255,
+      "has_differences": true
     }
   ],
   "Undergo_transformation": [
     {
       "instance_id": "EN-1069-807-frame-Undergo_transformation",
-      "idx": 732
+      "idx": 732,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1364-212-frame-Undergo_transformation",
-      "idx": 733
+      "idx": 733,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4068-28-frame-Undergo_transformation",
-      "idx": 734
+      "idx": 734,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0213-433-frame-Undergo_transformation",
-      "idx": 1003
+      "idx": 1003,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1222-294-frame-Undergo_transformation",
-      "idx": 1256
+      "idx": 1256,
+      "has_differences": true
     }
   ],
   "Undergoing": [
     {
       "instance_id": "EN-0005-307-frame-Undergoing",
-      "idx": 735
+      "idx": 735,
+      "has_differences": false
     },
     {
       "instance_id": "EN-0556-1234-frame-Undergoing",
-      "idx": 736
+      "idx": 736,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0205-691-frame-Undergoing",
-      "idx": 737
+      "idx": 737,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1104-100-frame-Undergoing",
-      "idx": 1004
+      "idx": 1004,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0638-94-frame-Undergoing",
-      "idx": 1257
+      "idx": 1257,
+      "has_differences": true
     }
   ],
   "Use_firearm": [
     {
       "instance_id": "EN-2601-1071-frame-Use_firearm",
-      "idx": 738
+      "idx": 738,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2820-992-frame-Use_firearm",
-      "idx": 739
+      "idx": 739,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0302-49-frame-Use_firearm",
-      "idx": 740
+      "idx": 740,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1483-751-frame-Use_firearm",
-      "idx": 1005
+      "idx": 1005,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4857-8-frame-Use_firearm",
-      "idx": 1258
+      "idx": 1258,
+      "has_differences": true
     }
   ],
   "Using": [
     {
       "instance_id": "EN-1222-311-frame-Using",
-      "idx": 741
+      "idx": 741,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1106-96-frame-Using",
-      "idx": 742
+      "idx": 742,
+      "has_differences": false
     },
     {
       "instance_id": "EN-4960-35-frame-Using",
-      "idx": 743
+      "idx": 743,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1084-7-frame-Using",
-      "idx": 1006
+      "idx": 1006,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4535-513-frame-Using",
-      "idx": 1259
+      "idx": 1259,
+      "has_differences": true
     }
   ],
   "Vehicle_landing": [
     {
       "instance_id": "EN-4964-200-frame-Vehicle_landing",
-      "idx": 744
+      "idx": 744,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4946-60-frame-Vehicle_landing",
-      "idx": 745
+      "idx": 745,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0333-926-frame-Vehicle_landing",
-      "idx": 746
+      "idx": 746,
+      "has_differences": false
     },
     {
       "instance_id": "EN-5069-604-frame-Vehicle_landing",
-      "idx": 1007
+      "idx": 1007,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4048-360-frame-Vehicle_landing",
-      "idx": 1260
+      "idx": 1260,
+      "has_differences": true
     }
   ],
   "Visiting": [
     {
       "instance_id": "EN-1392-50-frame-Visiting",
-      "idx": 747
+      "idx": 747,
+      "has_differences": true
     },
     {
       "instance_id": "EN-0702-24-frame-Visiting",
-      "idx": 748
+      "idx": 748,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4426-732-frame-Visiting",
-      "idx": 749
+      "idx": 749,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2767-28-frame-Visiting",
-      "idx": 1008
+      "idx": 1008,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1158-17-frame-Visiting",
-      "idx": 1261
+      "idx": 1261,
+      "has_differences": true
     }
   ],
   "Waking_up": [
     {
       "instance_id": "EN-1617-1662-frame-Waking_up",
-      "idx": 750
+      "idx": 750,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1427-602-frame-Waking_up",
-      "idx": 751
+      "idx": 751,
+      "has_differences": false
     },
     {
       "instance_id": "EN-3115-202-frame-Waking_up",
-      "idx": 752
+      "idx": 752,
+      "has_differences": false
     },
     {
       "instance_id": "EN-5043-2787-frame-Waking_up",
-      "idx": 1009
+      "idx": 1009,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3022-605-frame-Waking_up",
-      "idx": 1262
+      "idx": 1262,
+      "has_differences": true
     }
   ],
   "Work": [
     {
       "instance_id": "EN-2625-38-frame-Work",
-      "idx": 753
+      "idx": 753,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4002-175-frame-Work",
-      "idx": 754
+      "idx": 754,
+      "has_differences": true
     },
     {
       "instance_id": "EN-1031-1471-frame-Work",
-      "idx": 755
+      "idx": 755,
+      "has_differences": false
     },
     {
       "instance_id": "EN-3017-86-frame-Work",
-      "idx": 1010
+      "idx": 1010,
+      "has_differences": true
     },
     {
       "instance_id": "EN-3017-122-frame-Work",
-      "idx": 1263
+      "idx": 1263,
+      "has_differences": true
     }
   ],
   "Working_a_post": [
     {
       "instance_id": "EN-2840-109-frame-Working_a_post",
-      "idx": 756
+      "idx": 756,
+      "has_differences": true
     },
     {
       "instance_id": "EN-4037-304-frame-Working_a_post",
-      "idx": 757
+      "idx": 757,
+      "has_differences": false
     },
     {
       "instance_id": "EN-1566-1658-frame-Working_a_post",
-      "idx": 758
+      "idx": 758,
+      "has_differences": true
     },
     {
       "instance_id": "EN-7382-240-frame-Working_a_post",
-      "idx": 1011
+      "idx": 1011,
+      "has_differences": false
     },
     {
       "instance_id": "EN-2685-562-frame-Working_a_post",
-      "idx": 1264
+      "idx": 1264,
+      "has_differences": true
     }
   ]
 }

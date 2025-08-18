@@ -102,6 +102,39 @@ description: Explore FAMuS and SEAMuS datasets with interactive annotations
     
     <!-- Example Viewer -->
     <div v-if="currentExample" class="example-viewer">
+      <!-- Version Toggle -->
+      <div class="version-toggle-container">
+        <div class="version-toggle mdl-card mdl-shadow--2dp">
+          <div class="version-toggle-header">
+            <span class="version-label">FAMuS Version:</span>
+            <div class="version-buttons">
+              <button class="version-button mdl-button mdl-js-button mdl-button--raised"
+                      :class="{ 'mdl-button--colored': currentVersion === '1.0', 'mdl-button--disabled': !versionToggleEnabled }"
+                      :disabled="!versionToggleEnabled"
+                      @click="switchVersion('1.0')"
+                      :title="!versionToggleEnabled ? 'Annotations are identical in both versions' : 'View FAMuS 1.0 annotations'">
+                1.0
+              </button>
+              <button class="version-button mdl-button mdl-js-button mdl-button--raised"
+                      :class="{ 'mdl-button--colored': currentVersion === '1.1', 'mdl-button--disabled': !versionToggleEnabled }"
+                      :disabled="!versionToggleEnabled"
+                      @click="switchVersion('1.1')"
+                      :title="!versionToggleEnabled ? 'Annotations are identical in both versions' : 'View FAMuS 1.1 annotations'">
+                1.1
+              </button>
+            </div>
+            <span v-if="versionToggleEnabled" class="version-indicator">
+              <i class="material-icons">compare_arrows</i>
+              <span>Versions differ</span>
+            </span>
+            <span v-else class="version-indicator version-identical">
+              <i class="material-icons">check_circle</i>
+              <span>Identical</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      
       <!-- Frame Information Card -->
       <div class="frame-info mdl-card mdl-shadow--2dp">
         <div class="mdl-card__title">
@@ -382,6 +415,77 @@ document.addEventListener('DOMContentLoaded', function() {
   align-items: center;
   gap: 10px;
   color: #c62828;
+}
+
+/* Version Toggle */
+.version-toggle-container {
+  margin-bottom: 20px;
+}
+
+.version-toggle {
+  padding: 12px 20px;
+}
+
+.version-toggle-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.version-label {
+  font-weight: 500;
+  color: rgba(0,0,0,0.87);
+  font-size: 16px;
+}
+
+.version-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.version-button {
+  min-width: 60px;
+}
+
+.version-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+  color: #666;
+  font-size: 14px;
+}
+
+.version-info i {
+  font-size: 18px;
+}
+
+/* Version indicator */
+.version-indicator {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.version-indicator i {
+  font-size: 18px;
+}
+
+.version-indicator {
+  color: #ff9800; /* Orange for differences */
+}
+
+.version-indicator.version-identical {
+  color: #4caf50; /* Green for identical */
+}
+
+/* Disabled button styling */
+.version-button.mdl-button--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 /* Search Panel - Full Width */

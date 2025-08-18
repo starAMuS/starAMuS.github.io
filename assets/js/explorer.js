@@ -22,6 +22,10 @@ const ExplorerApp = {
       seamusInstanceMapping: {},  // Maps FAMuS instance IDs to SEAMuS data
       totalExamples: 0,
       
+      // Version state
+      currentVersion: '1.0',  // '1.0' or '1.1'
+      versionToggleEnabled: true,  // Whether toggle is enabled based on differences
+      
       // UI state
       loading: false,
       error: null,
@@ -159,13 +163,14 @@ const ExplorerApp = {
     async loadMetadata() {
       try {
         console.log('Loading metadata from:', this.dataPath);
-        // Load FAMuS metadata
+        // Load unified FAMuS metadata
         const famusUrl = `${this.dataPath}famus/metadata.json`;
         console.log('Fetching FAMuS metadata from:', famusUrl);
         const famusResponse = await fetch(famusUrl);
         if (famusResponse.ok) {
           this.famusMetadata = await famusResponse.json();
           console.log('FAMuS metadata loaded:', this.famusMetadata);
+          console.log('Instances with differences:', this.famusMetadata.instances_with_differences);
         } else {
           console.error('Failed to load FAMuS metadata:', famusResponse.status, famusResponse.statusText);
         }
@@ -188,7 +193,7 @@ const ExplorerApp = {
     
     async loadSearchIndices() {
       try {
-        // Load FAMuS search index
+        // Load unified FAMuS search index
         const famusResponse = await fetch(`${this.dataPath}famus/search_index.json`);
         if (famusResponse.ok) {
           this.famusSearchIndex = await famusResponse.json();
@@ -299,19 +304,20 @@ const ExplorerApp = {
       }
     },
     
-    async loadChunk(dataset, chunkId) {
+    async loadChunk(dataset, chunkId, cache = null) {
+      const cacheToUse = cache || this.chunkCache;
       const cacheKey = `${dataset}-${chunkId}`;
       
       // Check cache first
-      if (this.chunkCache.has(cacheKey)) {
-        return this.chunkCache.get(cacheKey);
+      if (cacheToUse.has(cacheKey)) {
+        return cacheToUse.get(cacheKey);
       }
       
       try {
         const response = await fetch(`${this.dataPath}${dataset}/chunk_${String(chunkId).padStart(4, '0')}.json`);
         if (response.ok) {
           const data = await response.json();
-          this.chunkCache.set(cacheKey, data);
+          cacheToUse.set(cacheKey, data);
           return data;
         }
       } catch (error) {
@@ -327,7 +333,6 @@ const ExplorerApp = {
       this.showAllDescendants = false;  // Reset accordion state
       
       try {
-        // Always load from FAMuS as the primary dataset
         const metadata = this.famusMetadata;
         if (!metadata) return;
         
@@ -337,15 +342,37 @@ const ExplorerApp = {
         const indexInChunk = id % chunkSize;
         
         // Load chunk if needed
-        if (chunkId !== this.currentChunkId) {
+        if (chunkId !== this.currentChunkId || this.currentChunk === null) {
           this.currentChunk = await this.loadChunk('famus', chunkId);
           this.currentChunkId = chunkId;
         }
         
         if (this.currentChunk && this.currentChunk[indexInChunk]) {
-          this.currentExample = this.currentChunk[indexInChunk];
+          const unifiedExample = this.currentChunk[indexInChunk];
+          
+          // Extract the current version's data
+          const versionKey = this.currentVersion === '1.1' ? 'v1_1' : 'v1_0';
+          const versionData = unifiedExample[versionKey];
+          
+          // Build currentExample from unified data
+          this.currentExample = {
+            instance_id: unifiedExample.instance_id,
+            frame: unifiedExample.frame,
+            frame_gloss: unifiedExample.frame_gloss,
+            frame_definition: unifiedExample.frame_definition,
+            frame_ancestors: unifiedExample.frame_ancestors,
+            frame_descendants: unifiedExample.frame_descendants,
+            has_differences: unifiedExample.has_differences,
+            report: versionData.report,
+            source: versionData.source,
+            split: unifiedExample.split
+          };
+          
           this.currentIndex = id;
           this.totalExamples = metadata.total_instances;
+          
+          // Update toggle state based on differences
+          this.versionToggleEnabled = unifiedExample.has_differences;
           
           // Add frame descendants if available
           if (this.frameHierarchy && this.currentExample.frame) {
@@ -369,6 +396,64 @@ const ExplorerApp = {
         this.setupRoleTooltips();
       }
     },
+    
+    async switchVersion(version) {
+      if (version === this.currentVersion || !this.versionToggleEnabled) return;
+      
+      this.currentVersion = version;
+      
+      // Clear any existing errors when switching versions
+      this.error = null;
+      
+      // If we have a current example, just update to show the new version
+      if (this.currentExample && this.currentChunk) {
+        // Find the unified example in current chunk
+        const indexInChunk = this.currentIndex % this.famusMetadata.chunk_size;
+        const unifiedExample = this.currentChunk[indexInChunk];
+        
+        if (unifiedExample) {
+          // Extract the new version's data
+          const versionKey = version === '1.1' ? 'v1_1' : 'v1_0';
+          const versionData = unifiedExample[versionKey];
+          
+          // Preserve SEAMuS data if it exists
+          const seamusData = {
+            seamus_report_summary: this.currentExample.seamus_report_summary,
+            seamus_report_template: this.currentExample.seamus_report_template,
+            seamus_combined_summary: this.currentExample.seamus_combined_summary,
+            seamus_combined_template: this.currentExample.seamus_combined_template
+          };
+          
+          // Update currentExample with new version data
+          this.currentExample = {
+            instance_id: unifiedExample.instance_id,
+            frame: unifiedExample.frame,
+            frame_gloss: unifiedExample.frame_gloss,
+            frame_definition: unifiedExample.frame_definition,
+            frame_ancestors: unifiedExample.frame_ancestors,
+            frame_descendants: unifiedExample.frame_descendants,
+            has_differences: unifiedExample.has_differences,
+            report: versionData.report,
+            source: versionData.source,
+            split: unifiedExample.split
+          };
+          
+          // Restore SEAMuS data if it existed
+          if (seamusData.seamus_report_summary) {
+            this.currentExample.seamus_report_summary = seamusData.seamus_report_summary;
+            this.currentExample.seamus_report_template = seamusData.seamus_report_template;
+          }
+          if (seamusData.seamus_combined_summary) {
+            this.currentExample.seamus_combined_summary = seamusData.seamus_combined_summary;
+            this.currentExample.seamus_combined_template = seamusData.seamus_combined_template;
+          }
+          
+          // Setup tooltips for new content
+          this.setupRoleTooltips();
+        }
+      }
+    },
+    
     
     async enrichWithSeamus(instanceId) {
       // Get SEAMuS data for this FAMuS instance
@@ -450,6 +535,7 @@ const ExplorerApp = {
     },
     
     performLunrSearch() {
+      // Use the unified search index
       const lunrIndex = this.famusLunrIndex;
       const searchIndex = this.famusSearchIndex;
       
@@ -713,6 +799,12 @@ const ExplorerApp = {
         const role = annotation.role || 'unknown';
         const roleDefinition = annotation.role_definition || '';
         const roleColor = this.getRoleColor(role);
+        
+        // Skip annotations without span information
+        if (!annotation.span) {
+          console.warn('Annotation without span:', annotation);
+          continue;
+        }
         
         // Handle both single spans and discontiguous spans
         const spans = Array.isArray(annotation.span[0]) ? annotation.span : [annotation.span];
