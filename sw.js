@@ -1,13 +1,13 @@
 // Service Worker for AMuS Dataset Explorer
-const CACHE_NAME = 'amus-v3';
+const CACHE_NAME = 'amus-v4';
 const urlsToCache = [
   '/',
   '/explorer.html',
   '/benchmarks.html',
   '/assets/js/explorer.js',
   'https://fonts.googleapis.com/icon?family=Material+Icons',
-  'https://code.getmdl.io/1.3.0/material.indigo-purple.min.css',
-  'https://code.getmdl.io/1.3.0/material.min.js',
+  'https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.indigo-teal.min.css',
+  'https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.min.js',
   'https://unpkg.com/vue@3/dist/vue.global.prod.js',
   'https://unpkg.com/lunr/lunr.js'
 ];
